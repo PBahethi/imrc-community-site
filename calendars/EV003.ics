@@ -1,0 +1,59 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Tree in the Forest//2027 Demo//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:EV003-2027-01-11@imrc-community-site
+DTSTAMP:20260912T000000Z
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270112
+SUMMARY:Meeting with Hanuman (demo programme)
+LOCATION:Kishkindha region\, Karnataka\, India
+DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
+END:VEVENT
+BEGIN:VEVENT
+UID:EV003-2027-03-11@imrc-community-site
+DTSTAMP:20260912T000000Z
+DTSTART;VALUE=DATE:20270311
+DTEND;VALUE=DATE:20270312
+SUMMARY:Meeting with Hanuman (demo programme)
+LOCATION:Kishkindha region\, Karnataka\, India
+DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
+END:VEVENT
+BEGIN:VEVENT
+UID:EV003-2027-05-11@imrc-community-site
+DTSTAMP:20260912T000000Z
+DTSTART;VALUE=DATE:20270511
+DTEND;VALUE=DATE:20270512
+SUMMARY:Meeting with Hanuman (demo programme)
+LOCATION:Kishkindha region\, Karnataka\, India
+DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
+END:VEVENT
+BEGIN:VEVENT
+UID:EV003-2027-07-11@imrc-community-site
+DTSTAMP:20260912T000000Z
+DTSTART;VALUE=DATE:20270711
+DTEND;VALUE=DATE:20270712
+SUMMARY:Meeting with Hanuman (demo programme)
+LOCATION:Kishkindha region\, Karnataka\, India
+DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
+END:VEVENT
+BEGIN:VEVENT
+UID:EV003-2027-09-11@imrc-community-site
+DTSTAMP:20260912T000000Z
+DTSTART;VALUE=DATE:20270911
+DTEND;VALUE=DATE:20270912
+SUMMARY:Meeting with Hanuman (demo programme)
+LOCATION:Kishkindha region\, Karnataka\, India
+DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
+END:VEVENT
+BEGIN:VEVENT
+UID:EV003-2027-11-11@imrc-community-site
+DTSTAMP:20260912T000000Z
+DTSTART;VALUE=DATE:20271111
+DTEND;VALUE=DATE:20271112
+SUMMARY:Meeting with Hanuman (demo programme)
+LOCATION:Kishkindha region\, Karnataka\, India
+DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
+END:VEVENT
+END:VCALENDAR
