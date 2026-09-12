@@ -34,20 +34,21 @@ test('event bookmark saves and removes without claiming a registration',()=>{
  const a=app();a.run("detail('event','EV001')");a.node('#save-event').onclick();assert.equal(a.store.get('forest-saved'),'["EV001"]');assert.match(a.node('#save-status').textContent,/Saved in this browser/);a.node('#save-event').onclick();assert.equal(a.store.get('forest-saved'),'[]');
 });
 
-test('every event repeats in six alternate months of 2027 with artwork and valid ICS',()=>{
- for(const e of data.events){
-  assert.deepEqual(e.dates.map(d=>d.slice(0,7)),['2027-01','2027-03','2027-05','2027-07','2027-09','2027-11']);
+test('one event per month from January through August 2027 with artwork and valid ICS',()=>{
+ assert.equal(new Set(data.events.flatMap(e=>e.dates.map(d=>d.slice(0,7)))).size,8);
+ for(const [index,e] of data.events.entries()){
+  assert.deepEqual(e.dates.map(d=>d.slice(0,7)),['2027-'+String(index+1).padStart(2,'0')]);
   assert.ok(fs.statSync('site/'+e.image).size>0);
   const ics=fs.readFileSync('site/calendars/'+e.id+'.ics','utf8');
-  assert.equal((ics.match(/BEGIN:VEVENT/g)||[]).length,6);
-  assert.equal(new Set([...ics.matchAll(/UID:(.*)/g)].map(x=>x[1])).size,6);
+  assert.equal((ics.match(/BEGIN:VEVENT/g)||[]).length,1);
+  assert.equal(new Set([...ics.matchAll(/UID:(.*)/g)].map(x=>x[1])).size,1);
   for(const date of e.dates)assert.ok(ics.includes('DTSTART;VALUE=DATE:'+date.replaceAll('-','')));
   for(const line of ics.split('\r\n'))assert.ok(Buffer.byteLength(line)<=75);
  }
 });
 test('calendar month and saved filters narrow the agenda',()=>{
- const a=app();a.run('events(true)');a.node('#event-month').value='03';a.node('#event-month').onchange();
- assert.match(a.node('#event-results').innerHTML,/March/);assert.doesNotMatch(a.node('#event-results').innerHTML,/January/);
+ const a=app();a.run('events(true)');a.node('#event-month').value='02';a.node('#event-month').onchange();
+ assert.match(a.node('#event-results').innerHTML,/February/);assert.doesNotMatch(a.node('#event-results').innerHTML,/January/);
  a.node('#only-saved').checked=true;a.node('#only-saved').onchange();assert.match(a.node('#event-results').innerHTML,/No matching events/);
  a.store.set('forest-saved','["EV002"]');a.node('#only-saved').onchange();assert.match(a.node('#event-results').innerHTML,/Sita Swayamvara/);assert.doesNotMatch(a.node('#event-results').innerHTML,/Battle of Lanka/);
 });

@@ -39,7 +39,7 @@ def build():
     for index, event in enumerate(data['events']):
         event.update(art[event['id']])
         assert (ROOT/'site'/event['image']).is_file()
-        event['dates'] = [f'2027-{month:02d}-{index+9:02d}' for month in (1,3,5,7,9,11)]
+        event['dates'] = [f'2027-{index+1:02d}-{index+9:02d}']
         lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Tree in the Forest//2027 Demo//EN', 'CALSCALE:GREGORIAN']
         for date in event['dates']:
             day = datetime.date.fromisoformat(date)
