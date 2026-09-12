@@ -1,0 +1,59 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Tree in the Forest//2027 Demo//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:EV004-2027-01-12@imrc-community-site
+DTSTAMP:20260912T000000Z
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+SUMMARY:Search for Sita (demo programme)
+LOCATION:Kishkindha to southern coast\, India
+DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
+END:VEVENT
+BEGIN:VEVENT
+UID:EV004-2027-03-12@imrc-community-site
+DTSTAMP:20260912T000000Z
+DTSTART;VALUE=DATE:20270312
+DTEND;VALUE=DATE:20270313
+SUMMARY:Search for Sita (demo programme)
+LOCATION:Kishkindha to southern coast\, India
+DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
+END:VEVENT
+BEGIN:VEVENT
+UID:EV004-2027-05-12@imrc-community-site
+DTSTAMP:20260912T000000Z
+DTSTART;VALUE=DATE:20270512
+DTEND;VALUE=DATE:20270513
+SUMMARY:Search for Sita (demo programme)
+LOCATION:Kishkindha to southern coast\, India
+DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
+END:VEVENT
+BEGIN:VEVENT
+UID:EV004-2027-07-12@imrc-community-site
+DTSTAMP:20260912T000000Z
+DTSTART;VALUE=DATE:20270712
+DTEND;VALUE=DATE:20270713
+SUMMARY:Search for Sita (demo programme)
+LOCATION:Kishkindha to southern coast\, India
+DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
+END:VEVENT
+BEGIN:VEVENT
+UID:EV004-2027-09-12@imrc-community-site
+DTSTAMP:20260912T000000Z
+DTSTART;VALUE=DATE:20270912
+DTEND;VALUE=DATE:20270913
+SUMMARY:Search for Sita (demo programme)
+LOCATION:Kishkindha to southern coast\, India
+DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
+END:VEVENT
+BEGIN:VEVENT
+UID:EV004-2027-11-12@imrc-community-site
+DTSTAMP:20260912T000000Z
+DTSTART;VALUE=DATE:20271112
+DTEND;VALUE=DATE:20271113
+SUMMARY:Search for Sita (demo programme)
+LOCATION:Kishkindha to southern coast\, India
+DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
+END:VEVENT
+END:VCALENDAR

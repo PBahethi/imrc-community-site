@@ -1,6 +1,6 @@
 # Tree in the Forest
 
-A responsive community demo built from `CODEX_PROMPT.md` and the supplied Ramayana workbook, designed for GitHub Pages. Includes a dashboard, searchable and paginated directory, lineage collections, directional relationships with source notes, event participant views, browser-local event bookmarks, and an unscheduled calendar agenda.
+A responsive community demo built from `CODEX_PROMPT.md` and the supplied Ramayana workbook, designed for GitHub Pages. Includes a dashboard, searchable and paginated directory, lineage collections, directional relationships with source notes, event participant views, browser-local event bookmarks, and a 2027 calendar agenda, accessible contextual help, image-led event cards, saved-event filters, and ICS downloads.
 
 ## Run locally
 
@@ -13,7 +13,7 @@ python3 -m http.server 8000 --directory site
 
 Open http://localhost:8000. Run interaction and data checks with `node --test tests/site.test.cjs`. JavaScript syntax check: `node --check site/app.js`.
 
-Checks cover directory search/filter/pagination, source integrity and public-field allowlisting, route rendering, missing-profile handling, HTML escaping, and local event saves. Browser visual verification requires an available browser session.
+Checks cover directory search/filter/pagination, source integrity and public-field allowlisting, route rendering, missing-profile handling, HTML escaping, and local event saves. Additional checks cover recurring dates, image presence, calendar exports, month/saved filters, and accessible tooltip markup.
 
 ## GitHub Pages
 
@@ -31,7 +31,7 @@ All assets use relative paths, and navigation uses hash routes so project-path h
 
 The importer uses Python's standard XML/ZIP libraries and an explicit public-field allowlist. Stable workbook IDs connect 44 people, 80 directed relationship records, 8 events, and 47 seeded registrations. It validates source references and overwrites the generated JSON deterministically. The original workbook is unchanged.
 
-`Gautama` is a referenced person without a profile (REL-060). The relationship is retained with its original identifier and note, and the UI explains the missing profile. No event dates exist in the workbook; the calendar shows an unscheduled agenda and does not fabricate dates or ICS files. Lineages are derived collections, not invented membership groups.
+`Gautama` is a referenced person without a profile (REL-060). The relationship is retained with its original identifier and note, and the UI explains the missing profile. The original workbook has no dates. The requested 2027 demo programme repeats each of the eight events every other month (January, March, May, July, September, November), on days 9–16 respectively. These are planned all-day demonstration dates, not historical dates or confirmed public gatherings. Each series has an ICS download with six occurrences and exclusive next-day end dates. `scripts/event-art.json` maps supplied artwork to event cards; thematic illustrations are labeled. Optimized JPEGs in `site/images/` keep page downloads small; the source images are unchanged. Lineages are derived collections, not invented membership groups.
 
 ## Privacy and architecture
 

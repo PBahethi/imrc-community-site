@@ -1,0 +1,59 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Tree in the Forest//2027 Demo//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:EV002-2027-01-10@imrc-community-site
+DTSTAMP:20260912T000000Z
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270111
+SUMMARY:Sita Swayamvara (demo programme)
+LOCATION:Mithila\, Bihar\, India
+DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
+END:VEVENT
+BEGIN:VEVENT
+UID:EV002-2027-03-10@imrc-community-site
+DTSTAMP:20260912T000000Z
+DTSTART;VALUE=DATE:20270310
+DTEND;VALUE=DATE:20270311
+SUMMARY:Sita Swayamvara (demo programme)
+LOCATION:Mithila\, Bihar\, India
+DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
+END:VEVENT
+BEGIN:VEVENT
+UID:EV002-2027-05-10@imrc-community-site
+DTSTAMP:20260912T000000Z
+DTSTART;VALUE=DATE:20270510
+DTEND;VALUE=DATE:20270511
+SUMMARY:Sita Swayamvara (demo programme)
+LOCATION:Mithila\, Bihar\, India
+DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
+END:VEVENT
+BEGIN:VEVENT
+UID:EV002-2027-07-10@imrc-community-site
+DTSTAMP:20260912T000000Z
+DTSTART;VALUE=DATE:20270710
+DTEND;VALUE=DATE:20270711
+SUMMARY:Sita Swayamvara (demo programme)
+LOCATION:Mithila\, Bihar\, India
+DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
+END:VEVENT
+BEGIN:VEVENT
+UID:EV002-2027-09-10@imrc-community-site
+DTSTAMP:20260912T000000Z
+DTSTART;VALUE=DATE:20270910
+DTEND;VALUE=DATE:20270911
+SUMMARY:Sita Swayamvara (demo programme)
+LOCATION:Mithila\, Bihar\, India
+DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
+END:VEVENT
+BEGIN:VEVENT
+UID:EV002-2027-11-10@imrc-community-site
+DTSTAMP:20260912T000000Z
+DTSTART;VALUE=DATE:20271110
+DTEND;VALUE=DATE:20271111
+SUMMARY:Sita Swayamvara (demo programme)
+LOCATION:Mithila\, Bihar\, India
+DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
+END:VEVENT
+END:VCALENDAR

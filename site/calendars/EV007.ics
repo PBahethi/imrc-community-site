@@ -1,0 +1,59 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Tree in the Forest//2027 Demo//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:EV007-2027-01-15@imrc-community-site
+DTSTAMP:20260912T000000Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:Battle of Lanka (demo programme)
+LOCATION:Lanka\, Sri Lanka
+DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
+END:VEVENT
+BEGIN:VEVENT
+UID:EV007-2027-03-15@imrc-community-site
+DTSTAMP:20260912T000000Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270316
+SUMMARY:Battle of Lanka (demo programme)
+LOCATION:Lanka\, Sri Lanka
+DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
+END:VEVENT
+BEGIN:VEVENT
+UID:EV007-2027-05-15@imrc-community-site
+DTSTAMP:20260912T000000Z
+DTSTART;VALUE=DATE:20270515
+DTEND;VALUE=DATE:20270516
+SUMMARY:Battle of Lanka (demo programme)
+LOCATION:Lanka\, Sri Lanka
+DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
+END:VEVENT
+BEGIN:VEVENT
+UID:EV007-2027-07-15@imrc-community-site
+DTSTAMP:20260912T000000Z
+DTSTART;VALUE=DATE:20270715
+DTEND;VALUE=DATE:20270716
+SUMMARY:Battle of Lanka (demo programme)
+LOCATION:Lanka\, Sri Lanka
+DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
+END:VEVENT
+BEGIN:VEVENT
+UID:EV007-2027-09-15@imrc-community-site
+DTSTAMP:20260912T000000Z
+DTSTART;VALUE=DATE:20270915
+DTEND;VALUE=DATE:20270916
+SUMMARY:Battle of Lanka (demo programme)
+LOCATION:Lanka\, Sri Lanka
+DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
+END:VEVENT
+BEGIN:VEVENT
+UID:EV007-2027-11-15@imrc-community-site
+DTSTAMP:20260912T000000Z
+DTSTART;VALUE=DATE:20271115
+DTEND;VALUE=DATE:20271116
+SUMMARY:Battle of Lanka (demo programme)
+LOCATION:Lanka\, Sri Lanka
+DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
+END:VEVENT
+END:VCALENDAR

@@ -1143,6 +1143,17 @@
         "RAM-008",
         "RAM-004",
         "RAM-040"
+      ],
+      "image": "images/event-01.jpg",
+      "imageAlt": "Rama leaving Ayodhya for exile",
+      "imageSource": "Rama_leaving_for_fourteen_years_of_exile_from_Ayodhya.jpg",
+      "dates": [
+        "2027-01-09",
+        "2027-03-09",
+        "2027-05-09",
+        "2027-07-09",
+        "2027-09-09",
+        "2027-11-09"
       ]
     },
     {
@@ -1155,6 +1166,17 @@
         "RAM-010",
         "RAM-032",
         "RAM-003"
+      ],
+      "image": "images/event-02.jpg",
+      "imageAlt": "The marriage ceremony of Rama and Sita",
+      "imageSource": "The_marriage_ceremony_of_Rama_and_Sita.jpg",
+      "dates": [
+        "2027-01-10",
+        "2027-03-10",
+        "2027-05-10",
+        "2027-07-10",
+        "2027-09-10",
+        "2027-11-10"
       ]
     },
     {
@@ -1166,6 +1188,17 @@
         "RAM-003",
         "RAM-021",
         "RAM-022"
+      ],
+      "image": "images/event-03.jpg",
+      "imageAlt": "Rama in the forest — thematic illustration",
+      "imageSource": "Rama_exiled_to_Forest.jpg",
+      "dates": [
+        "2027-01-11",
+        "2027-03-11",
+        "2027-05-11",
+        "2027-07-11",
+        "2027-09-11",
+        "2027-11-11"
       ]
     },
     {
@@ -1178,6 +1211,17 @@
         "RAM-026",
         "RAM-027",
         "RAM-028"
+      ],
+      "image": "images/event-04.jpg",
+      "imageAlt": "Jatayu vadha, Raja Ravi Varma, 1906",
+      "imageSource": "Raja_Ravi_Varma,_Jatayu_vadha,_1906.jpg",
+      "dates": [
+        "2027-01-12",
+        "2027-03-12",
+        "2027-05-12",
+        "2027-07-12",
+        "2027-09-12",
+        "2027-11-12"
       ]
     },
     {
@@ -1190,6 +1234,17 @@
         "RAM-014",
         "RAM-019",
         "RAM-020"
+      ],
+      "image": "images/event-05.jpg",
+      "imageAlt": "Sita at Ashokavana",
+      "imageSource": "Sita_at_ashokavana.jpg",
+      "dates": [
+        "2027-01-13",
+        "2027-03-13",
+        "2027-05-13",
+        "2027-07-13",
+        "2027-09-13",
+        "2027-11-13"
       ]
     },
     {
@@ -1203,6 +1258,17 @@
         "RAM-028",
         "RAM-022",
         "RAM-024"
+      ],
+      "image": "images/event-06.jpg",
+      "imageAlt": "Ramayana mural in Thailand — thematic illustration",
+      "imageSource": "The_epic_ramayana_spread_in_thailand.jpg",
+      "dates": [
+        "2027-01-14",
+        "2027-03-14",
+        "2027-05-14",
+        "2027-07-14",
+        "2027-09-14",
+        "2027-11-14"
       ]
     },
     {
@@ -1220,6 +1286,17 @@
         "RAM-019",
         "RAM-016",
         "RAM-017"
+      ],
+      "image": "images/event-07.jpg",
+      "imageAlt": "Battle at Lanka, Udaipur, 1649–53",
+      "imageSource": "Battle_at_Lanka,_Ramayana,_Udaipur,_1649-53.jpg",
+      "dates": [
+        "2027-01-15",
+        "2027-03-15",
+        "2027-05-15",
+        "2027-07-15",
+        "2027-09-15",
+        "2027-11-15"
       ]
     },
     {
@@ -1232,6 +1309,17 @@
         "RAM-003",
         "RAM-004",
         "RAM-005"
+      ],
+      "image": "images/event-08.jpg",
+      "imageAlt": "Valmiki Ramayana — thematic illustration",
+      "imageSource": "Valmiki_Ramayana.jpg",
+      "dates": [
+        "2027-01-16",
+        "2027-03-16",
+        "2027-05-16",
+        "2027-07-16",
+        "2027-09-16",
+        "2027-11-16"
       ]
     }
   ]

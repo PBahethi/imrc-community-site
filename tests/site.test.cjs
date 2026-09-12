@@ -7,7 +7,7 @@ function app(){
  const nodes=new Map();
  const node=key=>{if(!nodes.has(key)) nodes.set(key,{innerHTML:'',textContent:'',value:'',focus(){},querySelector(){return null;}});return nodes.get(key);};
  const store=new Map();
- const context=vm.createContext({document:{querySelector:node,querySelectorAll:()=>[]},location:{hash:'#home'},window:{scrollTo(){},addEventListener(){}},localStorage:{getItem:k=>store.get(k),setItem:(k,v)=>store.set(k,v),removeItem:k=>store.delete(k)},fetch:()=>new Promise(()=>{}),console});
+ const context=vm.createContext({document:{addEventListener(){},querySelector:node,querySelectorAll:()=>[]},location:{hash:'#home'},window:{scrollTo(){},addEventListener(){}},localStorage:{getItem:k=>store.get(k),setItem:(k,v)=>store.set(k,v),removeItem:k=>store.delete(k)},fetch:()=>new Promise(()=>{}),console});
  vm.runInContext(fs.readFileSync('site/app.js','utf8')+'\ndata='+JSON.stringify(data)+';',context);
  return {run:code=>vm.runInContext(code,context),node,store};
 }
@@ -24,12 +24,34 @@ test('directory handles search, filter, pagination and no matches',()=>{
  a.node('#search').value='Raghava';a.node('#search').oninput();assert.match(a.node('#results').innerHTML,/Rama Ikshvaku/);
  a.node('#clan').value='Videha';a.node('#clan').onchange();assert.match(a.node('#results').innerHTML,/No people match/);
 });
-test('routes preserve notes, missing references, undated events and escaped text',()=>{
+test('routes preserve notes, missing references, scheduled events and escaped text',()=>{
  const a=app();a.run("detail('person','RAM-035')");assert.match(a.node('main').innerHTML,/no profile in workbook/);assert.match(a.node('main').innerHTML,/Tradition-dependent/);
- a.run('events(true)');assert.match(a.node('main').innerHTML,/unscheduled/);assert.doesNotMatch(a.node('main').innerHTML,/2026/);
+ a.run('events(true)');assert.match(a.node('main').innerHTML,/2027/);assert.match(a.node('#event-results').innerHTML,/January/);
  assert.equal(a.run("esc('<script>')"),'&lt;script&gt;');
  for(const view of ['home','people','connections','groups','events','calendar','about','person/RAM-001','event/EV001','lineage/Videha','invalid']){a.run(`location.hash=${JSON.stringify('#'+view)};route()`);assert.ok(a.node('main').innerHTML.length>50);}
 });
 test('event bookmark saves and removes without claiming a registration',()=>{
  const a=app();a.run("detail('event','EV001')");a.node('#save-event').onclick();assert.equal(a.store.get('forest-saved'),'["EV001"]');assert.match(a.node('#save-status').textContent,/Saved in this browser/);a.node('#save-event').onclick();assert.equal(a.store.get('forest-saved'),'[]');
+});
+
+test('every event repeats in six alternate months of 2027 with artwork and valid ICS',()=>{
+ for(const e of data.events){
+  assert.deepEqual(e.dates.map(d=>d.slice(0,7)),['2027-01','2027-03','2027-05','2027-07','2027-09','2027-11']);
+  assert.ok(fs.statSync('site/'+e.image).size>0);
+  const ics=fs.readFileSync('site/calendars/'+e.id+'.ics','utf8');
+  assert.equal((ics.match(/BEGIN:VEVENT/g)||[]).length,6);
+  assert.equal(new Set([...ics.matchAll(/UID:(.*)/g)].map(x=>x[1])).size,6);
+  for(const date of e.dates)assert.ok(ics.includes('DTSTART;VALUE=DATE:'+date.replaceAll('-','')));
+  for(const line of ics.split('\r\n'))assert.ok(Buffer.byteLength(line)<=75);
+ }
+});
+test('calendar month and saved filters narrow the agenda',()=>{
+ const a=app();a.run('events(true)');a.node('#event-month').value='03';a.node('#event-month').onchange();
+ assert.match(a.node('#event-results').innerHTML,/March/);assert.doesNotMatch(a.node('#event-results').innerHTML,/January/);
+ a.node('#only-saved').checked=true;a.node('#only-saved').onchange();assert.match(a.node('#event-results').innerHTML,/No matching events/);
+ a.store.set('forest-saved','["EV002"]');a.node('#only-saved').onchange();assert.match(a.node('#event-results').innerHTML,/Sita Swayamvara/);assert.doesNotMatch(a.node('#event-results').innerHTML,/Battle of Lanka/);
+});
+test('help has accessible descriptions and corrupt saved data is tolerated',()=>{
+ const a=app();assert.match(a.run("tip('Help','Try a name')"),/aria-describedby="tip-/);assert.match(a.run("tip('Help','Try a name')"),/role="tooltip"/);
+ a.store.set('forest-saved','{}');assert.equal(a.run('saved().length'),0);
 });

@@ -1,0 +1,42 @@
+{
+  "EV001": {
+    "image": "images/event-01.jpg",
+    "imageAlt": "Rama leaving Ayodhya for exile",
+    "imageSource": "Rama_leaving_for_fourteen_years_of_exile_from_Ayodhya.jpg"
+  },
+  "EV002": {
+    "image": "images/event-02.jpg",
+    "imageAlt": "The marriage ceremony of Rama and Sita",
+    "imageSource": "The_marriage_ceremony_of_Rama_and_Sita.jpg"
+  },
+  "EV003": {
+    "image": "images/event-03.jpg",
+    "imageAlt": "Rama in the forest — thematic illustration",
+    "imageSource": "Rama_exiled_to_Forest.jpg"
+  },
+  "EV004": {
+    "image": "images/event-04.jpg",
+    "imageAlt": "Jatayu vadha, Raja Ravi Varma, 1906",
+    "imageSource": "Raja_Ravi_Varma,_Jatayu_vadha,_1906.jpg"
+  },
+  "EV005": {
+    "image": "images/event-05.jpg",
+    "imageAlt": "Sita at Ashokavana",
+    "imageSource": "Sita_at_ashokavana.jpg"
+  },
+  "EV006": {
+    "image": "images/event-06.jpg",
+    "imageAlt": "Ramayana mural in Thailand — thematic illustration",
+    "imageSource": "The_epic_ramayana_spread_in_thailand.jpg"
+  },
+  "EV007": {
+    "image": "images/event-07.jpg",
+    "imageAlt": "Battle at Lanka, Udaipur, 1649–53",
+    "imageSource": "Battle_at_Lanka,_Ramayana,_Udaipur,_1649-53.jpg"
+  },
+  "EV008": {
+    "image": "images/event-08.jpg",
+    "imageAlt": "Valmiki Ramayana — thematic illustration",
+    "imageSource": "Valmiki_Ramayana.jpg"
+  }
+}
