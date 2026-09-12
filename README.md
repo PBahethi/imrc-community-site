@@ -17,11 +17,15 @@ Checks cover directory search/filter/pagination, source integrity and public-fie
 
 ## GitHub Pages
 
-The workflow `.github/workflows/pages.yml` regenerates the demo JSON and deploys **only `site/`** on pushes to `main`. In repository Settings → Pages, choose **GitHub Actions** as the source. Run the workflow or push to `main`.
+Live website: https://pbahethi.github.io/imrc-community-site/
 
-Expected URL after deployment: https://pbahethi.github.io/IMRC/
+Public deployment repository: https://github.com/PBahethi/imrc-community-site
 
-All assets use relative paths, and navigation uses hash routes so project-path hosting and reloads work without server routing. GitHub Pages availability for a private repository depends on the account plan; this implementation does not change repository visibility.
+The original IMRC repository stays private. The public repository contains only the generated `site/` contents and a `.nojekyll` file. GitHub Pages publishes its `main` branch root. No workbook, product specification, or private repository history is copied there.
+
+The workflow `.github/workflows/pages.yml` validates the source and uploads a `public-website` artifact. It does not deploy from this private repository because the current account plan does not support that. To update the live website, rebuild and test here, copy the contents of `site/` into a checkout of the public deployment repository, then commit and push there. Preserve `.nojekyll`. These repositories do not automatically synchronize.
+
+All assets use relative paths, and navigation uses hash routes so project-path hosting and reloads work without server routing.
 
 ## Source and data model
 
