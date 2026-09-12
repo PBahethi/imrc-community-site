@@ -3,55 +3,10 @@ VERSION:2.0
 PRODID:-//Tree in the Forest//2027 Demo//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
-UID:EV006-2027-01-14@imrc-community-site
+UID:EV006-2027-06-14@imrc-community-site
 DTSTAMP:20260912T000000Z
-DTSTART;VALUE=DATE:20270114
-DTEND;VALUE=DATE:20270115
-SUMMARY:Bridge to Lanka (demo programme)
-LOCATION:Southern India to Lanka
-DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
-END:VEVENT
-BEGIN:VEVENT
-UID:EV006-2027-03-14@imrc-community-site
-DTSTAMP:20260912T000000Z
-DTSTART;VALUE=DATE:20270314
-DTEND;VALUE=DATE:20270315
-SUMMARY:Bridge to Lanka (demo programme)
-LOCATION:Southern India to Lanka
-DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
-END:VEVENT
-BEGIN:VEVENT
-UID:EV006-2027-05-14@imrc-community-site
-DTSTAMP:20260912T000000Z
-DTSTART;VALUE=DATE:20270514
-DTEND;VALUE=DATE:20270515
-SUMMARY:Bridge to Lanka (demo programme)
-LOCATION:Southern India to Lanka
-DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
-END:VEVENT
-BEGIN:VEVENT
-UID:EV006-2027-07-14@imrc-community-site
-DTSTAMP:20260912T000000Z
-DTSTART;VALUE=DATE:20270714
-DTEND;VALUE=DATE:20270715
-SUMMARY:Bridge to Lanka (demo programme)
-LOCATION:Southern India to Lanka
-DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
-END:VEVENT
-BEGIN:VEVENT
-UID:EV006-2027-09-14@imrc-community-site
-DTSTAMP:20260912T000000Z
-DTSTART;VALUE=DATE:20270914
-DTEND;VALUE=DATE:20270915
-SUMMARY:Bridge to Lanka (demo programme)
-LOCATION:Southern India to Lanka
-DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
-END:VEVENT
-BEGIN:VEVENT
-UID:EV006-2027-11-14@imrc-community-site
-DTSTAMP:20260912T000000Z
-DTSTART;VALUE=DATE:20271114
-DTEND;VALUE=DATE:20271115
+DTSTART;VALUE=DATE:20270614
+DTEND;VALUE=DATE:20270615
 SUMMARY:Bridge to Lanka (demo programme)
 LOCATION:Southern India to Lanka
 DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.

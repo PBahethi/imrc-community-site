@@ -3,55 +3,10 @@ VERSION:2.0
 PRODID:-//Tree in the Forest//2027 Demo//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
-UID:EV008-2027-01-16@imrc-community-site
+UID:EV008-2027-08-16@imrc-community-site
 DTSTAMP:20260912T000000Z
-DTSTART;VALUE=DATE:20270116
-DTEND;VALUE=DATE:20270117
-SUMMARY:Return to Ayodhya (demo programme)
-LOCATION:Ayodhya\, Uttar Pradesh\, India
-DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
-END:VEVENT
-BEGIN:VEVENT
-UID:EV008-2027-03-16@imrc-community-site
-DTSTAMP:20260912T000000Z
-DTSTART;VALUE=DATE:20270316
-DTEND;VALUE=DATE:20270317
-SUMMARY:Return to Ayodhya (demo programme)
-LOCATION:Ayodhya\, Uttar Pradesh\, India
-DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
-END:VEVENT
-BEGIN:VEVENT
-UID:EV008-2027-05-16@imrc-community-site
-DTSTAMP:20260912T000000Z
-DTSTART;VALUE=DATE:20270516
-DTEND;VALUE=DATE:20270517
-SUMMARY:Return to Ayodhya (demo programme)
-LOCATION:Ayodhya\, Uttar Pradesh\, India
-DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
-END:VEVENT
-BEGIN:VEVENT
-UID:EV008-2027-07-16@imrc-community-site
-DTSTAMP:20260912T000000Z
-DTSTART;VALUE=DATE:20270716
-DTEND;VALUE=DATE:20270717
-SUMMARY:Return to Ayodhya (demo programme)
-LOCATION:Ayodhya\, Uttar Pradesh\, India
-DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
-END:VEVENT
-BEGIN:VEVENT
-UID:EV008-2027-09-16@imrc-community-site
-DTSTAMP:20260912T000000Z
-DTSTART;VALUE=DATE:20270916
-DTEND;VALUE=DATE:20270917
-SUMMARY:Return to Ayodhya (demo programme)
-LOCATION:Ayodhya\, Uttar Pradesh\, India
-DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
-END:VEVENT
-BEGIN:VEVENT
-UID:EV008-2027-11-16@imrc-community-site
-DTSTAMP:20260912T000000Z
-DTSTART;VALUE=DATE:20271116
-DTEND;VALUE=DATE:20271117
+DTSTART;VALUE=DATE:20270816
+DTEND;VALUE=DATE:20270817
 SUMMARY:Return to Ayodhya (demo programme)
 LOCATION:Ayodhya\, Uttar Pradesh\, India
 DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
