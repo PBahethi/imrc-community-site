@@ -1,0 +1,1 @@
+.locality-map{height:560px;border:1px solid var(--line);border-radius:12px;margin:22px 0;background:#eef1e5}.locality-popup h3{margin:0 0 2px;font:16px 'Libre Caslon Display',Georgia,serif}.locality-popup .sub{margin:0 0 8px;font-size:11px}.locality-popup dl{grid-template-columns:90px 1fr;font-size:12px;gap:6px}@media(max-width:700px){.locality-map{height:400px}}
