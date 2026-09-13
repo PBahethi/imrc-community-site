@@ -2,6 +2,8 @@
 let data, page = 1;
 const main = document.querySelector('main');
 if(!document.body)document.body={classList:{add(){},remove(){}}};
+const eventActionsReady=new Promise(resolve=>{if(document.querySelector('script[data-event-actions]'))return resolve();const coreScript=document.createElement('script');coreScript.src='./event-actions-core.js';coreScript.dataset.eventActions='core';coreScript.onload=()=>{const uiScript=document.createElement('script');uiScript.src='./event-actions.js';uiScript.dataset.eventActions='ui';uiScript.onload=resolve;uiScript.onerror=resolve;document.head?.appendChild(uiScript);};coreScript.onerror=resolve;document.head?.appendChild(coreScript);});
+document.addEventListener('event-actions-ready',()=>{if(data&&globalThis.EventActions)EventActions.observe(data);});
 if(!document.querySelector('link[href="./landing.css"]')){const landingStyles=document.createElement('link');landingStyles.rel='stylesheet';landingStyles.href='./landing.css';document.head.appendChild(landingStyles);}
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const byId = id => {const p=data.people.find(p=>p.id===id);return p?Engagement.person(data,p):null;};
@@ -49,3 +51,5 @@ document.addEventListener('focusin',event=>{if(event.target.matches('.help'))eve
 const resetDemoTab=document.querySelector('#reset-demo-tab');
 if(resetDemoTab&&typeof resetDemoTab.addEventListener==='function')resetDemoTab.addEventListener('click',()=>{if(data)Engagement.resetAll(data);});
 document.addEventListener('submit',event=>{if(event.target.id!=='landing-survey')return;let totals;try{totals=JSON.parse(localStorage.getItem('forest-survey-poll-v1')||'null');}catch{totals=null;}totals=totals&&totals.version===1?totals:{version:1,likes:{...surveySeed.likes},dislikes:{...surveySeed.dislikes},responses:0};['likes','dislikes'].forEach(kind=>event.target.querySelectorAll(`input[name="${kind}"]:checked`).forEach(input=>{totals[kind][input.value]=(totals[kind][input.value]||0)+1;}));totals.responses+=1;try{localStorage.setItem('forest-survey-poll-v1',JSON.stringify(totals));}catch{}setTimeout(decorateSurveyPolls,0);});
+eventActionsReady.then(()=>{if(data&&globalThis.EventActions)EventActions.observe(data);});
+if(resetDemoTab&&typeof resetDemoTab.addEventListener==='function')resetDemoTab.addEventListener('click',()=>globalThis.EventActions?.reset());
