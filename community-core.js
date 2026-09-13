@@ -20,18 +20,22 @@
     {id:'culture-circle',name:'Culture & creativity',interestIds:['music','cooking','culture','history'],description:'Share the food, art, music, and memories that give a community its character.',eventId:'EV008',activity:'Choose a recipe, song, or story you could share.',format:'Interest group'}
   ];
   const uniqueIds=(value,allowed)=>Array.isArray(value)?[...new Set(value.filter(id=>typeof id==='string'&&allowed.includes(id)))]:[];
-  const defaults=()=>({version:1,personaId:'',interestIds:[],helpIds:[],savedPeople:[],dismissedPeople:[],savedGroups:[],activity:[]});
+  const defaults=()=>({version:1,session:{authenticated:false,personaId:'',signedInAt:''},personaId:'',profileEdits:{},interestIds:[],helpIds:[],savedPeople:[],dismissedPeople:[],savedGroups:[],activity:[]});
   function normalize(value,personIds){
     const source=value&&typeof value==='object'&&!Array.isArray(value)&&value.version===1?value:{};
     const state=defaults();
-    state.personaId=personIds.includes(source.personaId)?source.personaId:'';
+    const session=source.session&&typeof source.session==='object'?source.session:{};
+    state.session={authenticated:Boolean(session.authenticated)&&personIds.includes(session.personaId),personaId:personIds.includes(session.personaId)?session.personaId:'',signedInAt:typeof session.signedInAt==='string'&&Number.isFinite(Date.parse(session.signedInAt))?session.signedInAt:''};
+    state.personaId=state.session.authenticated?state.session.personaId:(personIds.includes(source.personaId)?source.personaId:'');
+    state.profileEdits={};
+    if(source.profileEdits&&typeof source.profileEdits==='object') for(const [id,edit] of Object.entries(source.profileEdits)) if(personIds.includes(id)&&edit&&typeof edit==='object') state.profileEdits[id]={displayName:typeof edit.displayName==='string'?edit.displayName.slice(0,160):'',city:typeof edit.city==='string'?edit.city.slice(0,120):'',bio:typeof edit.bio==='string'?edit.bio.slice(0,2000):''};
     state.interestIds=uniqueIds(source.interestIds,interests.map(i=>i.id));
     state.helpIds=uniqueIds(source.helpIds,capabilities.map(i=>i.id));
     state.savedPeople=uniqueIds(source.savedPeople,personIds).filter(id=>id!==state.personaId);
     state.dismissedPeople=uniqueIds(source.dismissedPeople,personIds).filter(id=>!state.savedPeople.includes(id));
     state.savedGroups=uniqueIds(source.savedGroups,groups.map(g=>g.id));
-    const actions=['preferences','save-person','remove-person','dismiss-person','save-group','remove-group'];
-    state.activity=Array.isArray(source.activity)?source.activity.filter(a=>a&&actions.includes(a.type)&&typeof a.at==='string'&&Number.isFinite(Date.parse(a.at))&&((a.type==='preferences')||(a.type.includes('person')&&personIds.includes(a.target))||(a.type.includes('group')&&groups.some(g=>g.id===a.target)))).slice(0,12).map(a=>({type:a.type,target:a.type==='preferences'?'':a.target,at:a.at})):[];
+    const actions=['login','logout','profile-edit','preferences','save-person','remove-person','dismiss-person','save-group','remove-group'];
+    state.activity=Array.isArray(source.activity)?source.activity.filter(a=>a&&actions.includes(a.type)&&typeof a.at==='string'&&Number.isFinite(Date.parse(a.at))&&((a.type==='preferences'||a.type==='logout')||(a.type==='login'&&personIds.includes(a.target))||(a.type==='profile-edit'&&personIds.includes(a.target))||(a.type.includes('person')&&personIds.includes(a.target))||(a.type.includes('group')&&groups.some(g=>g.id===a.target)))).slice(0,12).map(a=>({type:a.type,target:a.type==='preferences'||a.type==='logout'?'':a.target,at:a.at})) : [];
     return state;
   }
   function sharedLanguages(a,b){
@@ -61,6 +65,20 @@
   }
   function transition(current,action,personIds,now=new Date()){
     const state=normalize(current,personIds);
+    if(action.type==='login'){
+      if(!personIds.includes(action.personaId))return state;
+      state.session={authenticated:true,personaId:action.personaId,signedInAt:now.toISOString()};state.personaId=action.personaId;
+      state.activity=[{type:'login',target:action.personaId,at:now.toISOString()},...state.activity].slice(0,12);return state;
+    }
+    if(action.type==='logout'){
+      state.session={authenticated:false,personaId:'',signedInAt:''};state.personaId='';
+      state.activity=[{type:'logout',target:'',at:now.toISOString()},...state.activity].slice(0,12);return state;
+    }
+    if(action.type==='profile-edit'){
+      if(!state.session.authenticated||state.session.personaId!==action.personaId||!personIds.includes(action.personaId))return state;
+      const edit=action.value&&typeof action.value==='object'?action.value:{};state.profileEdits[action.personaId]={displayName:typeof edit.displayName==='string'?edit.displayName.slice(0,160):'',city:typeof edit.city==='string'?edit.city.slice(0,120):'',bio:typeof edit.bio==='string'?edit.bio.slice(0,2000):''};
+      state.activity=[{type:'profile-edit',target:action.personaId,at:now.toISOString()},...state.activity].slice(0,12);return state;
+    }
     if(action.type==='preferences'){
       const next=normalize({...state,...action.value,version:1},personIds);
       // Preferences belong to this demo visitor, not an authenticated source person.
