@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="./convention.css">
+<link rel="stylesheet" href="./convention-experience.css">
+<link rel="stylesheet" href="./event-actions.css">
+<style>
+body{border:0!important}
+@keyframes om-rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+@keyframes om-pop{0%{transform:scale(.92)}60%{transform:scale(1.06)}100%{transform:scale(1)}}
+@keyframes om-tick{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</helmet>
+<div style="min-height:100vh;position:relative;padding-top:5px;background:#f8f9fc">
+<div style="position:absolute;inset:0 0 auto 0;height:5px;background:linear-gradient(90deg,#ff9933 0 33%,#fff 33% 66%,#138808 66%)"></div>
+<div style="max-width:1120px;margin:0 auto;padding:40px 32px 80px;display:flex;flex-direction:column;gap:52px">
+
+  <div>
+    <p class="eyebrow">PROPOSED PATTERNS · HELP AND MOTION</p>
+    <h1 style="font-size:40px">Every action says what it did.</h1>
+    <p class="sub" style="max-width:730px">Four working patterns for the new participation screens, built on the help button and palette already in <code>styles.css</code>. Click through them — each one is live. <a href="Review v2.dc.html" style="color:#153eaa;text-decoration:underline">Back to the findings ↗</a></p>
+  </div>
+
+  <section data-screen-label="A Tooltips">
+    <p class="eyebrow">PATTERN A · CONTEXTUAL HELP ON THE CONTROL</p>
+    <h2 style="font-size:29px">The help button, extended to the new screens</h2>
+    <p class="sub" style="max-width:730px;margin-bottom:20px">Same <code>?</code> affordance, same <code>aria-describedby</code>, same Escape-to-dismiss. The only new part is the edge-aware variant, so a tooltip inside a three-column grid does not clip.</p>
+    <div class="event-action-panel" style="margin:0">
+      <div class="event-action-heading">
+        <div><p class="eyebrow">GATHER TOGETHER</p><h2>Register your household</h2><p>Choose who is coming. One confirmation keeps the household together.</p></div>
+        <span class="event-capacity">18 of 240 places taken <span class="help-wrap"><button type="button" class="help" aria-label="About places" aria-describedby="tip-cap" aria-expanded="false">?</button><span class="tooltip" role="tooltip" id="tip-cap" style="left:auto;right:0">Places are the organiser's seated capacity for this gathering. Registering holds a place for each attendee you check.</span></span></span>
+      </div>
+      <fieldset>
+        <legend>Who will attend? <span class="help-wrap"><button type="button" class="help" aria-label="About household attendees" aria-describedby="tip-house" aria-expanded="false">?</button><span class="tooltip" role="tooltip" id="tip-house">Your household is everyone linked to your member record. Add anyone else with “Add a guest” — they do not need their own account.</span></span></legend>
+        <label class="attendee-choice"><input type="checkbox" checked><span>Rama Ikshvaku<small>You</small></span></label>
+        <label class="attendee-choice"><input type="checkbox" checked><span>Sita Videha<small>Household</small></span></label>
+        <label class="attendee-choice"><input type="checkbox"><span>Lakshmana Ikshvaku<small>Household</small></span></label>
+        <button class="text-button" type="button">+ Add a guest</button>
+      </fieldset>
+      <div class="logistics-grid">
+        <label>Arrival coach <span class="help-wrap"><button type="button" class="help" aria-label="About arrival coaches" aria-describedby="tip-bus" aria-expanded="false">?</button><span class="tooltip" role="tooltip" id="tip-bus">Convention coaches leave the airport Ground Transportation Plaza every 45 minutes, 10:00 AM to 11:00 PM. Choose the one after your flight lands.</span></span><select><option>Sat 15 Jan · 6:45 PM · OKC → Omni</option><option>Sat 15 Jan · 7:30 PM · OKC → Omni</option></select></label>
+        <label>Reminders <span class="help-wrap"><button type="button" class="help" aria-label="About reminders" aria-describedby="tip-rem" aria-expanded="false">?</button><span class="tooltip" role="tooltip" id="tip-rem" style="left:auto;right:0">Reminders appear on your dashboard and in the calendar file you download. Nothing is emailed in this demo.</span></span><select><option>Week before and morning of</option><option>Morning of only</option></select></label>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="B Confirmation">
+    <p class="eyebrow">PATTERN B · CONFIRMATION AND PROGRESS</p>
+    <h2 style="font-size:29px">The save answers next to the button that caused it</h2>
+    <p class="sub" style="max-width:730px;margin-bottom:20px">Instead of replacing the panel, the changed row is patched and the confirmation rises into place in 200ms. Step chips tint to done as each section is satisfied, so the numbered sequence finally means something.</p>
+    <div class="event-action-panel" style="margin:0">
+      <div class="workflow-steps">
+        <sc-for list="{{ steps }}" as="s" hint-placeholder-count="5"><span class="{{ s.cls }}" style="{{ s.style }}">{{ s.label }}</span></sc-for>
+      </div>
+      <div class="logistics-grid" style="margin-top:6px">
+        <label>Hotel<label class="attendee-choice compact" style="font-weight:400"><input type="checkbox" checked="{{ hotel }}" onChange="{{ toggleHotel }}"><span>Booking completed</span></label></label>
+        <label>Airline<input placeholder="American, Southwest…" value="{{ airline }}" onInput="{{ setAirline }}"></label>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;margin-top:20px;flex-wrap:wrap">
+        <button class="button" type="button" onClick="{{ save }}">Save convention logistics</button>
+        <sc-if value="{{ savedOnce }}"><span key="{{ saveKey }}" style="display:inline-flex;align-items:center;gap:9px;font-size:12px;font-weight:600;color:#176d1e;background:#ebf7e9;border:1px solid #bce1b8;border-radius:999px;padding:9px 14px;animation:om-rise .2s ease-out"><span style="animation:om-tick .24s ease-out">✓</span>{{ saveMessage }}</span></sc-if>
+      </div>
+      <p class="form-note" style="margin-top:14px">The chip stays until the next change, so a member who looks away still sees what happened.</p>
+    </div>
+  </section>
+
+  <section data-screen-label="C Schedule counter">
+    <p class="eyebrow">PATTERN C · SELECTION THAT LANDS SOMEWHERE</p>
+    <h2 style="font-size:29px">Choosing a session visibly adds it to your schedule</h2>
+    <p class="sub" style="max-width:730px;margin-bottom:20px">Fifty-seven checkboxes with no feedback feel like a form. The same checkboxes with a counter that pops feel like planning a trip. Day tabs cross-fade rather than snapping.</p>
+    <div class="event-action-panel" style="margin:0">
+      <div class="planner-filter-shell">
+        <div class="programme-controls">
+          <div class="day-tabs" role="tablist" aria-label="Convention days">
+            <sc-for list="{{ days }}" as="d" hint-placeholder-count="4"><button type="button" role="tab" aria-selected="{{ d.selected }}" onClick="{{ d.pick }}">{{ d.label }}</button></sc-for>
+          </div>
+          <p class="programme-count" role="status">{{ shownLabel }}</p>
+          <span style="display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;color:#172750;background:#fff3d2;border:1px solid #ffd3a6;border-radius:999px;padding:9px 14px"><span key="{{ pickedKey }}" style="display:inline-block;min-width:18px;text-align:center;animation:om-pop .24s ease-out">{{ pickedCount }}</span> in my schedule</span>
+        </div>
+      </div>
+      <div class="agenda-pick-grid" key="{{ dayKey }}" style="animation:om-rise .18s ease-out">
+        <sc-for list="{{ sessions }}" as="a" hint-placeholder-count="6">
+          <label class="choice agenda-option" style="{{ a.style }}"><input type="checkbox" checked="{{ a.picked }}" onChange="{{ a.toggle }}"><span><span class="session-category">{{ a.category }}</span><strong class="session-time">{{ a.timeTitle }}</strong><span class="session-room">{{ a.room }}</span></span></label>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="D Check-in">
+    <p class="eyebrow">PATTERN D · CHECK-IN AND BADGE</p>
+    <h2 style="font-size:29px">A check-in that reads as an arrival</h2>
+    <p class="sub" style="max-width:730px;margin-bottom:20px">The button becomes the attended state in place, and the badge it unlocks announces itself once — not by appearing silently on a different screen.</p>
+    <div class="session-checkin" style="margin:0 0 18px">
+      <div><p class="eyebrow">SESSION QR CHECK-IN</p><h3>Business and entrepreneurship expo</h3><p>Monday, Jan 17 · 9:00 AM · Five Moons Ballroom · Business</p></div>
+      <sc-if value="{{ notCheckedIn }}"><button type="button" class="button" onClick="{{ checkIn }}">Check in now</button></sc-if>
+      <sc-if value="{{ checkedIn }}"><span class="checkin-complete" style="animation:om-pop .26s ease-out">✓ Attended</span></sc-if>
+      <p class="profile-disclaimer">This public demo stores the check-in only in this browser. The QR contains a public session link and no member information.</p>
+    </div>
+    <div class="participation-badges">
+      <sc-for list="{{ badges }}" as="b" hint-placeholder-count="5">
+        <article class="participation-badge {{ b.cls }}" style="{{ b.style }}"><span>{{ b.icon }}</span><div><strong>{{ b.name }}</strong><small>{{ b.note }}</small></div></article>
+      </sc-for>
+    </div>
+    <p class="form-note">Durations: 120ms for a tint, 200ms for a confirmation, 260ms for an unlock. Nothing animates on scroll, and <code>prefers-reduced-motion</code> removes all of it.</p>
+  </section>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1120}}">
+class Component extends DCLogic {
+  state = { hotel: true, airline: '', savedOnce: false, saveKey: 0, saveMessage: '', day: 0, picked: [], pickedKey: 0, checkedIn: false, checkins: 2 };
+  sessionData() {
+    return [
+      [{ category: 'Health', timeTitle: '6:30 AM · Yoga Morning', room: 'Scissortail Terrace' }, { category: 'Meals', timeTitle: '7:30 AM · Community Breakfast', room: 'Oklahoma Station Ballroom' }, { category: 'Welcome', timeTitle: '9:00 AM · Registration and QR badge pickup', room: 'Omni Grand Foyer' }, { category: 'Culture', timeTitle: '11:00 AM · Opening cultural programme', room: 'Five Moons Ballroom' }, { category: 'RAYS', timeTitle: '2:00 PM · RAYS youth mixer', room: 'Paseo' }, { category: 'Networking', timeTitle: '7:00 PM · Welcome reception', room: 'Scissortail Terrace' }],
+      [{ category: 'Health', timeTitle: '6:30 AM · Yoga Morning', room: 'Scissortail Terrace' }, { category: 'Health', timeTitle: '8:30 AM · Preventive health screening', room: 'Paseo' }, { category: 'Women', timeTitle: '10:00 AM · Sakhi leadership circle', room: 'Bricktown' }, { category: 'Charity', timeTitle: '1:00 PM · Philanthropy roundtable', room: 'Five Moons Ballroom' }, { category: 'Card Games', timeTitle: '4:00 PM · Card games afternoon', room: 'Automobile Alley' }, { category: 'Meals', timeTitle: '7:00 PM · Community dinner', room: 'Oklahoma Station Ballroom' }],
+      [{ category: 'Business', timeTitle: '9:00 AM · Business and entrepreneurship expo', room: 'Five Moons Ballroom' }, { category: 'Matrimonial', timeTitle: '11:00 AM · Matrimonial introductions', room: 'Paseo' }, { category: 'Networking', timeTitle: '1:00 PM · Professional networking lunch', room: 'Bricktown' }, { category: 'Local Outings', timeTitle: '3:00 PM · Oklahoma City walking tour', room: 'Hotel lobby' }, { category: 'Recognition', timeTitle: '7:00 PM · Recognition banquet', room: 'Oklahoma Station Ballroom' }],
+      [{ category: 'Health', timeTitle: '8:30 AM · Mindfulness and travel wellness', room: 'Paseo' }, { category: 'Culture', timeTitle: '10:00 AM · Closing cultural showcase', room: 'Five Moons Ballroom' }, { category: 'Travel', timeTitle: '12:00 PM · Departure coach briefing', room: 'Omni Grand Foyer' }, { category: 'Meals', timeTitle: '1:00 PM · Farewell lunch', room: 'Oklahoma Station Ballroom' }]
+    ];
+  }
+  renderVals() {
+    const s = this.state, dayNames = ['Saturday, Jan 15', 'Sunday, Jan 16', 'Monday, Jan 17', 'Tuesday, Jan 18'];
+    const all = this.sessionData(), rows = all[s.day];
+    const badgeDefs = [['✦', 'First Gathering', 1], ['◉', 'Community Explorer', 3], ['⌘', 'Active Connector', 6], ['♧', 'Community Builder', 10], ['❧', 'Convention Steward', 20]];
+    const stepDone = [true, s.hotel, false, s.picked.length > 0, false];
+    return {
+      steps: ['1 Register', '2 Hotel', '3 Buses', '4 Agenda', '5 Reminders'].map((label, i) => ({
+        label, cls: stepDone[i] ? 'done' : '', style: stepDone[i] ? 'transition:background .12s ease-out,color .12s ease-out,border-color .12s ease-out' : 'transition:background .12s ease-out'
+      })),
+      hotel: s.hotel, airline: s.airline,
+      toggleHotel: e => this.setState({ hotel: e.target.checked, savedOnce: false }),
+      setAirline: e => this.setState({ airline: e.target.value, savedOnce: false }),
+      save: () => this.setState(st => ({ savedOnce: true, saveKey: st.saveKey + 1, saveMessage: 'Saved in this browser · hotel, airline, agenda' })),
+      savedOnce: s.savedOnce, saveKey: String(s.saveKey), saveMessage: s.saveMessage,
+      days: dayNames.map((label, i) => ({ label, selected: s.day === i ? 'true' : 'false', pick: () => this.setState({ day: i }) })),
+      dayKey: String(s.day),
+      shownLabel: `${rows.length} sessions shown`,
+      pickedCount: s.picked.length, pickedKey: String(s.pickedKey),
+      sessions: rows.map((r, i) => {
+        const id = `${s.day}-${i}`, picked = s.picked.includes(id);
+        return {
+          ...r, picked,
+          style: `transition:background .12s ease-out,border-color .12s ease-out${picked ? ';background:#edf2ff;border-color:#91a9e9' : ''}`,
+          toggle: () => this.setState(st => ({ picked: st.picked.includes(id) ? st.picked.filter(x => x !== id) : [...st.picked, id], pickedKey: st.pickedKey + 1 }))
+        };
+      }),
+      notCheckedIn: !s.checkedIn, checkedIn: s.checkedIn,
+      checkIn: () => this.setState(st => ({ checkedIn: true, checkins: st.checkins + 1 })),
+      badges: badgeDefs.map(([icon, name, count]) => {
+        const earned = s.checkins >= count, justEarned = s.checkedIn && s.checkins === count;
+        return {
+          icon, name, cls: earned ? 'earned' : 'locked',
+          note: earned ? 'Earned in this browser.' : `Unlock at ${count} check-in${count === 1 ? '' : 's'}.`,
+          style: justEarned ? 'animation:om-pop .26s ease-out;box-shadow:0 0 0 3px #ffca5766' : 'transition:border-color .12s ease-out,background .12s ease-out'
+        };
+      })
+    };
+  }
+}
+</script>
+</body>
+</html>

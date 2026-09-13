@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/broadsheet-a49e7d18-fec6-4fca-995b-b3b77723ef7c/styles.css">
+<script src="_ds/broadsheet-a49e7d18-fec6-4fca-995b-b3b77723ef7c/_ds_bundle.js"></script>
+</helmet>
+<div style="background:var(--color-bg);min-height:100vh">
+<div style="max-width:1100px;margin:0 auto;padding:var(--space-8) var(--space-6) var(--space-8)">
+
+  <div style="border-top:6px solid var(--color-text);padding-top:var(--space-2);margin-bottom:var(--space-2)"></div>
+  <div style="display:flex;flex-wrap:wrap;gap:var(--space-3);justify-content:space-between;align-items:baseline;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--color-neutral-700);padding-bottom:var(--space-2);border-bottom:1px solid var(--color-text)">
+    <span>Design review · second pass</span>
+    <span>Tree in the Forest · IMRC community demo</span>
+    <span>13 September 2026</span>
+  </div>
+
+  <h1 style="font-size:clamp(2.5rem,5vw,4rem);line-height:1.03;margin:var(--space-6) 0 var(--space-4);max-width:28ch">The features arrived. The feedback that tells a member they worked did not.</h1>
+  <p style="font-size:1.22rem;line-height:1.6;max-width:60ch;margin:0 0 var(--space-3)">Twenty-two commits added household registration, event requests, a four-day convention workflow, QR check-ins, participation badges, a help network and a locality map. Nine of these are real advances on the last review. What is missing is the layer that makes them legible: the help button exists on three old screens and none of the seven new modules, and the new stylesheets contain no motion at all.</p>
+  <p style="font-size:1rem;line-height:1.7;max-width:60ch;color:var(--color-neutral-700)">Reference builds: <a href="Current Site.dc.html">the current screens, recreated</a> · <a href="Help and Motion Patterns.dc.html">four working help &amp; motion patterns</a> · <a href="Review.dc.html">first review</a>.</p>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:var(--space-6);margin:var(--space-8) 0">
+    <div><div style="font-size:2.5rem;line-height:1">3 / 10</div><p style="margin:var(--space-1) 0 0;font-size:.9rem;color:var(--color-neutral-700)">screens with a contextual help button — none of them new</p></div>
+    <div><div style="font-size:2.5rem;line-height:1">0</div><p style="margin:var(--space-1) 0 0;font-size:.9rem;color:var(--color-neutral-700)">transitions or keyframes in the six new stylesheets</p></div>
+    <div><div style="font-size:2.5rem;line-height:1">1</div><p style="margin:var(--space-1) 0 0;font-size:.9rem;color:var(--color-neutral-700)">attendee the household form can offer a seeded member</p></div>
+    <div><div style="font-size:2.5rem;line-height:1">57</div><p style="margin:var(--space-1) 0 0;font-size:.9rem;color:var(--color-neutral-700)">session checkboxes behind one Save button</p></div>
+  </div>
+
+  <h2 style="font-size:1.9rem;margin:0 0 var(--space-2)">Credit where it is due</h2>
+  <p style="font-size:1.05rem;line-height:1.75;max-width:64ch;margin:0 0 var(--space-8);color:var(--color-neutral-800)">Registration is now a real record with attendees, validated and versioned in <em>event-actions-core.js</em>. Requests give an attendee a reason to speak before the day. The convention has genuine venue, airport and coach data with sources. Check-ins and badges are private by construction — no score, no leaderboard. The <em>calendars/EV2028.ics</em> file the last review flagged as missing now exists. The honesty of the copy has survived the growth.</p>
+
+  <div style="border-top:1px solid var(--color-neutral-300);padding-top:var(--space-6)">
+  <h2 style="font-size:1.9rem;margin:0 0 var(--space-2)">Functionality</h2>
+  <p style="font-size:1rem;line-height:1.7;max-width:60ch;margin:0 0 var(--space-6);color:var(--color-neutral-700)">Four of these change what a reviewer sees on the first click.</p>
+  <sc-for list="{{ functionality }}" as="f" hint-placeholder-count="6">
+    <article style="display:grid;grid-template-columns:3.5rem minmax(0,1fr);gap:var(--space-4);padding-bottom:var(--space-6);margin-bottom:var(--space-6);border-bottom:1px solid var(--color-neutral-200)">
+      <div style="font-size:1.9rem;line-height:1;color:var(--color-accent-2)">{{ f.n }}</div>
+      <div>
+        <h3 style="font-size:1.55rem;line-height:1.15;margin:0 0 var(--space-2);max-width:32ch">{{ f.title }}</h3>
+        <p style="font-size:1.02rem;line-height:1.75;margin:0 0 var(--space-2);max-width:66ch">{{ f.body }}</p>
+        <p style="font-size:1.02rem;line-height:1.75;margin:0 0 var(--space-2);max-width:66ch"><em>{{ f.fix }}</em></p>
+        <p style="font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:var(--color-neutral-600);margin:0">{{ f.source }}</p>
+      </div>
+    </article>
+  </sc-for>
+  </div>
+
+  <h2 style="font-size:1.9rem;margin:var(--space-4) 0 var(--space-2)">Tooltips and contextual help</h2>
+  <p style="font-size:1.05rem;line-height:1.75;max-width:64ch;margin:0 0 var(--space-6);color:var(--color-neutral-800)">The pattern you already built is the right one — <em>app.js</em>’s <code>tip()</code> renders a labelled button with <code>aria-describedby</code>, opens on hover, focus and tap, and closes on Escape. It is called three times in the entire product: people search, reading a relationship, and event dates. Every new control ships without it.</p>
+  <sc-for list="{{ help }}" as="f" hint-placeholder-count="3">
+    <article style="display:grid;grid-template-columns:3.5rem minmax(0,1fr);gap:var(--space-4);padding-bottom:var(--space-6);margin-bottom:var(--space-6);border-bottom:1px solid var(--color-neutral-200)">
+      <div style="font-size:1.9rem;line-height:1;color:var(--color-accent)">{{ f.n }}</div>
+      <div>
+        <h3 style="font-size:1.55rem;line-height:1.15;margin:0 0 var(--space-2);max-width:32ch">{{ f.title }}</h3>
+        <p style="font-size:1.02rem;line-height:1.75;margin:0 0 var(--space-2);max-width:66ch">{{ f.body }}</p>
+        <p style="font-size:1.02rem;line-height:1.75;margin:0 0 var(--space-2);max-width:66ch"><em>{{ f.fix }}</em></p>
+        <p style="font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:var(--color-neutral-600);margin:0">{{ f.source }}</p>
+      </div>
+    </article>
+  </sc-for>
+
+  <h3 style="font-size:1.3rem;margin:0 0 var(--space-3)">Where the next twelve tooltips go</h3>
+  <table class="table" style="margin-bottom:var(--space-8)">
+    <thead><tr><th>Control</th><th>What the tooltip has to answer</th></tr></thead>
+    <tbody>
+      <tr><td>Who will attend?</td><td>What counts as my household, and how do I bring someone who has no account</td></tr>
+      <tr><td>Places / capacity badge</td><td>Whether a place is held for each attendee, and what happens when it is full</td></tr>
+      <tr><td>Register household button</td><td>That this is a demo record in this browser and no organiser is notified</td></tr>
+      <tr><td>Request type</td><td>The difference between a ride, a volunteer offer and an accessibility need</td></tr>
+      <tr><td>Hotel booking completed</td><td>That the checkbox is a personal marker, not a reservation</td></tr>
+      <tr><td>Arrival / departure coach</td><td>Coach frequency and which option to pick relative to a flight time</td></tr>
+      <tr><td>Agenda signups</td><td>That selections across all four day tabs save together</td></tr>
+      <tr><td>Reminders</td><td>Where a reminder actually appears, given nothing is emailed</td></tr>
+      <tr><td>Packing list</td><td>Why items appear and change as the itinerary changes</td></tr>
+      <tr><td>QR check-in</td><td>What the QR contains and that check-in stays in this browser</td></tr>
+      <tr><td>Participation badges</td><td>That badges are private and grant nothing</td></tr>
+      <tr><td>Locality map heat layer</td><td>That the shading is county population, not community members</td></tr>
+    </tbody>
+  </table>
+
+  <h2 style="font-size:1.9rem;margin:var(--space-4) 0 var(--space-2)">Motion</h2>
+  <p style="font-size:1.05rem;line-height:1.75;max-width:64ch;margin:0 0 var(--space-6);color:var(--color-neutral-800)">Search the repository for <code>transition</code> or <code>@keyframes</code> and the whole product returns five: the route-change fade on <code>main</code>, the button hover lift, the event image zoom, the dashboard event-card border, and one poll bar. <em>event-actions.css</em>, <em>convention.css</em>, <em>convention-experience.css</em>, <em>help.css</em>, <em>recognition.css</em> and <em>locality-map.css</em> contain none. So registering, checking in, unlocking a badge and saving logistics all happen with no visible change in state — and because each one re-renders its panel with <code>innerHTML</code>, there is no old state left to animate from.</p>
+  <sc-for list="{{ motion }}" as="f" hint-placeholder-count="3">
+    <article style="display:grid;grid-template-columns:3.5rem minmax(0,1fr);gap:var(--space-4);padding-bottom:var(--space-6);margin-bottom:var(--space-6);border-bottom:1px solid var(--color-neutral-200)">
+      <div style="font-size:1.9rem;line-height:1;color:var(--color-accent)">{{ f.n }}</div>
+      <div>
+        <h3 style="font-size:1.55rem;line-height:1.15;margin:0 0 var(--space-2);max-width:32ch">{{ f.title }}</h3>
+        <p style="font-size:1.02rem;line-height:1.75;margin:0 0 var(--space-2);max-width:66ch">{{ f.body }}</p>
+        <p style="font-size:1.02rem;line-height:1.75;margin:0 0 var(--space-2);max-width:66ch"><em>{{ f.fix }}</em></p>
+        <p style="font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:var(--color-neutral-600);margin:0">{{ f.source }}</p>
+      </div>
+    </article>
+  </sc-for>
+
+  <h3 style="font-size:1.3rem;margin:0 0 var(--space-3)">A motion scale small enough to keep</h3>
+  <table class="table" style="margin-bottom:var(--space-8)">
+    <thead><tr><th>Duration</th><th>Used for</th><th>Example</th></tr></thead>
+    <tbody>
+      <tr><td>120ms tint</td><td>State a control already describes</td><td>Step chip turning done; session row tinting when checked</td></tr>
+      <tr><td>200ms rise</td><td>Something new appearing</td><td>Save confirmation chip beside the button</td></tr>
+      <tr><td>180ms cross-fade</td><td>Swapping equivalent content</td><td>Day tab panels in the planner</td></tr>
+      <tr><td>260ms pop</td><td>An earned or completed state, once</td><td>Check-in → Attended; badge unlock</td></tr>
+      <tr><td>None</td><td>Scroll, page entry, decoration</td><td>Keep the existing route fade and nothing more</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:1rem;line-height:1.75;max-width:64ch;margin:0 0 var(--space-8);color:var(--color-neutral-800)">All four patterns are built and clickable in <a href="Help and Motion Patterns.dc.html">Help &amp; motion patterns</a>. The existing <code>prefers-reduced-motion</code> block in <em>styles.css</em> already removes them for members who ask for that — extend it to cover the new files.</p>
+
+  <h2 style="font-size:1.9rem;margin:0 0 var(--space-2)">What we would do next, in order</h2>
+  <table class="table" style="margin-bottom:var(--space-8)">
+    <thead><tr><th>Change</th><th>Why now</th><th>Effort</th></tr></thead>
+    <tbody>
+      <tr><td>Seed two household links in the fixture; add “Add a guest”</td><td>The headline feature currently shows one checkbox</td><td>Low</td></tr>
+      <tr><td>Confirmation chip + step chips that animate</td><td>Answers “did that work?” on every new screen</td><td>Low</td></tr>
+      <tr><td>Twelve tooltips from the table above</td><td>Reuses the helper you already wrote</td><td>Low</td></tr>
+      <tr><td>Save the convention form per section</td><td>57 checkboxes and five fieldsets should not share one button</td><td>Medium</td></tr>
+      <tr><td>Label the heat map on the map</td><td>The riskiest screen to show a board unexplained</td><td>Low</td></tr>
+      <tr><td>Put Take part, Ask the community and Help in the sidebar</td><td>The newest work is the hardest to reach</td><td>Low</td></tr>
+      <tr><td>Mount panels from the router instead of MutationObservers</td><td>Two observers now write into the node they watch</td><td>Medium</td></tr>
+    </tbody>
+  </table>
+
+  <div style="border-top:6px solid var(--color-text);padding-top:var(--space-4);display:flex;flex-wrap:wrap;gap:var(--space-4);justify-content:space-between;font-size:.85rem;color:var(--color-neutral-700)">
+    <span>Reviewed from source at PBahethi/imrc-community-site@main · 22 commits since the first review</span>
+    <span><a href="Help and Motion Patterns.dc.html">Help &amp; motion patterns ↗</a></span>
+  </div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1100}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      functionality: [
+        { n: '01', title: 'The household form can only ever offer you yourself',
+          body: 'Attendees come from familyFor(), which matches people whose familyOf field points at you. No profile in the published data.json carries a familyOf field — all 54 are unlinked. So a reviewer who signs in as Rama and opens “Register your household” sees exactly one checkbox, labelled “You”. Household registration only produces a household for members created locally in that browser during the session.',
+          fix: 'Seed two or three family links into the fixture so the feature demonstrates itself, and add an inline “Add a guest” row for attendees who will never have a profile.',
+          source: 'event-actions.js · familyFor() · data.json · people[]' },
+        { n: '02', title: 'The capacity badge is not a capacity',
+          body: 'Beside “Register your household” sits “6 story participants”, styled as the panel’s status metric. It is the seeded cast of the event, not a limit, and it does not change when you register. Nothing in the flow can be full, waitlisted or closed — the one number that would make registering feel consequential is absent.',
+          fix: 'Show registered-of-capacity from the record, and let the panel reach a full state with a waitlist. If capacity cannot exist without a backend, label the number as the seeded cast.',
+          source: 'event-actions.js · registration() · event-actions.css · .event-capacity' },
+        { n: '03', title: 'The confirmation is written into a node that was just created',
+          body: 'On a successful save the handler calls mount(…, true), which replaces the panel’s innerHTML, and then sets text on the fresh role="status" span. A live region that already contains its text at insertion is generally not announced, so the confirmation is silent for assistive technology — and visually it is a 12px line beside the button, which on the convention form can be well below the fold.',
+          fix: 'Keep one persistent status region outside the re-rendered panel, patch only the row that changed, and move focus or scroll the confirmation into view for long forms.',
+          source: 'event-actions.js · bind() · event-actions.css · [role=status]' },
+        { n: '04', title: 'Five fieldsets, fifty-seven checkboxes, one Save button',
+          body: 'Hotel, airline, buses, 57 agenda sessions, six reminders and nine packing items are one form saved by one button at the bottom. The workflow chips above it read 1 Register → 5 Reminders, implying a sequence the page does not have; a member who fills in flights and leaves loses them. The day tabs and category filter only hide checkboxes, so the count of what is selected is never shown.',
+          fix: 'Save each fieldset on change with its own confirmation, make the five chips anchor links to their section, and show a running “n sessions in my schedule” counter.',
+          source: 'event-actions.js · conventionWorkflow() · convention-experience.js · decoratePlanner()' },
+        { n: '05', title: 'Coach times are strings that contradict the published schedule',
+          body: 'The bus selects are generated as fourteen arrival and twelve departure strings on two-hour steps, while the transportation data for the same event states coaches every 45 minutes from 10:00 AM to 11:00 PM. A member cannot express “I land at 6:20 PM” and the list does not match what the page tells them elsewhere.',
+          fix: 'Generate the options from the transportation record, or ask for the flight time and recommend the coach after it.',
+          source: 'event-actions.js · busTimes() · data.json · EV2028.transportation' },
+        { n: '06', title: 'The packing list quietly overrides the member',
+          body: 'The rendered items come from packingFor(plan) — derived from the itinerary — while the checked state comes from the saved list. An item you unchecked returns on the next render, and an item you kept disappears if the derivation stops producing it.',
+          fix: 'Treat the derived list as suggestions the member adds, and keep their list as the source of truth once they save.',
+          source: 'event-actions.js · packingFor() and conventionWorkflow()' },
+        { n: '07', title: 'Two observers write into the node they are watching',
+          body: 'event-actions.observe() and convention-experience’s autoBind() both attach a MutationObserver to #main and then mutate #main. Today the flags (panels && !refresh, dataset.enhanced, dataset.filterBound) stop the recursion, so it settles — but every future panel has to remember its own guard, and the route is no longer the thing that decides what is on screen.',
+          fix: 'Have the router mount panels explicitly after each view renders. It removes a class of bug that is very hard to reproduce.',
+          source: 'event-actions.js · observe() · convention-experience.js · start()/autoBind()' },
+        { n: '08', title: 'The map shows population, not the community',
+          body: 'The heat layer is US Census county total population, and the README says so plainly. On screen it reads as where members live, which is the one claim a board should not take away from a demo. Canadian directory members add no Canadian coverage, so the map is also asymmetric.',
+          fix: 'Put the caveat in the legend, title the layer “County population (context)”, and draw member dots as the foreground layer so the two are never confused.',
+          source: 'locality-map.js · locality-data.json · README.md' },
+        { n: '09', title: 'The newest features are the least reachable',
+          body: 'The sidebar gained Locality Map and now holds seven browsing destinations. Take part, Ask the community, the help network, mentorship and recognition still have no navigation entry, while the header gained a nine-item gold strip whose every link points into a single event.',
+          fix: 'Two sidebar blocks: what is happening (events, convention, take part, questions) and who is here (people, connections, lineages, map). Keep the gold strip for convention categories only, under the event.',
+          source: 'index.html · nav and .initiative-strip' }
+      ],
+      help: [
+        { n: '10', title: 'A good help pattern, used on three screens out of ten',
+          body: 'tip() produces a labelled button, a described tooltip, hover/focus/tap opening and Escape dismissal — better than most production tooltips. It is called in people(), connections() and events(). Registration, requests, the convention workflow, QR check-in, badges, help offers, recognition and the map call it zero times.',
+          fix: 'Export tip() from app.js as a shared helper and add the twelve tooltips in the table below. Rule of thumb: any control whose effect is not visible on the same screen earns one.',
+          source: 'app.js · tip(), people(), connections(), events()' },
+        { n: '11', title: 'The tooltip will clip inside the new grids',
+          body: 'The bubble is fixed at left:0, 250px wide, below the trigger, with one hand-written right-aligned override for the event filters. The new layouts put controls in three-column grids and at panel edges, where that geometry runs off the right side.',
+          fix: 'Add a flipped variant chosen from the trigger’s position — or anchor positioning with a fallback — so it works in the last column too.',
+          source: 'styles.css · .tooltip and .event-filters .tooltip' },
+        { n: '12', title: 'Paragraphs are doing the tooltips’ job',
+          body: 'Explanations that belong on a control are printed as permanent prose: .form-note under two fieldsets, .login-note, .profile-disclaimer inside the check-in panel, .demo-context on every engagement view. It is honest, and it is the reason the convention page reads as dense before you have done anything.',
+          fix: 'Keep one standing privacy line per screen. Move the “what does this control do” sentences into tooltips, which is where a member looks for them.',
+          source: 'event-actions.js, help.js, convention-experience.js · .form-note/.demo-context' }
+      ],
+      motion: [
+        { n: '13', title: 'Nothing marks the moment an action succeeds',
+          body: 'Registering, posting a request, saving logistics, checking in and unlocking a badge all resolve as an instant DOM replacement. The only signals are small green text and, for badges, a class change on a screen you may not be looking at. For a first-time member this is indistinguishable from nothing having happened.',
+          fix: 'One confirmation chip that rises in 200ms beside the control, and a 120ms tint on whatever state changed. Both are in the patterns file.',
+          source: 'event-actions.css, convention-experience.css, recognition.css · no transitions' },
+        { n: '14', title: 'The re-render pattern makes animation impossible',
+          body: 'Because each panel is rebuilt with innerHTML, the element that should animate is a different element after the action — there is no from-state. This is why adding a transition to these stylesheets would currently change nothing.',
+          fix: 'Patch the affected row or chip in place instead of rebuilding the panel. It is the same change that fixes the silent live region in finding 03.',
+          source: 'event-actions.js · mount(…, true)' },
+        { n: '15', title: 'Selecting and filtering feel like nothing is listening',
+          body: 'Day tabs toggle the hidden attribute, so panels snap; checking a session changes only the checkbox; the planner never says how many sessions you have chosen. Fifty-seven silent checkboxes is the least engaging part of the most ambitious screen.',
+          fix: '180ms cross-fade on tab change, 120ms tint on a chosen row, and a counter chip that pops when it increments — so choosing sessions feels like building a schedule.',
+          source: 'convention-experience.js · bindFilter() · convention.css · .agenda-pick-grid' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
