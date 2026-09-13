@@ -1823,6 +1823,269 @@
       "dates": [
         "2027-08-16"
       ]
+    },
+    {
+      "id": "EV2028",
+      "name": "IMRC Convention 2028",
+      "location": "Omni Oklahoma City Hotel, 100 W Oklahoma City Blvd, Oklahoma City, OK 73109",
+      "people": [
+        "RAM-001",
+        "RAM-002",
+        "RAM-017",
+        "RAM-020",
+        "MBH-001",
+        "MBH-002"
+      ],
+      "image": "images/okc-convention.svg",
+      "imageAlt": "Schematic Oklahoma City convention badge with hotel, airport, and transit routes",
+      "imageSource": "Generated site asset; venue facts from Omni Oklahoma City Hotel and OKC Airport public pages",
+      "dates": [
+        "2028-01-15",
+        "2028-01-16",
+        "2028-01-17",
+        "2028-01-18"
+      ],
+      "type": "Convention",
+      "venue": {
+        "hotel": "Omni Oklahoma City Hotel",
+        "address": "100 W Oklahoma City Blvd, Oklahoma City, OK 73109",
+        "phone": "(405) 438-6500",
+        "hotelFacts": [
+          "605 guest rooms",
+          "76,000 sq ft meeting space",
+          "Oklahoma Station Ballroom 20,500 sq ft",
+          "Five Moons Ballroom 10,222 sq ft",
+          "12 breakout rooms"
+        ],
+        "sourceUrl": "https://www.omnihotels.com/hotels/oklahoma-city/meetings"
+      },
+      "airports": [
+        {
+          "code": "OKC",
+          "name": "OKC Will Rogers International Airport",
+          "address": "7100 Terminal Drive, Oklahoma City, OK 73159",
+          "role": "Primary commercial airport",
+          "distance": "About 10 miles to Omni Oklahoma City Hotel"
+        },
+        {
+          "code": "PWA",
+          "name": "Wiley Post Airport",
+          "address": "Oklahoma City, OK",
+          "role": "Reliever / corporate aviation airport",
+          "distance": "Use only for private or charter arrivals"
+        },
+        {
+          "code": "CEH",
+          "name": "Clarence E. Page Airport",
+          "address": "Oklahoma City, OK",
+          "role": "General aviation airport",
+          "distance": "Use only for private or charter arrivals"
+        }
+      ],
+      "transportation": [
+        {
+          "route": "OKC arrivals to Omni",
+          "mode": "Convention coach",
+          "pickup": "Lower-level baggage claim / Ground Transportation Plaza",
+          "dropoff": "Omni group entrance",
+          "frequency": "Every 45 minutes, 10:00 AM-11:00 PM on arrival days"
+        },
+        {
+          "route": "Omni to OKC departures",
+          "mode": "Convention coach",
+          "pickup": "Omni group entrance",
+          "dropoff": "OKC terminal departure level",
+          "frequency": "Every 45 minutes, 5:00 AM-2:00 PM on departure day"
+        },
+        {
+          "route": "Late arrivals",
+          "mode": "Rideshare / taxi backup",
+          "pickup": "Airport designated rideshare or taxi zones",
+          "dropoff": "Omni main entrance",
+          "frequency": "On demand"
+        },
+        {
+          "route": "Mobility assistance",
+          "mode": "Accessible van",
+          "pickup": "By registration request",
+          "dropoff": "Hotel or airport curb",
+          "frequency": "Scheduled by transportation desk"
+        }
+      ],
+      "agenda": [
+        {
+          "day": "Saturday, Jan 15",
+          "theme": "Arrival, welcome, and orientation",
+          "items": [
+            "6:30 AM Yoga Morning",
+            "7:30 AM Breakfast",
+            "9:00 AM Registration opens",
+            "10:30 AM Opening prayer and community welcome",
+            "12:30 PM Lunch",
+            "2:00 PM Chapter caucuses and youth orientation",
+            "4:00 PM Afternoon Tea",
+            "6:30 PM Dinner",
+            "8:00 PM Cultural welcome program",
+            "10:00 PM Evening snacks"
+          ]
+        },
+        {
+          "day": "Sunday, Jan 16",
+          "theme": "Mentoring, matrimonials, and family networks",
+          "items": [
+            "6:30 AM Yoga Morning",
+            "7:30 AM Breakfast",
+            "9:00 AM Mentoring circles",
+            "10:30 AM Matrimonial introductions",
+            "12:30 PM Lunch",
+            "2:00 PM Business and professional roundtables",
+            "4:00 PM Afternoon Tea",
+            "6:30 PM Dinner",
+            "8:00 PM Family heritage night",
+            "10:00 PM Evening snacks"
+          ]
+        },
+        {
+          "day": "Monday, Jan 17",
+          "theme": "Business, service, and community future",
+          "items": [
+            "6:30 AM Yoga Morning",
+            "7:30 AM Breakfast",
+            "9:00 AM Business expo opens",
+            "10:30 AM Youth leadership and college panels",
+            "12:30 PM Lunch",
+            "2:00 PM Community service workshops",
+            "4:00 PM Afternoon Tea",
+            "6:30 PM Dinner",
+            "8:00 PM Awards and member spotlights",
+            "10:00 PM Evening snacks"
+          ]
+        },
+        {
+          "day": "Tuesday, Jan 18",
+          "theme": "Closing, departures, and next steps",
+          "items": [
+            "6:30 AM Yoga Morning",
+            "7:30 AM Breakfast",
+            "9:00 AM Closing satsang and feedback",
+            "10:30 AM Chapter planning meetings",
+            "12:30 PM Lunch",
+            "2:00 PM Departures and airport coaches",
+            "4:00 PM Afternoon Tea",
+            "6:30 PM Dinner for late departures",
+            "8:00 PM Informal farewell lounge",
+            "10:00 PM Evening snacks"
+          ]
+        }
+      ],
+      "rooms": [
+        {
+          "name": "Oklahoma Station Ballroom",
+          "use": "Main sessions, dinners, cultural programs",
+          "level": "Level 2",
+          "capacity": "Large plenary"
+        },
+        {
+          "name": "Five Moons Ballroom",
+          "use": "Business expo and professional networking",
+          "level": "Level 2",
+          "capacity": "Mid-size ballroom"
+        },
+        {
+          "name": "Route 66",
+          "use": "Mentoring",
+          "level": "Level 2",
+          "capacity": "Breakout"
+        },
+        {
+          "name": "Bricktown",
+          "use": "Matrimonials",
+          "level": "Level 2",
+          "capacity": "Breakout"
+        },
+        {
+          "name": "Myriad",
+          "use": "Youth and college guidance",
+          "level": "Level 2",
+          "capacity": "Breakout"
+        },
+        {
+          "name": "Paseo",
+          "use": "Family help desk",
+          "level": "Level 2",
+          "capacity": "Breakout"
+        },
+        {
+          "name": "Deep Deuce",
+          "use": "Volunteer coordination",
+          "level": "Level 2",
+          "capacity": "Breakout"
+        },
+        {
+          "name": "Mistletoe",
+          "use": "Matrimonial family conversations",
+          "level": "Level 2",
+          "capacity": "Breakout"
+        },
+        {
+          "name": "Pinon",
+          "use": "Business meetings",
+          "level": "Level 2",
+          "capacity": "Breakout"
+        },
+        {
+          "name": "Thunder Boardroom",
+          "use": "Organizer command center",
+          "level": "Level 2",
+          "capacity": "Boardroom"
+        },
+        {
+          "name": "Red Earth Boardroom",
+          "use": "VIP / speaker ready room",
+          "level": "Level 17",
+          "capacity": "Boardroom"
+        }
+      ],
+      "tickets": [
+        {
+          "name": "Convention Check-in",
+          "code": "IMRC-2028-CONV-CHECKIN",
+          "target": "#event/EV2028"
+        },
+        {
+          "name": "Airport Coach: OKC to Omni",
+          "code": "IMRC-2028-BUS-ARRIVAL",
+          "target": "#event/EV2028?ticket=bus-arrival"
+        },
+        {
+          "name": "Airport Coach: Omni to OKC",
+          "code": "IMRC-2028-BUS-DEPARTURE",
+          "target": "#event/EV2028?ticket=bus-departure"
+        },
+        {
+          "name": "Meal & Program Access",
+          "code": "IMRC-2028-MEALS-PROGRAM",
+          "target": "#event/EV2028?ticket=meals"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Omni Oklahoma City Hotel meetings",
+          "url": "https://www.omnihotels.com/hotels/oklahoma-city/meetings"
+        },
+        {
+          "label": "Omni Oklahoma City Hotel directions",
+          "url": "https://www.omnihotels.com/hotels/oklahoma-city/property-details/directions"
+        },
+        {
+          "label": "OKC Airport parking and transportation",
+          "url": "https://flyokc.com/parking-transportation/"
+        },
+        {
+          "label": "City of OKC airport overview",
+          "url": "https://www.okc.gov/Government/Departments/Airports"
+        }
+      ]
     }
   ]
 }

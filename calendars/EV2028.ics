@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Tree in the Forest//IMRC Convention//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:EV2028-20280115@imrc-community-site
+DTSTAMP:20260913T000000Z
+DTSTART;VALUE=DATE:20280115
+DTEND;VALUE=DATE:20280119
+SUMMARY:IMRC Convention 2028
+LOCATION:Omni Oklahoma City Hotel\, 100 W Oklahoma City Blvd\, Oklahoma Cit
+ y\, OK 73109
+DESCRIPTION:Four-day planning concept for IMRC Convention 2028 with meals\,
+  programming\, room assignments\, QR tickets\, and airport transportation.
+END:VEVENT
+END:VCALENDAR
