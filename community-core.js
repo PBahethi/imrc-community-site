@@ -28,7 +28,7 @@
     state.session={authenticated:Boolean(session.authenticated)&&personIds.includes(session.personaId),personaId:personIds.includes(session.personaId)?session.personaId:'',signedInAt:typeof session.signedInAt==='string'&&Number.isFinite(Date.parse(session.signedInAt))?session.signedInAt:''};
     state.personaId=state.session.authenticated?state.session.personaId:(personIds.includes(source.personaId)?source.personaId:'');
     state.profileEdits={};
-    if(source.profileEdits&&typeof source.profileEdits==='object') for(const [id,edit] of Object.entries(source.profileEdits)) if(personIds.includes(id)&&edit&&typeof edit==='object') state.profileEdits[id]={displayName:typeof edit.displayName==='string'?edit.displayName.slice(0,160):'',city:typeof edit.city==='string'?edit.city.slice(0,120):'',bio:typeof edit.bio==='string'?edit.bio.slice(0,2000):''};
+    if(source.profileEdits&&typeof source.profileEdits==='object') for(const [id,edit] of Object.entries(source.profileEdits)) if(personIds.includes(id)&&edit&&typeof edit==='object') state.profileEdits[id]={displayName:typeof edit.displayName==='string'?edit.displayName.slice(0,160):'',city:typeof edit.city==='string'?edit.city.slice(0,120):'',bio:typeof edit.bio==='string'?edit.bio.slice(0,2000):'',catchPhrase:typeof edit.catchPhrase==='string'?edit.catchPhrase.slice(0,240):''};
     state.interestIds=uniqueIds(source.interestIds,interests.map(i=>i.id));
     state.helpIds=uniqueIds(source.helpIds,capabilities.map(i=>i.id));
     state.savedPeople=uniqueIds(source.savedPeople,personIds).filter(id=>id!==state.personaId);
@@ -76,7 +76,7 @@
     }
     if(action.type==='profile-edit'){
       if(!state.session.authenticated||state.session.personaId!==action.personaId||!personIds.includes(action.personaId))return state;
-      const edit=action.value&&typeof action.value==='object'?action.value:{};state.profileEdits[action.personaId]={displayName:typeof edit.displayName==='string'?edit.displayName.slice(0,160):'',city:typeof edit.city==='string'?edit.city.slice(0,120):'',bio:typeof edit.bio==='string'?edit.bio.slice(0,2000):''};
+      const edit=action.value&&typeof action.value==='object'?action.value:{};state.profileEdits[action.personaId]={displayName:typeof edit.displayName==='string'?edit.displayName.slice(0,160):'',city:typeof edit.city==='string'?edit.city.slice(0,120):'',bio:typeof edit.bio==='string'?edit.bio.slice(0,2000):'',catchPhrase:typeof edit.catchPhrase==='string'?edit.catchPhrase.slice(0,240):''};
       state.activity=[{type:'profile-edit',target:action.personaId,at:now.toISOString()},...state.activity].slice(0,12);return state;
     }
     if(action.type==='preferences'){
