@@ -25,6 +25,6 @@
     }else return s;
     s.activity=s.activity.slice(0,40);return s;
   }
-  function repository(storage,people,events){let memory=null,persistent=true;function read(){if(memory)return normalize(memory,people,events);try{memory=normalize(JSON.parse(storage.getItem(key)||'null'),people,events);}catch{persistent=false;memory=empty();}return memory;}return {read,isPersistent:()=>persistent,apply(action,actor){memory=transition(read(),action,actor,people,events);try{storage.setItem(key,JSON.stringify(memory));persistent=true;}catch{persistent=false;}return read();},reset(){memory=empty();try{storage.removeItem(key);persistent=true;}catch{persistent=false;}return read();}};}
+  function repository(storage,people,events){let memory=null,persistent=true;function read(){if(memory)return normalize(memory,people,events);try{memory=normalize(JSON.parse(storage.getItem(key)||'null'),people,events);}catch{persistent=false;memory=empty();}return memory;}return {read,updateReferences(nextPeople,nextEvents){people=nextPeople;events=nextEvents;},isPersistent:()=>persistent,apply(action,actor){memory=transition(read(),action,actor,people,events);try{storage.setItem(key,JSON.stringify(memory));persistent=true;}catch{persistent=false;}return read();},reset(){memory=empty();try{storage.removeItem(key);persistent=true;}catch{persistent=false;}return read();}};}
   root.EventActionsCore={key,requestTypes,empty,normalize,transition,repository};if(typeof module==='object'&&module.exports)module.exports=root.EventActionsCore;
 })(globalThis);

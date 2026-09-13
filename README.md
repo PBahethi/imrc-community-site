@@ -23,6 +23,10 @@ Open http://localhost:8000. Run all interaction, state, and security regression 
 
 Checks cover directory search/filter/pagination, source integrity and public-field allowlisting, route rendering, missing-profile handling, HTML escaping, and local event saves. Additional checks cover monthly dates, image presence, calendar exports, month/saved filters, accessible tooltip markup, deterministic recommendations, preference persistence, group discovery, date-aware dashboard content, and corrupted or unavailable browser storage.
 
+Event participation now mounts a single registration/request panel and updates it after a confirmed save. Members and family created during a demo session can register immediately; validation follows the current member list while preserving saved and visit-only activity. Locality Map is handled by the main router, waits for Leaflet 1.9.4 CSS and scripts, and discards pending renders when the member leaves the page. Failed map assets show a retry message. The heat map currently shows aggregate US Census county data; Canadian directory members do not add Canadian Census coverage.
+
+The September 2026 rendering fixes are covered by 46 automated checks, including observer stability, member-list replacement, map asset failures/retries, stylesheet readiness, and route transitions. Playwright's bundled Chromium also verified event sign-in/registration/requests, immediate registration of a new household, loaded map tiles/heat layer, both module/data loading orders, and repeated map navigation. Browser screenshots are kept locally under `output/playwright/`.
+
 ## GitHub Pages
 
 Live website: https://pbahethi.github.io/imrc-community-site/
