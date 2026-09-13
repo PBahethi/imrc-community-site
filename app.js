@@ -2,9 +2,12 @@
 let data, page = 1;
 const main = document.querySelector('main');
 if(!document.body)document.body={classList:{add(){},remove(){}}};
+function decorateChapterCards(){if(!data)return;document.querySelectorAll('.person[href^="#person/"]').forEach(card=>{if(card.querySelector('.chapter-label'))return;const id=decodeURIComponent(card.getAttribute('href').slice(8)),person=data.people.find(p=>p.id===id);if(!person?.chapter)return;const label=document.createElement?.('small');if(!label)return;label.className='chapter-label';label.textContent=`${person.chapter} chapter`;card.querySelector('.card-bottom')?.prepend(label);});}
+if(typeof MutationObserver==='function')new MutationObserver(decorateChapterCards).observe(main,{childList:true,subtree:true});
 const eventActionsReady=new Promise(resolve=>{if(document.querySelector('script[data-event-actions]'))return resolve();const coreScript=document.createElement('script');coreScript.src='./event-actions-core.js';coreScript.dataset.eventActions='core';coreScript.onload=()=>{const uiScript=document.createElement('script');uiScript.src='./event-actions.js';uiScript.dataset.eventActions='ui';uiScript.onload=resolve;uiScript.onerror=resolve;document.head?.appendChild(uiScript);};coreScript.onerror=resolve;document.head?.appendChild(coreScript);});
 document.addEventListener('event-actions-ready',()=>{if(data&&globalThis.EventActions)EventActions.observe(data);});
 const localityMapReady=new Promise(resolve=>{if(typeof document.createElement!=='function')return resolve();const style=document.createElement('link');style.rel='stylesheet';style.href='./locality-map.css';document.head?.appendChild(style);const script=document.createElement('script');script.src='./locality-map.js';script.onload=()=>{document.dispatchEvent(new Event('locality-map-ready'));resolve();};script.onerror=resolve;document.head?.appendChild(script);});
+if(typeof MutationObserver==='function')new MutationObserver(()=>{if(data&&globalThis.EventActions)EventActions.observe(data);if(data&&globalThis.LocalityMap)LocalityMap.observe();}).observe(main,{childList:true,subtree:true});
 if(!document.querySelector('link[href="./landing.css"]')){const landingStyles=document.createElement('link');landingStyles.rel='stylesheet';landingStyles.href='./landing.css';document.head.appendChild(landingStyles);}
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const byId = id => {const p=data.people.find(p=>p.id===id);return p?Engagement.person(data,p):null;};
