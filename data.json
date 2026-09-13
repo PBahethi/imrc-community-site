@@ -12,7 +12,13 @@
       "city": "Washington, DC",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Raghava; Ramachandra",
-      "type": "Human/Divine"
+      "type": "Human/Divine",
+      "headshot": "headshots/rama.jpg",
+      "headshotAlt": "Rama in a public-domain Raja Ravi Varma depiction",
+      "headshotSource": "https://commons.wikimedia.org/wiki/File:Rama-Varuna.jpg",
+      "headshotLicense": "Public domain; Wikimedia Commons / Raja Ravi Varma",
+      "catchPhrase": "Steady in purpose, generous in action.",
+      "membership": "Platinum"
     },
     {
       "id": "RAM-002",
@@ -23,7 +29,13 @@
       "city": "New York, NY",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Janaki; Vaidehi",
-      "type": "Human/Divine"
+      "type": "Human/Divine",
+      "headshot": "headshots/sita.jpg",
+      "headshotAlt": "Sita in a public-domain Raja Ravi Varma depiction",
+      "headshotSource": "https://commons.wikimedia.org/wiki/File:Sita_Svayamvar.jpg",
+      "headshotLicense": "Public domain; Wikimedia Commons / Raja Ravi Varma",
+      "catchPhrase": "Grace can be a form of courage.",
+      "membership": "Platinum"
     },
     {
       "id": "RAM-003",
@@ -34,7 +46,13 @@
       "city": "Dallas, TX",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Saumitra",
-      "type": "Human/Divine"
+      "type": "Human/Divine",
+      "headshot": "headshots/lakshmana.jpg",
+      "headshotAlt": "Lakshmana in a public-domain Ramayana painting",
+      "headshotSource": "https://commons.wikimedia.org/wiki/File:Lakshmana_in_the_service_of_Rama_in_the_forest.jpg",
+      "headshotLicense": "Public domain; Wikimedia Commons",
+      "catchPhrase": "Show up for the people you love.",
+      "membership": "Gold"
     },
     {
       "id": "RAM-004",
@@ -45,7 +63,13 @@
       "city": "Chicago, IL",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Kaikeyi's son",
-      "type": "Human"
+      "type": "Human",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Silver"
     },
     {
       "id": "RAM-005",
@@ -56,7 +80,13 @@
       "city": "Houston, TX",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Sumitra's son",
-      "type": "Human"
+      "type": "Human",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Silver"
     },
     {
       "id": "RAM-006",
@@ -67,7 +97,13 @@
       "city": "Los Angeles, CA",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "King of Ayodhya",
-      "type": "Human"
+      "type": "Human",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Silver"
     },
     {
       "id": "RAM-007",
@@ -78,7 +114,13 @@
       "city": "San Francisco, CA",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Rama's mother",
-      "type": "Human"
+      "type": "Human",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Silver"
     },
     {
       "id": "RAM-008",
@@ -89,7 +131,13 @@
       "city": "New York, NY",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Bharata's mother",
-      "type": "Human"
+      "type": "Human",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Silver"
     },
     {
       "id": "RAM-009",
@@ -100,7 +148,13 @@
       "city": "Boston, MA",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Lakshmana & Shatrughna's mother",
-      "type": "Human"
+      "type": "Human",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Bronze"
     },
     {
       "id": "RAM-010",
@@ -111,7 +165,13 @@
       "city": "New York, NY",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "King of Mithila",
-      "type": "Human"
+      "type": "Human",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Silver"
     },
     {
       "id": "RAM-011",
@@ -122,7 +182,13 @@
       "city": "Dallas, TX",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Lakshmana's wife",
-      "type": "Human"
+      "type": "Human",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Bronze"
     },
     {
       "id": "RAM-012",
@@ -133,7 +199,13 @@
       "city": "Chicago, IL",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Bharata's wife",
-      "type": "Human"
+      "type": "Human",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Bronze"
     },
     {
       "id": "RAM-013",
@@ -144,7 +216,13 @@
       "city": "Houston, TX",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Shatrughna's wife",
-      "type": "Human"
+      "type": "Human",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Bronze"
     },
     {
       "id": "RAM-014",
@@ -155,7 +233,13 @@
       "city": "Miami, FL",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Dashagriva; Lankesh",
-      "type": "Rakshasa"
+      "type": "Rakshasa",
+      "headshot": "headshots/ravana.jpg",
+      "headshotAlt": "Ravana in a public-domain nineteenth-century painting",
+      "headshotSource": "https://commons.wikimedia.org/wiki/File:Ravana_water_painting.jpg",
+      "headshotLicense": "Public domain; Wikimedia Commons / British Museum source",
+      "catchPhrase": "Power asks for wisdom in return.",
+      "membership": "Gold"
     },
     {
       "id": "RAM-015",
@@ -166,7 +250,13 @@
       "city": "Miami, FL",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Ravana's chief queen",
-      "type": "Rakshasa"
+      "type": "Rakshasa",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Bronze"
     },
     {
       "id": "RAM-016",
@@ -177,7 +267,13 @@
       "city": "Atlanta, GA",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Ravana's brother",
-      "type": "Rakshasa"
+      "type": "Rakshasa",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Bronze"
     },
     {
       "id": "RAM-017",
@@ -188,7 +284,13 @@
       "city": "Seattle, WA",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Ravana's brother; later king",
-      "type": "Rakshasa"
+      "type": "Rakshasa",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Silver"
     },
     {
       "id": "RAM-018",
@@ -199,7 +301,13 @@
       "city": "Tampa, FL",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Ravana's sister",
-      "type": "Rakshasa"
+      "type": "Rakshasa",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Bronze"
     },
     {
       "id": "RAM-019",
@@ -210,7 +318,13 @@
       "city": "Miami, FL",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Meghanada",
-      "type": "Rakshasa"
+      "type": "Rakshasa",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Bronze"
     },
     {
       "id": "RAM-020",
@@ -221,7 +335,13 @@
       "city": "Orlando, FL",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Ravana & Mandodari's son",
-      "type": "Rakshasa"
+      "type": "Rakshasa",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Bronze"
     },
     {
       "id": "RAM-021",
@@ -232,7 +352,13 @@
       "city": "San Jose, CA",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Anjaneya; Maruti",
-      "type": "Vanara/Divine"
+      "type": "Vanara/Divine",
+      "headshot": "headshots/hanuman.jpg",
+      "headshotAlt": "Hanuman before Rama and Lakshmana in a CC0 Metropolitan Museum image",
+      "headshotSource": "https://commons.wikimedia.org/wiki/File:Anonymous_-_Hanuman_before_Rama_and_Lakshmana,_Folio_from_the_dispersed_%E2%80%9CMankot%22_Ramayana_series_-_1976.16_-_Metropolitan_Museum_of_Art.jpg",
+      "headshotLicense": "CC0 / public domain; Metropolitan Museum of Art via Wikimedia Commons",
+      "catchPhrase": "Service turns intention into movement.",
+      "membership": "Gold"
     },
     {
       "id": "RAM-022",
@@ -243,7 +369,13 @@
       "city": "Phoenix, AZ",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Vanararaja",
-      "type": "Vanara/Divine"
+      "type": "Vanara/Divine",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Silver"
     },
     {
       "id": "RAM-023",
@@ -254,7 +386,13 @@
       "city": "San Diego, CA",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Bali",
-      "type": "Vanara/Divine"
+      "type": "Vanara/Divine",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Silver"
     },
     {
       "id": "RAM-024",
@@ -265,7 +403,13 @@
       "city": "San Diego, CA",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Valiputra",
-      "type": "Vanara"
+      "type": "Vanara",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Bronze"
     },
     {
       "id": "RAM-025",
@@ -276,7 +420,13 @@
       "city": "San Diego, CA",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Vali's queen",
-      "type": "Vanara"
+      "type": "Vanara",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Silver"
     },
     {
       "id": "RAM-026",
@@ -287,7 +437,13 @@
       "city": "Denver, CO",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Riksharaja",
-      "type": "Riksha/Bear"
+      "type": "Riksha/Bear",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Bronze"
     },
     {
       "id": "RAM-027",
@@ -298,7 +454,13 @@
       "city": "Seattle, WA",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Setu architect",
-      "type": "Vanara"
+      "type": "Vanara",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Bronze"
     },
     {
       "id": "RAM-028",
@@ -309,7 +471,13 @@
       "city": "Portland, OR",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Vanara commander",
-      "type": "Vanara"
+      "type": "Vanara",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Bronze"
     },
     {
       "id": "RAM-029",
@@ -320,7 +488,13 @@
       "city": "Washington, DC",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Gridhraraja",
-      "type": "Divine Bird"
+      "type": "Divine Bird",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Bronze"
     },
     {
       "id": "RAM-030",
@@ -331,7 +505,13 @@
       "city": "Baltimore, MD",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Jatayu's brother",
-      "type": "Divine Bird"
+      "type": "Divine Bird",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Bronze"
     },
     {
       "id": "RAM-031",
@@ -342,7 +522,13 @@
       "city": "Newark, NJ",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Nishadaraja",
-      "type": "Human"
+      "type": "Human",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Bronze"
     },
     {
       "id": "RAM-032",
@@ -353,7 +539,13 @@
       "city": "Washington, DC",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Rajarshi; Rama's teacher",
-      "type": "Rishi"
+      "type": "Rishi",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Silver"
     },
     {
       "id": "RAM-033",
@@ -364,7 +556,13 @@
       "city": "Boston, MA",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Royal preceptor",
-      "type": "Rishi"
+      "type": "Rishi",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Silver"
     },
     {
       "id": "RAM-034",
@@ -375,7 +573,13 @@
       "city": "Austin, TX",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Rishi Agastya",
-      "type": "Rishi"
+      "type": "Rishi",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Bronze"
     },
     {
       "id": "RAM-035",
@@ -386,7 +590,13 @@
       "city": "New York, NY",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Gautama's wife",
-      "type": "Human/Divine"
+      "type": "Human/Divine",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Bronze"
     },
     {
       "id": "RAM-036",
@@ -397,7 +607,13 @@
       "city": "Miami, FL",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Golden deer",
-      "type": "Rakshasa"
+      "type": "Rakshasa",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Bronze"
     },
     {
       "id": "RAM-037",
@@ -408,7 +624,13 @@
       "city": "Tampa, FL",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Ravana's cousin",
-      "type": "Rakshasa"
+      "type": "Rakshasa",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Bronze"
     },
     {
       "id": "RAM-038",
@@ -419,7 +641,13 @@
       "city": "Tampa, FL",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Khara's brother",
-      "type": "Rakshasa"
+      "type": "Rakshasa",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Bronze"
     },
     {
       "id": "RAM-039",
@@ -430,7 +658,13 @@
       "city": "Orlando, FL",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Khara's commander",
-      "type": "Rakshasa"
+      "type": "Rakshasa",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Bronze"
     },
     {
       "id": "RAM-040",
@@ -441,7 +675,13 @@
       "city": "New York, NY",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Kaikeyi's attendant",
-      "type": "Human"
+      "type": "Human",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Bronze"
     },
     {
       "id": "RAM-041",
@@ -452,7 +692,13 @@
       "city": "Miami, FL",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Kaikasi's father",
-      "type": "Rakshasa"
+      "type": "Rakshasa",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Bronze"
     },
     {
       "id": "RAM-042",
@@ -463,7 +709,13 @@
       "city": "Miami, FL",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Ravana's mother",
-      "type": "Rakshasa"
+      "type": "Rakshasa",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Bronze"
     },
     {
       "id": "RAM-043",
@@ -474,7 +726,13 @@
       "city": "Seattle, WA",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Ravana's father",
-      "type": "Rishi/Rakshasa lineage"
+      "type": "Rishi/Rakshasa lineage",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Bronze"
     },
     {
       "id": "RAM-044",
@@ -485,7 +743,13 @@
       "city": "Atlanta, GA",
       "languages": "Sanskrit; Hindi; English",
       "aliases": "Mandodari's father",
-      "type": "Asura"
+      "type": "Asura",
+      "headshot": "",
+      "headshotAlt": "No portrait selected; initials shown",
+      "headshotSource": "",
+      "headshotLicense": "",
+      "catchPhrase": "A story still invites a new connection.",
+      "membership": "Bronze"
     }
   ],
   "relationships": [
@@ -1143,6 +1407,12 @@
         "RAM-008",
         "RAM-004",
         "RAM-040"
+      ],
+      "image": "images/event-01.jpg",
+      "imageAlt": "Rama leaving Ayodhya for exile",
+      "imageSource": "Rama_leaving_for_fourteen_years_of_exile_from_Ayodhya.jpg",
+      "dates": [
+        "2027-01-09"
       ]
     },
     {
@@ -1155,6 +1425,12 @@
         "RAM-010",
         "RAM-032",
         "RAM-003"
+      ],
+      "image": "images/event-02.jpg",
+      "imageAlt": "The marriage ceremony of Rama and Sita",
+      "imageSource": "The_marriage_ceremony_of_Rama_and_Sita.jpg",
+      "dates": [
+        "2027-02-10"
       ]
     },
     {
@@ -1166,6 +1442,12 @@
         "RAM-003",
         "RAM-021",
         "RAM-022"
+      ],
+      "image": "images/event-03.jpg",
+      "imageAlt": "Rama in the forest — thematic illustration",
+      "imageSource": "Rama_exiled_to_Forest.jpg",
+      "dates": [
+        "2027-03-11"
       ]
     },
     {
@@ -1178,6 +1460,12 @@
         "RAM-026",
         "RAM-027",
         "RAM-028"
+      ],
+      "image": "images/event-04.jpg",
+      "imageAlt": "Jatayu vadha, Raja Ravi Varma, 1906",
+      "imageSource": "Raja_Ravi_Varma,_Jatayu_vadha,_1906.jpg",
+      "dates": [
+        "2027-04-12"
       ]
     },
     {
@@ -1190,6 +1478,12 @@
         "RAM-014",
         "RAM-019",
         "RAM-020"
+      ],
+      "image": "images/event-05.jpg",
+      "imageAlt": "Sita at Ashokavana",
+      "imageSource": "Sita_at_ashokavana.jpg",
+      "dates": [
+        "2027-05-13"
       ]
     },
     {
@@ -1203,6 +1497,12 @@
         "RAM-028",
         "RAM-022",
         "RAM-024"
+      ],
+      "image": "images/event-06.jpg",
+      "imageAlt": "Ramayana mural in Thailand — thematic illustration",
+      "imageSource": "The_epic_ramayana_spread_in_thailand.jpg",
+      "dates": [
+        "2027-06-14"
       ]
     },
     {
@@ -1220,6 +1520,12 @@
         "RAM-019",
         "RAM-016",
         "RAM-017"
+      ],
+      "image": "images/event-07.jpg",
+      "imageAlt": "Battle at Lanka, Udaipur, 1649–53",
+      "imageSource": "Battle_at_Lanka,_Ramayana,_Udaipur,_1649-53.jpg",
+      "dates": [
+        "2027-07-15"
       ]
     },
     {
@@ -1232,6 +1538,12 @@
         "RAM-003",
         "RAM-004",
         "RAM-005"
+      ],
+      "image": "images/event-08.jpg",
+      "imageAlt": "Valmiki Ramayana — thematic illustration",
+      "imageSource": "Valmiki_Ramayana.jpg",
+      "dates": [
+        "2027-08-16"
       ]
     }
   ]

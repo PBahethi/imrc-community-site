@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Tree in the Forest//2027 Demo//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:EV008-2027-08-16@imrc-community-site
+DTSTAMP:20260912T000000Z
+DTSTART;VALUE=DATE:20270816
+DTEND;VALUE=DATE:20270817
+SUMMARY:Return to Ayodhya (demo programme)
+LOCATION:Ayodhya\, Uttar Pradesh\, India
+DESCRIPTION:Planned demonstration event. Not a confirmed public gathering.
+END:VEVENT
+END:VCALENDAR
