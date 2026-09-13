@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/broadsheet-a49e7d18-fec6-4fca-995b-b3b77723ef7c/styles.css">
+<script src="_ds/broadsheet-a49e7d18-fec6-4fca-995b-b3b77723ef7c/_ds_bundle.js"></script>
+</helmet>
+<div style="background:var(--color-bg);min-height:100vh">
+<div style="max-width:1100px;margin:0 auto;padding:var(--space-8) var(--space-6) var(--space-8)">
+
+  <div style="border-top:6px solid var(--color-text);padding-top:var(--space-2);margin-bottom:var(--space-2)"></div>
+  <div style="display:flex;flex-wrap:wrap;gap:var(--space-3);justify-content:space-between;align-items:baseline;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--color-neutral-700);padding-bottom:var(--space-2);border-bottom:1px solid var(--color-text)">
+    <span>Design review</span>
+    <span>Tree in the Forest · community demo</span>
+    <span>13 September 2026</span>
+  </div>
+
+  <h1 style="font-size:clamp(2.6rem,5.4vw,4.2rem);line-height:1.02;margin:var(--space-6) 0 var(--space-4);max-width:26ch">The demo explains itself so carefully that it forgets to invite anyone in.</h1>
+  <p style="font-size:1.25rem;line-height:1.6;max-width:58ch;margin:0 0 var(--space-3)">Nine findings from a read of the live site and its source, ordered by what stands between a visitor and a registered seat at a gathering. Each one names the file it came from.</p>
+  <p style="font-size:1rem;line-height:1.7;max-width:58ch;color:var(--color-neutral-700)">Reference builds: <a href="Current Site.dc.html">the current screens, recreated</a> · <a href="Redesign Screens.dc.html">three proposed screens</a>.</p>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:var(--space-6);margin:var(--space-8) 0 var(--space-8)">
+    <div><div style="font-size:2.6rem;line-height:1">44</div><p style="margin:var(--space-1) 0 0;font-size:.9rem;color:var(--color-neutral-700)">fictional profiles a visitor must choose between to personalise anything</p></div>
+    <div><div style="font-size:2.6rem;line-height:1">0</div><p style="margin:var(--space-1) 0 0;font-size:.9rem;color:var(--color-neutral-700)">ways to register for a gathering; saving is a browser bookmark</p></div>
+    <div><div style="font-size:2.6rem;line-height:1">4</div><p style="margin:var(--space-1) 0 0;font-size:.9rem;color:var(--color-neutral-700)">separate “this is only a demo” caveats on the events screen alone</p></div>
+    <div><div style="font-size:2.6rem;line-height:1">2</div><p style="margin:var(--space-1) 0 0;font-size:.9rem;color:var(--color-neutral-700)">features — mentorship and questions — with no entry in the navigation</p></div>
+  </div>
+
+  <h2 style="font-size:2rem;margin:0 0 var(--space-2)">What we would change first</h2>
+  <p style="font-size:1.05rem;line-height:1.7;max-width:60ch;margin:0 0 var(--space-6);color:var(--color-neutral-800)">Three moves, in order. Everything else in this review is a refinement of them.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:var(--space-6);margin-bottom:var(--space-8)">
+    <div>
+      <p style="font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 var(--space-2)">Move one</p>
+      <h3 style="font-size:1.4rem;margin:0 0 var(--space-2)">Make sign-in look like sign-in</h3>
+      <p style="font-size:.95rem;line-height:1.7;margin:0;color:var(--color-neutral-800)">An email panel first, the persona picker beneath it as a labelled demo shortcut. A board member should recognise the screen in one second.</p>
+    </div>
+    <div>
+      <p style="font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 var(--space-2)">Move two</p>
+      <h3 style="font-size:1.4rem;margin:0 0 var(--space-2)">Put registration on the event card</h3>
+      <p style="font-size:.95rem;line-height:1.7;margin:0;color:var(--color-neutral-800)">One primary action — Register — with places remaining beside it. Saving becomes a secondary link, so the two stop competing.</p>
+    </div>
+    <div>
+      <p style="font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 var(--space-2)">Move three</p>
+      <h3 style="font-size:1.4rem;margin:0 0 var(--space-2)">Register the household, not the person</h3>
+      <p style="font-size:.95rem;line-height:1.7;margin:0;color:var(--color-neutral-800)">Head count, contact details once, reminders on by default. The family field already drafted in the create-member form becomes the unit that registers.</p>
+    </div>
+  </div>
+
+  <div style="border-top:1px solid var(--color-neutral-300);padding-top:var(--space-6)">
+  <h2 style="font-size:2rem;margin:0 0 var(--space-6)">Findings</h2>
+  <sc-for list="{{ findings }}" as="f" hint-placeholder-count="9">
+    <article style="display:grid;grid-template-columns:3.5rem minmax(0,1fr);gap:var(--space-6);padding-bottom:var(--space-6);margin-bottom:var(--space-6);border-bottom:1px solid var(--color-neutral-200)">
+      <div style="font-size:2rem;line-height:1;color:var(--color-accent-2)">{{ f.n }}</div>
+      <div>
+        <h3 style="font-size:1.65rem;line-height:1.15;margin:0 0 var(--space-3);max-width:30ch">{{ f.title }}</h3>
+        <p style="font-size:1.02rem;line-height:1.75;margin:0 0 var(--space-3);max-width:66ch">{{ f.body }}</p>
+        <p style="font-size:1.02rem;line-height:1.75;margin:0 0 var(--space-3);max-width:66ch"><em>{{ f.fix }}</em></p>
+        <p style="font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:var(--color-neutral-600);margin:0">{{ f.source }}</p>
+      </div>
+    </article>
+  </sc-for>
+  </div>
+
+  <h2 style="font-size:2rem;margin:var(--space-4) 0 var(--space-2)">Sequencing</h2>
+  <p style="font-size:1.05rem;line-height:1.7;max-width:60ch;margin:0 0 var(--space-6);color:var(--color-neutral-800)">What the static site can do on its own, and what needs a backend before it can be true.</p>
+  <table class="table" style="margin-bottom:var(--space-8)">
+    <thead><tr><th>Change</th><th>Effort</th><th>Needs a backend</th></tr></thead>
+    <tbody>
+      <tr><td>Email-style sign-in with demo shortcut</td><td>Low</td><td>No — mock, real later</td></tr>
+      <tr><td>Register action + places remaining on cards</td><td>Low</td><td>Counts need one</td></tr>
+      <tr><td>Household head-count form</td><td>Medium</td><td>Storing it does</td></tr>
+      <tr><td>Working add-to-calendar files</td><td>Low</td><td>No — generate the files</td></tr>
+      <tr><td>Questions board in the navigation</td><td>Low</td><td>Replies and moderation do</td></tr>
+      <tr><td>One caveat per screen instead of four</td><td>Low</td><td>No</td></tr>
+      <tr><td>Single identity model (drop the second persona picker)</td><td>Medium</td><td>No</td></tr>
+    </tbody>
+  </table>
+
+  <div style="border-top:6px solid var(--color-text);padding-top:var(--space-4);display:flex;flex-wrap:wrap;gap:var(--space-4);justify-content:space-between;font-size:.85rem;color:var(--color-neutral-700)">
+    <span>Reviewed from source at PBahethi/imrc-community-site@main</span>
+    <span><a href="Redesign Screens.dc.html">Proposed screens ↗</a></span>
+  </div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1100}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      findings: [
+        { n: '01', title: 'The first real decision is “which fictional character are you?”',
+          body: 'The sign-in screen opens with a select of 44 workbook names and the heading “Choose your demo member.” Until one is picked, the dashboard cannot personalise: suggestions return an empty list without a persona, and every empty state links back to preferences. A leadership audience reads this as a toy, not a membership product.',
+          fix: 'Lead with an email panel and keep the persona picker below it, explicitly labelled as the demo shortcut. The demo still works; the product reads as real.',
+          source: 'engagement.js · login() · community-core.js · suggestions()' },
+        { n: '02', title: 'Two identity systems write the same field',
+          body: 'A persona can be set on the sign-in screen (a session) and again in preferences (“1. Choose a demo profile”). Both end up as personaId, but only one sets authenticated, so the header pill, the dashboard viewpoint and the profile screen can disagree about who you are.',
+          fix: 'One model: signed in or not. Preferences keeps interests and ways to help, and drops the profile selector.',
+          source: 'community-core.js · transition() · engagement.js · preferences()' },
+        { n: '03', title: 'Nothing on the site registers anyone for anything',
+          body: 'The strongest action on an event is “Save demo event”, which writes an id to localStorage, and the events filter is “Saved events only”. Save and register look identical to a visitor, so the programme reads as an archive rather than eight invitations.',
+          fix: 'Make Register the single primary action on the card, show places remaining beside it, and demote Save to a text link.',
+          source: 'app.js · detail() and events()' },
+        { n: '04', title: 'The add-to-calendar button downloads nothing',
+          body: 'Event detail links to calendars/{id}.ics, but the repository has no calendars directory — the one concrete commitment a visitor can make ends in a failed download.',
+          fix: 'Generate the eight files, or build the ICS in the browser from the dates already in data.json. Then put the same action in the registration confirmation.',
+          source: 'app.js · detail() · repository file tree' },
+        { n: '05', title: 'Caution crowds out the offer',
+          body: 'On the events screen alone a visitor meets four disclaimers: the demo-programme note, a tooltip about dates, a saved-events tooltip and the synthetic-locations line. Profiles add two more. The copy is honest and well written, but at this density it is the loudest voice on the page.',
+          fix: 'One standing notice per screen, in the same place each time, with the detail moved into an About page section.',
+          source: 'app.js · events(), results() · engagement.js · localNotice()' },
+        { n: '06', title: 'Two features are unreachable from the navigation',
+          body: 'The questions board and mentorship views are routed and built, but the sidebar has no entry for either — questions is reachable only from a link inside the People screen, mentorship only by typing the hash.',
+          fix: 'Promote “Ask the community” into the sidebar. It is the lever with the lowest cost and the highest engagement value in the current build.',
+          source: 'app.js · route() overrides · index.html · nav' },
+        { n: '07', title: 'The navigation mixes archive with activity',
+          body: 'Six sidebar items cover people, relationships, lineages, events and calendar — all browsing. The things a member would come back for (suggestions, groups, preferences, questions) live one level down as body links, and Lineages sits beside a separate “Find your circle” group concept that also calls itself groups.',
+          fix: 'Split the sidebar into two blocks: what is happening (events, questions, groups) and who is here (people, connections, lineages).',
+          source: 'index.html · nav · engagement.js · groups()' },
+        { n: '08', title: 'Households and membership tiers are decoration',
+          body: 'The create-member form can “add a family member with these shared details”, and profiles carry Bronze to Platinum tiers — but the tier only changes a medallion colour, and the family record is never used again anywhere in the site.',
+          fix: 'Give the household a job: it is the thing that registers for a gathering. One record, several attendees, one confirmation.',
+          source: 'app.js · createMember override · styles.css · .medallion-frame' },
+        { n: '09', title: 'A red tab shouts on every screen',
+          body: 'The fixed “Reset demo” tab sits at 45% of viewport height in saturated red with a drop shadow — the highest-contrast element on a page whose palette is otherwise navy, saffron and paper. It overlaps card content at narrow widths.',
+          fix: 'Move it into the header beside the sign-in pill, or into the About page, at the weight of a secondary link.',
+          source: 'styles.css · .reset-tab · index.html' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

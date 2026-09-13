@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="./styles.css">
+<style>body{border:0!important}</style>
+</helmet>
+<div style="min-height:100vh;position:relative;padding-top:5px;background:#f8f9fc">
+<div style="position:absolute;inset:0 0 auto 0;height:5px;background:linear-gradient(90deg,#ff9933 0 33%,#fff 33% 66%,#138808 66%)"></div>
+<div style="max-width:1180px;margin:0 auto;padding:40px 32px 80px;display:flex;flex-direction:column;gap:56px">
+
+  <div>
+    <p class="eyebrow">PROPOSED SCREENS · IN THE SITE’S EXISTING VISUAL LANGUAGE</p>
+    <h1 style="font-size:40px">Three screens that turn browsing into registering.</h1>
+    <p class="sub" style="max-width:720px">Same palette, type and components as the live demo — only the flow changes. <a href="Review.dc.html" style="color:#153eaa;text-decoration:underline">Back to the findings ↗</a></p>
+  </div>
+
+  <section data-screen-label="01 Sign in">
+    <p class="eyebrow">SCREEN 01 · REPLACES “CHOOSE YOUR DEMO MEMBER”</p>
+    <h2 style="font-size:30px">Sign in that looks like sign in</h2>
+    <p class="sub" style="max-width:720px;margin-bottom:24px">An email-first panel a board member recognises, with the persona picker demoted to a clearly-marked demo shortcut underneath.</p>
+    <div class="login-shell" style="margin:0;max-width:none">
+      <div class="login-panel">
+        <div class="login-mark">♧</div>
+        <h2>Welcome back</h2>
+        <p class="sub">Sign in to register for gatherings, manage your household, and ask the community.</p>
+        <label for="rd-email">Email address</label>
+        <input id="rd-email" type="email" placeholder="you@example.com" style="width:100%;margin-bottom:4px">
+        <label for="rd-pass">Password</label>
+        <input id="rd-pass" type="password" placeholder="••••••••" style="width:100%;margin-bottom:18px">
+        <button class="button" type="button" style="width:100%">Sign in →</button>
+        <div style="display:flex;justify-content:space-between;gap:16px;margin-top:14px;font-size:12px">
+          <a href="#" style="color:#153eaa">Forgot password</a>
+          <a href="#" style="color:#153eaa">Create an account →</a>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px;margin:26px 0 18px;color:#59657c;font-size:11px;letter-spacing:1px"><span style="flex:1;height:1px;background:#dce2ed"></span>OR<span style="flex:1;height:1px;background:#dce2ed"></span></div>
+        <p class="eyebrow" style="margin-bottom:10px">EXPLORING THE DEMO?</p>
+        <label for="rd-persona">Browse as a fictional member</label>
+        <select id="rd-persona" style="width:100%;margin-bottom:14px">
+          <option>Rama Ikshvaku · Washington, DC · Platinum</option>
+          <option>Sita Videha · New York, NY · Platinum</option>
+          <option>Hanuman Vanara / Kesari · Atlanta, GA · Gold</option>
+        </select>
+        <button class="button secondary" type="button" style="width:100%">Continue as demo member</button>
+        <p class="login-note">Demo sessions stay in this browser. No account is created and nothing is sent to anyone.</p>
+      </div>
+      <div class="login-preview">
+        <p class="eyebrow">WHAT YOU CAN DO ONCE SIGNED IN</p>
+        <ul>
+          <li>Register yourself and your household for a gathering in one step.</li>
+          <li>Get a reminder and an add-to-calendar file for every registration.</li>
+          <li>Ask the community a question and follow the answers.</li>
+          <li>Keep your family’s details in one household record.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="02 Events with RSVP">
+    <p class="eyebrow">SCREEN 02 · EVENTS GRID</p>
+    <h2 style="font-size:30px">Registration on the card, not three clicks away</h2>
+    <p class="sub" style="max-width:720px;margin-bottom:24px">Each card carries the date, remaining places and a single primary action. “Save” stays, demoted to a secondary link — the ambiguity between saving and registering disappears.</p>
+    <div class="event-grid">
+      <sc-for list="{{ cards }}" as="e" hint-placeholder-count="4">
+        <article class="event">
+          <a href="#" class="event-image"><img src="{{ e.image }}" alt="{{ e.alt }}" loading="lazy" width="700" height="440"><span class="image-label">{{ e.label }}</span></a>
+          <div class="event-body">
+            <p class="event-date">{{ e.date }}</p>
+            <h3><a href="#">{{ e.name }}</a></h3>
+            <p>{{ e.location }}</p>
+            <div style="display:flex;align-items:center;gap:10px;margin:14px 0 0;font-size:12px;color:#59657c">
+              <span style="display:inline-flex;align-items:center;gap:7px;padding:6px 10px;border-radius:20px;background:#eef7ed;color:#226a24;border:1px solid #d4e8d2">{{ e.places }}</span>
+              <span>{{ e.going }}</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:14px;margin-top:16px;padding-top:16px;border-top:1px solid #dce2ed">
+              <button class="button" type="button">Register →</button>
+              <a href="#" style="font-size:12px;color:#153eaa">Save for later</a>
+              <a href="#" style="font-size:12px;color:#153eaa;margin-left:auto">Details ↗</a>
+            </div>
+          </div>
+        </article>
+      </sc-for>
+    </div>
+  </section>
+
+  <section data-screen-label="03 Register household">
+    <p class="eyebrow">SCREEN 03 · REGISTRATION</p>
+    <h2 style="font-size:30px">One form for the whole household</h2>
+    <p class="sub" style="max-width:720px;margin-bottom:24px">Head count first, contact details once, reminders by default. Guests who aren’t signed in give a name and email here instead of being sent to a sign-in wall.</p>
+    <div style="display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,1fr);gap:25px;align-items:start">
+      <form style="background:#fff;border:1px solid #dce2ed;border-radius:12px;padding:28px">
+        <p class="eyebrow">REGISTERING FOR</p>
+        <h3 style="font:28px 'Libre Caslon Display',Georgia,serif;margin:8px 0 4px">Sita Swayamvara</h3>
+        <p class="sub" style="font-size:13px;margin-bottom:22px">10 Feb 2027 · All day · Mithila, Bihar, India</p>
+
+        <p class="eyebrow">WHO IS COMING</p>
+        <div style="display:flex;flex-direction:column;gap:10px;margin:12px 0 22px">
+          <label class="choice" style="justify-content:space-between"><span style="display:flex;align-items:center;gap:10px"><input type="checkbox" checked><span>Rama Ikshvaku <small style="color:#59657c">· you</small></span></span><span style="font-size:11px;color:#59657c">Adult</span></label>
+          <label class="choice" style="justify-content:space-between"><span style="display:flex;align-items:center;gap:10px"><input type="checkbox" checked><span>Sita Videha <small style="color:#59657c">· household</small></span></span><span style="font-size:11px;color:#59657c">Adult</span></label>
+          <label class="choice" style="justify-content:space-between"><span style="display:flex;align-items:center;gap:10px"><input type="checkbox"><span>Lakshmana Ikshvaku <small style="color:#59657c">· household</small></span></span><span style="font-size:11px;color:#59657c">Adult</span></label>
+          <button class="text-button" type="button">+ Add a guest</button>
+        </div>
+
+        <p class="eyebrow">HOW WE REACH YOU</p>
+        <label for="rd-rname" style="display:block;font-size:12px;font-weight:600;margin:14px 0 7px">Name</label>
+        <input id="rd-rname" value="Rama Ikshvaku" style="width:100%">
+        <label for="rd-remail" style="display:block;font-size:12px;font-weight:600;margin:14px 0 7px">Email for the confirmation</label>
+        <input id="rd-remail" type="email" value="rama@example.org" style="width:100%">
+        <label class="choice" style="margin:18px 0 0"><input type="checkbox" checked><span>Remind me the week before and the morning of</span></label>
+        <label class="choice" style="margin:10px 0 0"><input type="checkbox" checked><span>Add this to my calendar after registering</span></label>
+        <button class="button" type="button" style="margin-top:22px">Register 2 people →</button>
+        <p class="login-note">Demo only: nothing is emailed and no place is reserved.</p>
+      </form>
+      <aside style="display:flex;flex-direction:column;gap:16px">
+        <div class="note">
+          <p class="eyebrow" style="margin-bottom:8px">AFTER YOU REGISTER</p>
+          <p style="margin:0">A confirmation card appears here with your head count, an <strong>Add to calendar</strong> download, and a link to change your answer — the same record the organiser sees.</p>
+        </div>
+        <div style="background:#fff;border:1px solid #dce2ed;border-radius:12px;padding:22px">
+          <p class="eyebrow">YOU’RE REGISTERED</p>
+          <h3 style="font:25px 'Libre Caslon Display',Georgia,serif;margin:10px 0 6px">2 of your household</h3>
+          <p class="sub" style="font-size:12px;margin-bottom:16px">Rama Ikshvaku, Sita Videha · 10 Feb 2027</p>
+          <div style="display:flex;flex-wrap:wrap;gap:10px">
+            <a class="button secondary" href="#">Add to calendar ↓</a>
+            <a href="#" style="font-size:12px;color:#153eaa;align-self:center">Change head count</a>
+          </div>
+        </div>
+        <div class="contribution-card">
+          <span class="eyebrow">BEFORE YOU GO</span>
+          <h3>Ask the community</h3>
+          <p>“Is anyone driving from Rockville?” Questions attached to a gathering give newcomers a reason to speak first.</p>
+          <a class="button" href="#">Post a question</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1180}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      cards: [
+        { image: 'images/event-02.jpg', alt: 'The marriage ceremony of Rama and Sita', label: 'REGISTRATION OPEN', date: '10 Feb 2027 · All day', name: 'Sita Swayamvara', location: 'Mithila, Bihar, India', places: '34 places left', going: '5 households going' },
+        { image: 'images/event-03.jpg', alt: 'Rama in the forest — thematic illustration', label: 'REGISTRATION OPEN', date: '11 Mar 2027 · All day', name: 'Meeting with Hanuman', location: 'Kishkindha region, Karnataka, India', places: '12 places left', going: '9 households going' },
+        { image: 'images/event-04.jpg', alt: 'Jatayu vadha, Raja Ravi Varma, 1906', label: 'WAITLIST', date: '12 Apr 2027 · All day', name: 'Search for Sita', location: 'Kishkindha to southern coast, India', places: 'Full — join waitlist', going: '22 households going' },
+        { image: 'images/event-05.jpg', alt: 'Sita at Ashokavana', label: 'REGISTRATION OPEN', date: '13 May 2027 · All day', name: 'Hanuman in Lanka', location: 'Lanka, Sri Lanka', places: '48 places left', going: '3 households going' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

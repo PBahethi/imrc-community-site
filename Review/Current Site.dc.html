@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="./styles.css">
+<style>body{border:0!important}</style>
+</helmet>
+<div style="min-height:100vh;position:relative;padding-top:5px">
+<div style="position:absolute;inset:0 0 auto 0;height:5px;background:linear-gradient(90deg,#ff9933 0 33%,#fff 33% 66%,#138808 66%)"></div>
+<a class="skip" href="#main">Skip to content</a>
+<button class="reset-tab" type="button" title="Clear this browser's simulated session and return to the original demo baseline">↺ <span>Reset demo</span></button>
+<aside class="sidebar">
+  <a href="#home" class="brand"><span class="brand-icon">♧</span><span>Tree in<br>the Forest<small>A PLACE TO BELONG</small></span></a>
+  <div class="community-label">RAMAYANA COMMUNITY</div>
+  <nav aria-label="Main navigation">
+    <a href="#home" class="{{ clsHome }}" onClick="{{ goHome }}">⌂ <span>My Community</span></a>
+    <a href="#people" class="{{ clsPeople }}" onClick="{{ goPeople }}">♧ <span>People</span></a>
+    <a href="#connections" class="{{ clsConnections }}" onClick="{{ goConnections }}">⌘ <span>Family &amp; connections</span></a>
+    <a href="#groups" class="{{ clsGroups }}">◉ <span>Lineages</span></a>
+    <a href="#events" class="{{ clsEvents }}" onClick="{{ goEvents }}">◇ <span>Events</span></a>
+    <a href="#calendar" class="{{ clsCalendar }}">▦ <span>Calendar</span></a>
+  </nav>
+  <div class="sidebar-bottom">
+    <span class="seed">❧</span>
+    <p>Many roots.<br>One shared community.</p>
+    <a href="#about">About this project ↗</a>
+  </div>
+</aside>
+<div class="workspace">
+  <header><span>Indian roots. A world of connection.</span><a href="#login" class="demo-pill" onClick="{{ goLogin }}"><i></i> Demo sign in</a></header>
+  <main id="main" tabindex="-1">
+
+    <sc-if value="{{ isPeople }}" hint-placeholder-val="{{ true }}">
+      <p class="eyebrow">YOUR SHARED ROOTS</p>
+      <h1>People, with a connection.</h1>
+      <p class="sub">Explore the Ramayana collection by name, shared roots, or lineage.</p>
+      <div class="directory-actions">
+        <a href="#suggestions">People you may want to know →</a>
+        <a href="#community-groups">Find a group →</a>
+        <a href="#questions">Ask the community →</a>
+        <a href="#preferences">Interests &amp; ways to help →</a>
+      </div>
+      <p class="inline-help">Find a familiar name <span class="help-wrap"><button type="button" class="help" aria-label="Search tips" aria-expanded="false">?</button><span class="tooltip" role="tooltip">Try a name, an alias such as Raghava, a city, ancestral home, or language. Combine your search with a lineage filter.</span></span></p>
+      <div class="filters">
+        <input aria-label="Search people" placeholder="Search names, aliases, roots, languages…" value="{{ query }}" onInput="{{ onQuery }}">
+        <select aria-label="Filter by lineage" value="{{ clan }}" onChange="{{ onClan }}">
+          <option value="">All lineages</option>
+          <sc-for list="{{ clans }}" as="c" hint-placeholder-count="4"><option value="{{ c }}">{{ c }}</option></sc-for>
+        </select>
+      </div>
+      <div aria-live="polite">
+        <p class="results">{{ resultsLabel }}</p>
+        <div class="cards">
+          <sc-for list="{{ pagePeople }}" as="p" hint-placeholder-count="12">
+            <a class="person" href="#person">
+              <sc-if value="{{ p.hasHeadshot }}"><img class="person-headshot" src="{{ p.headshot }}" alt="{{ p.headshotAlt }}" width="72" height="72" loading="lazy"></sc-if>
+              <sc-if value="{{ p.noHeadshot }}"><div class="avatar">{{ p.initials }}</div></sc-if>
+              <h3>{{ p.name }}</h3>
+              <p>{{ p.lineageLine }}</p>
+              <p class="person-phrase">{{ p.phraseQuoted }}</p>
+              <div class="origin">{{ p.originLine }}</div>
+              <div class="card-bottom"><span>{{ p.relLine }}</span><span>View profile ↗</span></div>
+            </a>
+          </sc-for>
+        </div>
+        <div class="pagination">
+          <button class="button secondary" onClick="{{ prevPage }}" disabled="{{ onFirstPage }}">Previous</button>
+          <span>{{ pageLabel }}</span>
+          <button class="button secondary" onClick="{{ nextPage }}" disabled="{{ onLastPage }}">Next</button>
+        </div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isConnections }}">
+      <p class="eyebrow">YOUR SHARED ROOTS</p>
+      <h1>The ties that bring us together.</h1>
+      <p class="sub">Explore directional relationships from the workbook. Source notes are preserved.</p>
+      <p class="inline-help">How to read a connection <span class="help-wrap"><button type="button" class="help" aria-label="Reading relationships" aria-expanded="false">?</button><span class="tooltip" role="tooltip">Read left to right: the first person has the stated relationship to the second. Select another person to explore their ties.</span></span></p>
+      <div class="filters">
+        <select aria-label="Choose a person" value="{{ edgePerson }}" onChange="{{ onEdgePerson }}">
+          <sc-for list="{{ people }}" as="p" hint-placeholder-count="6"><option value="{{ p.id }}">{{ p.name }}</option></sc-for>
+        </select>
+      </div>
+      <div>
+        <sc-for list="{{ edgeRows }}" as="r" hint-placeholder-count="5">
+          <div class="edge"><a href="#person">{{ r.fromName }}</a><span class="edge-type">{{ r.typeLabel }}</span><a href="#person">{{ r.toName }}</a><small>{{ r.note }}</small></div>
+        </sc-for>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isEvents }}">
+      <p class="eyebrow">GATHER • EXPLORE • BELONG</p>
+      <h1>Eight stories. A year of connection.</h1>
+      <p class="sub">Discover the 2027 programme, explore the artwork, and save the stories you love.</p>
+      <div class="schedule-note">2027 demo programme · One event per month, January–August · All day <span class="help-wrap"><button type="button" class="help" aria-label="About event dates" aria-expanded="false">?</button><span class="tooltip" role="tooltip">These are planned demonstration dates for 2027, not historical dates or confirmed public gatherings.</span></span></div>
+      <div class="filters event-filters">
+        <label>Month <select>
+          <option value="">All months</option>
+          <option>January</option><option>February</option><option>March</option><option>April</option><option>May</option><option>June</option><option>July</option><option>August</option>
+        </select></label>
+        <label class="saved-filter"><input type="checkbox"> Saved events only</label>
+        <span class="help-wrap"><button type="button" class="help" aria-label="Saved events" aria-expanded="false">?</button><span class="tooltip" role="tooltip">Save an event on its detail page, then use this filter to find it. Saves stay in this browser and do not register you.</span></span>
+        <a class="button secondary" href="#calendar">View calendar</a>
+      </div>
+      <div aria-live="polite">
+        <p class="results">8 events</p>
+        <div class="event-grid">
+          <sc-for list="{{ events }}" as="e" hint-placeholder-count="8">
+            <article class="event">
+              <a href="#event" class="event-image"><img src="{{ e.image }}" alt="{{ e.imageAlt }}" loading="lazy" width="700" height="440"><span class="image-label">2027 STORY EVENT</span></a>
+              <div class="event-body">
+                <p class="event-date">{{ e.dateLabel }}</p>
+                <h3><a href="#event">{{ e.name }}</a></h3>
+                <p>{{ e.location }}</p>
+                <div class="card-bottom"><span>{{ e.peopleLine }}</span><a href="#event">Explore event ↗</a></div>
+              </div>
+            </article>
+          </sc-for>
+        </div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isLogin }}">
+      <p class="eyebrow">DEMO SIGN IN</p>
+      <h1>Choose your demo member.</h1>
+      <p class="sub">This sign-in simulates a member session using fictional workbook profiles. It does not authenticate an account or expose private data.</p>
+      <div class="login-shell">
+        <div class="login-panel">
+          <div class="login-mark">♧</div>
+          <h2>Step into the forest</h2>
+          <p class="sub">Choose a profile to see the community through their point of view. Changes you save are stored in this browser until you reset the demo.</p>
+          <form>
+            <label for="login-person">Who are you exploring as?</label>
+            <select id="login-person" required>
+              <option value="">Select a fictional member</option>
+              <sc-for list="{{ people }}" as="p" hint-placeholder-count="8"><option value="{{ p.id }}">{{ p.loginLabel }}</option></sc-for>
+            </select>
+            <button class="button" type="button">Enter my profile →</button>
+            <p class="login-note">No email or password is requested. This is a UI simulation for review.</p>
+          </form>
+          <p class="login-note"><a href="#create-member">Create a new fictional member →</a></p>
+        </div>
+        <div class="login-preview">
+          <p class="eyebrow">WHAT CHANGES AFTER SIGN IN?</p>
+          <ul>
+            <li>Your dashboard uses the selected profile as its viewpoint.</li>
+            <li>You can edit a small demo profile and save the change locally.</li>
+            <li>Your membership tier frames your portrait with a matching medallion.</li>
+            <li>The red Reset demo tab restores the original fixture baseline.</li>
+          </ul>
+        </div>
+      </div>
+    </sc-if>
+
+  </main>
+  <footer>Tree in the Forest <span>Rooted in relationships. Growing together.</span></footer>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:900}}">
+class Component extends DCLogic {
+  state = { screen: 'people', data: null, query: '', clan: '', page: 1, edgePerson: 'RAM-001' };
+  componentDidMount() {
+    fetch('./data.json').then(r => r.json()).then(data => this.setState({ data, edgePerson: data.people[0].id }));
+  }
+  initials(name) { return name.split(' ').slice(0, 2).map(n => n[0]).join(''); }
+  dateLabel(d) { return new Intl.DateTimeFormat('en-IN', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(d + 'T00:00:00Z')); }
+  renderVals() {
+    const s = this.state, d = s.data;
+    const people = d ? d.people : [];
+    const rels = d ? d.relationships : [];
+    const nameOf = id => people.find(p => p.id === id)?.name || (d && d.externalPeople[id]) || id;
+    const q = s.query.toLowerCase().trim();
+    const list = people.filter(p => (!s.clan || p.clan === s.clan) && [p.name, p.aliases, p.origin, p.city, p.languages].join(' ').toLowerCase().includes(q));
+    const pages = Math.max(1, Math.ceil(list.length / 12));
+    const page = Math.min(s.page, pages);
+    const go = screen => e => { if (e) e.preventDefault(); this.setState({ screen }); };
+    return {
+      isPeople: s.screen === 'people', isConnections: s.screen === 'connections', isEvents: s.screen === 'events', isLogin: s.screen === 'login',
+      clsHome: '', clsGroups: '', clsCalendar: '',
+      clsPeople: s.screen === 'people' ? 'active' : '', clsConnections: s.screen === 'connections' ? 'active' : '', clsEvents: s.screen === 'events' ? 'active' : '',
+      goHome: go('people'), goPeople: go('people'), goConnections: go('connections'), goEvents: go('events'), goLogin: go('login'),
+      people: people.map(p => ({ ...p, loginLabel: `${p.name} · ${p.city} · ${p.membership || 'Bronze'}` })),
+      clans: [...new Set(people.map(p => p.clan))].sort(),
+      query: s.query, clan: s.clan,
+      onQuery: e => this.setState({ query: e.target.value, page: 1 }),
+      onClan: e => this.setState({ clan: e.target.value, page: 1 }),
+      resultsLabel: `${list.length} people · Modern locations are synthetic`,
+      pageLabel: `Page ${page} of ${pages}`,
+      onFirstPage: page === 1, onLastPage: page === pages,
+      prevPage: () => this.setState(st => ({ page: Math.max(1, st.page - 1) })),
+      nextPage: () => this.setState(st => ({ page: Math.min(pages, st.page + 1) })),
+      pagePeople: list.slice((page - 1) * 12, page * 12).map(p => ({
+        ...p, hasHeadshot: !!p.headshot, noHeadshot: !p.headshot, initials: this.initials(p.name),
+        lineageLine: `${p.clan} lineage · ${p.city}`,
+        phraseQuoted: p.catchPhrase ? `“${p.catchPhrase}”` : '',
+        originLine: `Roots in ${p.origin}`,
+        relLine: `${rels.filter(r => r.from === p.id || r.to === p.id).length} relationship records`
+      })),
+      edgePerson: s.edgePerson,
+      onEdgePerson: e => this.setState({ edgePerson: e.target.value }),
+      edgeRows: rels.filter(r => r.from === s.edgePerson || r.to === s.edgePerson).map(r => ({
+        fromName: nameOf(r.from), toName: nameOf(r.to), typeLabel: r.type.toLowerCase().replaceAll('_', ' ') + ' →', note: r.note
+      })),
+      events: (d ? d.events : []).map(e => ({ ...e, dateLabel: this.dateLabel(e.dates[0]), peopleLine: `${e.people.length} story participants` }))
+    };
+  }
+}
+</script>
+</body>
+</html>
