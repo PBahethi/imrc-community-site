@@ -35,7 +35,7 @@
     state.dismissedPeople=uniqueIds(source.dismissedPeople,personIds).filter(id=>!state.savedPeople.includes(id));
     state.savedGroups=uniqueIds(source.savedGroups,groups.map(g=>g.id));
     const actions=['login','logout','profile-edit','preferences','save-person','remove-person','dismiss-person','save-group','remove-group'];
-    state.activity=Array.isArray(source.activity)?source.activity.filter(a=>a&&actions.includes(a.type)&&typeof a.at==='string'&&Number.isFinite(Date.parse(a.at))&&((a.type==='preferences'||a.type==='logout')||(a.type==='login'&&personIds.includes(a.target))||(a.type==='profile-edit'&&personIds.includes(a.target))||(a.type.includes('person')&&personIds.includes(a.target))||(a.type.includes('group')&&groups.some(g=>g.id===a.target)))).slice(0,12).map(a=>({type:a.type,target:a.type==='preferences'||a.type==='logout'?'':a.target,at:a.at})) : [];
+    state.activity=Array.isArray(source.activity)?source.activity.filter(a=>a&&actions.includes(a.type)&&typeof a.at==='string'&&Number.isFinite(Date.parse(a.at))&&((a.type==='preferences')||(a.type==='logout'&&(!a.target||personIds.includes(a.target)||personIds.includes(a.actorId)))||(a.type==='login'&&personIds.includes(a.target))||(a.type==='profile-edit'&&personIds.includes(a.target))||(a.type.includes('person')&&personIds.includes(a.target))||(a.type.includes('group')&&groups.some(g=>g.id===a.target)))).slice(0,12).map(a=>{const actorId=personIds.includes(a.actorId)?a.actorId:(['login','profile-edit','logout'].includes(a.type)&&personIds.includes(a.target)?a.target:'');return {type:a.type,target:a.type==='preferences'?'':a.target||'',actorId,at:a.at};}) : [];
     return state;
   }
   function sharedLanguages(a,b){
@@ -68,23 +68,24 @@
     if(action.type==='login'){
       if(!personIds.includes(action.personaId))return state;
       state.session={authenticated:true,personaId:action.personaId,signedInAt:now.toISOString()};state.personaId=action.personaId;
-      state.activity=[{type:'login',target:action.personaId,at:now.toISOString()},...state.activity].slice(0,12);return state;
+      state.activity=[{type:'login',target:action.personaId,actorId:action.personaId,at:now.toISOString()},...state.activity].slice(0,12);return state;
     }
     if(action.type==='logout'){
+      const actorId=state.session.personaId||state.personaId;
       state.session={authenticated:false,personaId:'',signedInAt:''};state.personaId='';
-      state.activity=[{type:'logout',target:'',at:now.toISOString()},...state.activity].slice(0,12);return state;
+      state.activity=[{type:'logout',target:actorId,actorId,at:now.toISOString()},...state.activity].slice(0,12);return state;
     }
     if(action.type==='profile-edit'){
       if(!state.session.authenticated||state.session.personaId!==action.personaId||!personIds.includes(action.personaId))return state;
       const edit=action.value&&typeof action.value==='object'?action.value:{};state.profileEdits[action.personaId]={displayName:typeof edit.displayName==='string'?edit.displayName.slice(0,160):'',city:typeof edit.city==='string'?edit.city.slice(0,120):'',bio:typeof edit.bio==='string'?edit.bio.slice(0,2000):'',catchPhrase:typeof edit.catchPhrase==='string'?edit.catchPhrase.slice(0,240):''};
-      state.activity=[{type:'profile-edit',target:action.personaId,at:now.toISOString()},...state.activity].slice(0,12);return state;
+      state.activity=[{type:'profile-edit',target:action.personaId,actorId:action.personaId,at:now.toISOString()},...state.activity].slice(0,12);return state;
     }
     if(action.type==='preferences'){
       const next=normalize({...state,...action.value,version:1},personIds);
       // Preferences belong to this demo visitor, not an authenticated source person.
       next.savedPeople=next.savedPeople.filter(id=>id!==next.personaId);
       next.dismissedPeople=[];
-      next.activity=[{type:'preferences',target:'',at:now.toISOString()},...state.activity].slice(0,12);
+      next.activity=[{type:'preferences',target:'',actorId:state.session.personaId||'',at:now.toISOString()},...state.activity].slice(0,12);
       return next;
     }
     const mappings={'save-person':['savedPeople',true,personIds],'remove-person':['savedPeople',false,personIds],'dismiss-person':['dismissedPeople',true,personIds],'save-group':['savedGroups',true,groups.map(g=>g.id)],'remove-group':['savedGroups',false,groups.map(g=>g.id)]};
@@ -93,7 +94,7 @@
     const [field,add]=mapping;
     if(add===state[field].includes(action.target))return state;
     state[field]=add?[...state[field],action.target]:state[field].filter(id=>id!==action.target);
-    state.activity=[{type:action.type,target:action.target,at:now.toISOString()},...state.activity].slice(0,12);
+    state.activity=[{type:action.type,target:action.target,actorId:state.session.personaId||'',at:now.toISOString()},...state.activity].slice(0,12);
     return state;
   }
   function repository(storage,personIds){

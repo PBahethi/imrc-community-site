@@ -1914,67 +1914,438 @@
       ],
       "agenda": [
         {
+          "id": "day-1",
+          "date": "2028-01-15",
           "day": "Saturday, Jan 15",
+          "shortDay": "Sat 15",
           "theme": "Arrival, welcome, and orientation",
           "items": [
-            "6:30 AM Yoga Morning",
-            "7:30 AM Breakfast",
-            "9:00 AM Registration opens",
-            "10:30 AM Opening prayer and community welcome",
-            "12:30 PM Lunch",
-            "2:00 PM Chapter caucuses and youth orientation",
-            "4:00 PM Afternoon Tea",
-            "6:30 PM Dinner",
-            "8:00 PM Cultural welcome program",
-            "10:00 PM Evening snacks"
+            {
+              "id": "sat-yoga",
+              "time": "6:30 AM",
+              "title": "Yoga Morning",
+              "category": "Health",
+              "room": "Scissortail Terrace"
+            },
+            {
+              "id": "sat-breakfast",
+              "time": "7:30 AM",
+              "title": "Community Breakfast",
+              "category": "Meals",
+              "room": "Oklahoma Station Ballroom"
+            },
+            {
+              "id": "sat-registration",
+              "time": "9:00 AM",
+              "title": "Registration and QR badge pickup",
+              "category": "Welcome",
+              "room": "Omni Grand Foyer"
+            },
+            {
+              "id": "sat-opening",
+              "time": "10:30 AM",
+              "title": "Opening prayer and community welcome",
+              "category": "Culture",
+              "room": "Oklahoma Station Ballroom"
+            },
+            {
+              "id": "sat-rays",
+              "time": "11:30 AM",
+              "title": "RAYS welcome and young professionals mixer",
+              "category": "RAYS",
+              "room": "Myriad"
+            },
+            {
+              "id": "sat-lunch",
+              "time": "12:30 PM",
+              "title": "Community Lunch",
+              "category": "Meals",
+              "room": "Oklahoma Station Ballroom"
+            },
+            {
+              "id": "sat-women",
+              "time": "2:00 PM",
+              "title": "Women / Sakhi leadership circle",
+              "category": "Women",
+              "room": "Paseo"
+            },
+            {
+              "id": "sat-networking",
+              "time": "2:00 PM",
+              "title": "Chapter networking exchange",
+              "category": "Networking",
+              "room": "Five Moons Ballroom"
+            },
+            {
+              "id": "sat-outing",
+              "time": "3:00 PM",
+              "title": "Bricktown and Scissortail Park welcome walk",
+              "category": "Local Outings",
+              "room": "Omni lobby departure"
+            },
+            {
+              "id": "sat-tea",
+              "time": "4:00 PM",
+              "title": "Afternoon Tea",
+              "category": "Meals",
+              "room": "Grand Foyer"
+            },
+            {
+              "id": "sat-dinner",
+              "time": "6:30 PM",
+              "title": "Welcome Dinner",
+              "category": "Meals",
+              "room": "Oklahoma Station Ballroom"
+            },
+            {
+              "id": "sat-culture",
+              "time": "8:00 PM",
+              "title": "Cultural welcome program",
+              "category": "Culture",
+              "room": "Oklahoma Station Ballroom"
+            },
+            {
+              "id": "sat-games",
+              "time": "9:30 PM",
+              "title": "Family card games lounge",
+              "category": "Card Games",
+              "room": "Route 66"
+            },
+            {
+              "id": "sat-snacks",
+              "time": "10:00 PM",
+              "title": "Evening Snacks",
+              "category": "Meals",
+              "room": "Grand Foyer"
+            }
           ]
         },
         {
+          "id": "day-2",
+          "date": "2028-01-16",
           "day": "Sunday, Jan 16",
+          "shortDay": "Sun 16",
           "theme": "Mentoring, matrimonials, and family networks",
           "items": [
-            "6:30 AM Yoga Morning",
-            "7:30 AM Breakfast",
-            "9:00 AM Mentoring circles",
-            "10:30 AM Matrimonial introductions",
-            "12:30 PM Lunch",
-            "2:00 PM Business and professional roundtables",
-            "4:00 PM Afternoon Tea",
-            "6:30 PM Dinner",
-            "8:00 PM Family heritage night",
-            "10:00 PM Evening snacks"
+            {
+              "id": "sun-yoga",
+              "time": "6:30 AM",
+              "title": "Yoga Morning",
+              "category": "Health",
+              "room": "Scissortail Terrace"
+            },
+            {
+              "id": "sun-breakfast",
+              "time": "7:30 AM",
+              "title": "Community Breakfast",
+              "category": "Meals",
+              "room": "Oklahoma Station Ballroom"
+            },
+            {
+              "id": "sun-health",
+              "time": "8:30 AM",
+              "title": "Preventive health screening and physician Q&A",
+              "category": "Health",
+              "room": "Paseo"
+            },
+            {
+              "id": "sun-mentoring",
+              "time": "9:00 AM",
+              "title": "Mentoring circles",
+              "category": "Networking",
+              "room": "Route 66"
+            },
+            {
+              "id": "sun-matrimonial",
+              "time": "10:30 AM",
+              "title": "Matrimonial introductions",
+              "category": "Matrimonial",
+              "room": "Bricktown"
+            },
+            {
+              "id": "sun-business",
+              "time": "10:30 AM",
+              "title": "Business founder office hours",
+              "category": "Business",
+              "room": "Pinon"
+            },
+            {
+              "id": "sun-lunch",
+              "time": "12:30 PM",
+              "title": "Community Lunch",
+              "category": "Meals",
+              "room": "Oklahoma Station Ballroom"
+            },
+            {
+              "id": "sun-charity",
+              "time": "2:00 PM",
+              "title": "Charity project design lab",
+              "category": "Charity",
+              "room": "Deep Deuce"
+            },
+            {
+              "id": "sun-women",
+              "time": "2:00 PM",
+              "title": "Women in leadership forum",
+              "category": "Women",
+              "room": "Paseo"
+            },
+            {
+              "id": "sun-tea",
+              "time": "4:00 PM",
+              "title": "Afternoon Tea",
+              "category": "Meals",
+              "room": "Grand Foyer"
+            },
+            {
+              "id": "sun-dinner",
+              "time": "6:30 PM",
+              "title": "Family Dinner",
+              "category": "Meals",
+              "room": "Oklahoma Station Ballroom"
+            },
+            {
+              "id": "sun-heritage",
+              "time": "8:00 PM",
+              "title": "Family heritage night",
+              "category": "Culture",
+              "room": "Oklahoma Station Ballroom"
+            },
+            {
+              "id": "sun-games",
+              "time": "9:30 PM",
+              "title": "Teen patti and bridge tables",
+              "category": "Card Games",
+              "room": "Five Moons Ballroom"
+            },
+            {
+              "id": "sun-snacks",
+              "time": "10:00 PM",
+              "title": "Evening Snacks",
+              "category": "Meals",
+              "room": "Grand Foyer"
+            }
           ]
         },
         {
+          "id": "day-3",
+          "date": "2028-01-17",
           "day": "Monday, Jan 17",
+          "shortDay": "Mon 17",
           "theme": "Business, service, and community future",
           "items": [
-            "6:30 AM Yoga Morning",
-            "7:30 AM Breakfast",
-            "9:00 AM Business expo opens",
-            "10:30 AM Youth leadership and college panels",
-            "12:30 PM Lunch",
-            "2:00 PM Community service workshops",
-            "4:00 PM Afternoon Tea",
-            "6:30 PM Dinner",
-            "8:00 PM Awards and member spotlights",
-            "10:00 PM Evening snacks"
+            {
+              "id": "mon-yoga",
+              "time": "6:30 AM",
+              "title": "Yoga Morning",
+              "category": "Health",
+              "room": "Scissortail Terrace"
+            },
+            {
+              "id": "mon-breakfast",
+              "time": "7:30 AM",
+              "title": "Community Breakfast",
+              "category": "Meals",
+              "room": "Oklahoma Station Ballroom"
+            },
+            {
+              "id": "mon-business-expo",
+              "time": "9:00 AM",
+              "title": "Business and entrepreneurship expo",
+              "category": "Business",
+              "room": "Five Moons Ballroom"
+            },
+            {
+              "id": "mon-rays-career",
+              "time": "9:00 AM",
+              "title": "RAYS career launch lab",
+              "category": "RAYS",
+              "room": "Myriad"
+            },
+            {
+              "id": "mon-women-business",
+              "time": "10:30 AM",
+              "title": "Women entrepreneurs forum",
+              "category": "Women",
+              "room": "Paseo"
+            },
+            {
+              "id": "mon-networking",
+              "time": "10:30 AM",
+              "title": "Professional networking roundtables",
+              "category": "Networking",
+              "room": "Route 66"
+            },
+            {
+              "id": "mon-lunch",
+              "time": "12:30 PM",
+              "title": "Community Lunch",
+              "category": "Meals",
+              "room": "Oklahoma Station Ballroom"
+            },
+            {
+              "id": "mon-charity",
+              "time": "2:00 PM",
+              "title": "Community charity and service workshops",
+              "category": "Charity",
+              "room": "Deep Deuce"
+            },
+            {
+              "id": "mon-outing",
+              "time": "2:00 PM",
+              "title": "First Americans Museum group outing",
+              "category": "Local Outings",
+              "room": "Omni lobby departure"
+            },
+            {
+              "id": "mon-health",
+              "time": "3:00 PM",
+              "title": "Healthy aging and family wellness",
+              "category": "Health",
+              "room": "Paseo"
+            },
+            {
+              "id": "mon-tea",
+              "time": "4:00 PM",
+              "title": "Afternoon Tea",
+              "category": "Meals",
+              "room": "Grand Foyer"
+            },
+            {
+              "id": "mon-dinner",
+              "time": "6:30 PM",
+              "title": "Community Dinner",
+              "category": "Meals",
+              "room": "Oklahoma Station Ballroom"
+            },
+            {
+              "id": "mon-recognition",
+              "time": "8:00 PM",
+              "title": "Awards and member spotlights",
+              "category": "Recognition",
+              "room": "Oklahoma Station Ballroom"
+            },
+            {
+              "id": "mon-games",
+              "time": "9:30 PM",
+              "title": "Card games social",
+              "category": "Card Games",
+              "room": "Route 66"
+            },
+            {
+              "id": "mon-snacks",
+              "time": "10:00 PM",
+              "title": "Evening Snacks",
+              "category": "Meals",
+              "room": "Grand Foyer"
+            }
           ]
         },
         {
+          "id": "day-4",
+          "date": "2028-01-18",
           "day": "Tuesday, Jan 18",
+          "shortDay": "Tue 18",
           "theme": "Closing, departures, and next steps",
           "items": [
-            "6:30 AM Yoga Morning",
-            "7:30 AM Breakfast",
-            "9:00 AM Closing satsang and feedback",
-            "10:30 AM Chapter planning meetings",
-            "12:30 PM Lunch",
-            "2:00 PM Departures and airport coaches",
-            "4:00 PM Afternoon Tea",
-            "6:30 PM Dinner for late departures",
-            "8:00 PM Informal farewell lounge",
-            "10:00 PM Evening snacks"
+            {
+              "id": "tue-yoga",
+              "time": "6:30 AM",
+              "title": "Yoga Morning",
+              "category": "Health",
+              "room": "Scissortail Terrace"
+            },
+            {
+              "id": "tue-breakfast",
+              "time": "7:30 AM",
+              "title": "Community Breakfast",
+              "category": "Meals",
+              "room": "Oklahoma Station Ballroom"
+            },
+            {
+              "id": "tue-health",
+              "time": "8:30 AM",
+              "title": "Mindfulness and travel wellness",
+              "category": "Health",
+              "room": "Paseo"
+            },
+            {
+              "id": "tue-closing",
+              "time": "9:00 AM",
+              "title": "Closing satsang and feedback",
+              "category": "Culture",
+              "room": "Oklahoma Station Ballroom"
+            },
+            {
+              "id": "tue-business",
+              "time": "10:30 AM",
+              "title": "Chapter business meetings",
+              "category": "Business",
+              "room": "Five Moons Ballroom"
+            },
+            {
+              "id": "tue-matrimonial",
+              "time": "10:30 AM",
+              "title": "Matrimonial follow-up conversations",
+              "category": "Matrimonial",
+              "room": "Mistletoe"
+            },
+            {
+              "id": "tue-rays",
+              "time": "10:30 AM",
+              "title": "RAYS next-year planning",
+              "category": "RAYS",
+              "room": "Myriad"
+            },
+            {
+              "id": "tue-lunch",
+              "time": "12:30 PM",
+              "title": "Community Lunch",
+              "category": "Meals",
+              "room": "Oklahoma Station Ballroom"
+            },
+            {
+              "id": "tue-charity",
+              "time": "1:30 PM",
+              "title": "Charity commitments and volunteer handoff",
+              "category": "Charity",
+              "room": "Deep Deuce"
+            },
+            {
+              "id": "tue-departures",
+              "time": "2:00 PM",
+              "title": "Departures and airport coaches",
+              "category": "Travel",
+              "room": "Omni group entrance"
+            },
+            {
+              "id": "tue-tea",
+              "time": "4:00 PM",
+              "title": "Afternoon Tea",
+              "category": "Meals",
+              "room": "Grand Foyer"
+            },
+            {
+              "id": "tue-dinner",
+              "time": "6:30 PM",
+              "title": "Dinner for late departures",
+              "category": "Meals",
+              "room": "Oklahoma Station Ballroom"
+            },
+            {
+              "id": "tue-games",
+              "time": "8:00 PM",
+              "title": "Informal farewell and card games",
+              "category": "Card Games",
+              "room": "Route 66"
+            },
+            {
+              "id": "tue-snacks",
+              "time": "10:00 PM",
+              "title": "Evening Snacks",
+              "category": "Meals",
+              "room": "Grand Foyer"
+            }
           ]
         }
       ],
