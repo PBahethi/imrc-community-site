@@ -10,7 +10,9 @@ The public demo also includes a simulated sign-in at `#login`. Choose a fictiona
 
 Selected profile portraits are sourced from Wikimedia Commons public-domain or CC0 depictions and are attributed in `scripts/profile-art.json`; they are artistic representations, not historical photographs. Profiles without a selected portrait retain initials. Catch phrases are editorial demo copy and can be edited locally in the simulated profile.
 
-The formal organization masthead and gold initiative navigation take their information-hierarchy cues from the public [MMNA website](https://www.mmna.org/), while retaining the Tree in the Forest identity, Indian tricolor accents, and original site assets. Initiative labels such as RAYS, Matrimonial, philanthropy, business, and professional networking follow MMNA's public programme structure; no MMNA logo or page content is copied.
+The organization masthead now exposes a national/chapter context and a city-derived visual theme. Theme palettes are documented in `themes/colorpalette.md`; members can override the suggested Jaisalmer, Jodhpur, Udaipur, Jaipur, or Peacock palette from the header. Navigation is grouped into what is happening and who is here so convention categories stay with the convention rather than becoming global page chrome.
+
+The organization model is represented by `ChapterCore`: IMRC National owns shared programs and the IMRC Convention calendar, while regional chapters are selected from a member's home-city/chapter field and maintain their own committees and initiatives. `#chapters/<id>` presents that hierarchy. `Voting`/`VotingCore` is a reusable, browser-local poll that national or chapter committees can open at `#votes` when a decision needs member input.
 
 ## Run locally
 

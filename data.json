@@ -24,6 +24,7 @@
     },
     {
       "id": "RAM-002",
+      "familyOf": "RAM-001",
       "name": "Sita Videha",
       "first": "Sita",
       "clan": "Videha",
@@ -43,6 +44,7 @@
     },
     {
       "id": "RAM-003",
+      "familyOf": "RAM-001",
       "name": "Lakshmana Ikshvaku",
       "first": "Lakshmana",
       "clan": "Ikshvaku",
@@ -1846,6 +1848,8 @@
         "2028-01-18"
       ],
       "type": "Convention",
+      "capacity": 240,
+      "registeredCount": 18,
       "venue": {
         "hotel": "Omni Oklahoma City Hotel",
         "address": "100 W Oklahoma City Blvd, Oklahoma City, OK 73109",

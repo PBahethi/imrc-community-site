@@ -69,11 +69,12 @@
   function reset(){try{localStorage.removeItem(key);}catch{}}
   const api={key,sessions,badgeProgress,normalize,agendaBrowser,bindAgendaBrowser,decoratePlanner,checkinPanel,bindCheckin,profilePanel,activity:data=>read(data).activity,reset};
   root.ConventionExperience=api;if(typeof module==='object'&&module.exports)module.exports=api;
-  if(typeof document!=='undefined'&&typeof MutationObserver==='function'){
+  if(typeof document!=='undefined'){
     let dataPromise;
     const loadData=()=>dataPromise||(dataPromise=fetch('./data.json').then(response=>response.json()));
     const autoBind=()=>{const category=query().get('category')||'';document.querySelectorAll('.programme-browser').forEach(node=>{const match=[...node.querySelectorAll('[data-programme-category]')].find(item=>item.dataset.programmeCategory===category),day=match?.closest('[data-programme-day]')?.dataset.programmeDay||'';bindFilter(node,day,category);});if(location.hash==='#profile'&&!document.querySelector('.profile-convention')&&document.querySelector('.profile-actions'))loadData().then(data=>{let session;try{session=JSON.parse(localStorage.getItem('forest-community-v1')||'{}').session;}catch{}if(location.hash==='#profile'&&session?.authenticated&&!document.querySelector('.profile-convention'))document.querySelector('.profile-actions')?.insertAdjacentHTML('afterend',profilePanel(data,session.personaId));}).catch(()=>{});};
-    const start=()=>{const main=document.querySelector('main');if(main){new MutationObserver(autoBind).observe(main,{childList:true,subtree:true});autoBind();}document.querySelector('#reset-demo-tab')?.addEventListener('click',reset);};
-    if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start,{once:true});else start();
+    root.ConventionExperience.bindAll=autoBind;
+    if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',autoBind,{once:true});else autoBind();
+    document.querySelector('#reset-demo-tab')?.addEventListener('click',reset);
   }
 })(globalThis);
