@@ -1,0 +1,100 @@
+[
+  {
+    "id": "welcome",
+    "route": "#tour",
+    "targetSelector": "",
+    "title": "A five-minute tour of what a modern IMRC site could do",
+    "seeing": "A working demo built with fictional Ramayana-era profiles — no real members, no real data, nothing is sent anywhere.",
+    "why": "The board has asked how we bring members back, reach younger families, and make decisions with more of the community in the room. Each stop shows one answer.",
+    "presenterNote": "Begin here before showing any member screens."
+  },
+  {
+    "id": "chapter",
+    "route": "#chapter/mideast",
+    "targetSelector": "[data-tour=\"chapter-map\"]",
+    "title": "Every member belongs somewhere visible",
+    "seeing": "IMRC National, the regional chapters, and the states and provinces each one serves — drawn from the member's own home-city field.",
+    "why": "Members who can see their chapter, and see that other chapters exist, are far more likely to show up for their own and cross over to a neighbor's events."
+  },
+  {
+    "id": "login",
+    "route": "#login",
+    "targetSelector": "#demo-login-form",
+    "title": "One sign-in, one profile, one place for everything",
+    "seeing": "A simulated sign-in. In production this becomes invitation-and-approval with real accounts; here it just opens a fictional member's world.",
+    "why": "Today a member's registrations, votes, and family details live in email threads and spreadsheets. Once they live behind one sign-in, every later step in this tour becomes possible."
+  },
+  {
+    "id": "dashboard",
+    "route": "#home",
+    "targetSelector": "[data-tour=\"dashboard-actions\"]",
+    "title": "Every visit ends with a small next step",
+    "seeing": "Rama's dashboard — a suggested introduction with the reason shown, an upcoming event two connections are attending, and a ways-to-help prompt.",
+    "why": "Engagement is built from small repeated actions. A dashboard that always offers one easy, relevant thing to do turns occasional visitors into participants."
+  },
+  {
+    "id": "suggestions",
+    "route": "#home",
+    "targetSelector": ".suggestion-card:first-of-type",
+    "title": "Suggestions members can trust",
+    "seeing": "A recommended introduction and the plain reason for it — shared chapter, shared lineage, or shared interest.",
+    "why": "New and returning members stay when they find people. Showing why someone is suggested keeps it feeling like a community, not an algorithm."
+  },
+  {
+    "id": "directory",
+    "route": "#connections",
+    "targetSelector": "[data-tour=\"directory-tree\"]",
+    "title": "A living directory, not a printed one",
+    "seeing": "Searchable, filterable members with lineage collections and directional relationships, and Rama's family and friends view.",
+    "why": "Families join together and stay together. Letting a household see itself in the tree, and add a new family member in one step, is how the next generation gets an account at all."
+  },
+  {
+    "id": "registration",
+    "route": "#event/EV2028",
+    "targetSelector": "#event-participation > .event-action-panel:first-child",
+    "title": "Registration without the reply-all",
+    "seeing": "Rama registered his household for this event. The panel updated after saving, and the event can be added to any calendar with one download.",
+    "why": "Every extra step between ‘I saw the event’ and ‘I'm registered’ loses people. One panel, whole household, calendar file — and organizers get a real count instead of guesses."
+  },
+  {
+    "id": "convention",
+    "route": "#event/EV2028",
+    "targetSelector": "#conv-agenda",
+    "title": "Plan the whole convention from a phone",
+    "seeing": "The four-day OKC 2028 programme filtered by day and category — business, charity, RAYS, Sakhi, culture, meals — and Rama's selected sessions.",
+    "why": "Attendance at conventions is decided months earlier, when a member either can or cannot picture their weekend. Registration, hotel link, flights, airport coach, and agenda in one flow removes the reason to put it off."
+  },
+  {
+    "id": "checkin",
+    "route": "#profile",
+    "targetSelector": ".profile-convention",
+    "title": "Participation you can see — and nobody else has to",
+    "seeing": "A session QR code, a recorded check-in, and the badge it unlocked. Badges are private; there is no public score or leaderboard.",
+    "why": "Recognition drives repeat attendance. Keeping it private keeps it healthy — encouragement without competition, and organizers finally know who actually walked in."
+  },
+  {
+    "id": "votes",
+    "route": "#votes",
+    "targetSelector": "[data-tour=\"chapter-poll\"]",
+    "title": "Decisions with the whole community in the room",
+    "seeing": "A chapter poll Rama has already answered, and the national and chapter officer ballots — President, Vice President, Treasurer, Secretary — linked from the calendar event.",
+    "why": "Turnout for decisions is the most honest measure of engagement we have. A ballot that reaches every member's phone, with the calendar reminder pointing back to it, will outperform any proxy form."
+  },
+  {
+    "id": "contribute",
+    "route": "#home",
+    "targetSelector": "[data-tour=\"take-part\"]",
+    "title": "Members helping members",
+    "seeing": "Questions and replies, mentoring offers, requests for help, and spotlight nominations — all browser-local in this demo.",
+    "why": "Communities that only broadcast lose people; communities that let members contribute keep them. This is where the newer member finds a mentor and the veteran finds a reason to stay involved."
+  },
+  {
+    "id": "end",
+    "route": "#tour/end",
+    "targetSelector": "",
+    "title": "Where this stands, and what the board is being asked",
+    "seeing": "Built and shown today: the member experience above, with fictional data stored only in this browser. Designed and reviewed, not yet turned on: real accounts, a private database, real registration and notifications, moderation, and administrator engagement insights.",
+    "why": "The ask: approve the production phase so a pilot chapter can use this with real members.",
+    "presenterNote": "Pause for the board's production-pilot discussion."
+  }
+]

@@ -1,0 +1,194 @@
+- generic [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - button "↺ Reset demo" [ref=e3] [cursor=pointer]
+  - complementary [ref=e4]:
+    - link "♧ Tree in the Forest A PLACE TO BELONG" [ref=e5] [cursor=pointer]:
+      - /url: "#home"
+      - generic [ref=e6]: ♧
+      - generic [ref=e7]:
+        - text: Tree inthe Forest
+        - generic [ref=e8]: A PLACE TO BELONG
+    - generic [ref=e9]: IMRC COMMUNITY
+    - navigation "Main navigation" [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e12]: What’s happening
+        - link "⌂ My Community" [ref=e13] [cursor=pointer]:
+          - /url: "#home"
+          - text: ⌂
+          - generic [ref=e14]: My Community
+        - link "→ Take the member journey" [ref=e15] [cursor=pointer]:
+          - /url: "#start"
+          - text: →
+          - generic [ref=e16]: Take the member journey
+        - link "◎ Board tour" [ref=e17] [cursor=pointer]:
+          - /url: "#tour"
+          - text: ◎
+          - generic [ref=e18]: Board tour
+        - link "◇ IMRC Convention 2028" [ref=e19] [cursor=pointer]:
+          - /url: "#event/EV2028"
+          - text: ◇
+          - generic [ref=e20]: IMRC Convention 2028
+        - link "▦ Events" [ref=e21] [cursor=pointer]:
+          - /url: "#events"
+          - text: ▦
+          - generic [ref=e22]: Events
+        - link "◉ Votes & polls" [ref=e23] [cursor=pointer]:
+          - /url: "#votes"
+          - text: ◉
+          - generic [ref=e24]: Votes & polls
+      - generic [ref=e25]:
+        - generic [ref=e26]: Who’s here
+        - link "● My profile" [ref=e27] [cursor=pointer]:
+          - /url: "#profile"
+          - text: ●
+          - generic [ref=e28]: My profile
+        - link "♧ People" [ref=e29] [cursor=pointer]:
+          - /url: "#people"
+          - text: ♧
+          - generic [ref=e30]: People
+        - link "⌘ Family & connections" [ref=e31] [cursor=pointer]:
+          - /url: "#connections"
+          - text: ⌘
+          - generic [ref=e32]: Family & connections
+        - link "▤ Chapters & map" [ref=e33] [cursor=pointer]:
+          - /url: "#chapters"
+          - text: ▤
+          - generic [ref=e34]: Chapters & map
+    - generic [ref=e35]:
+      - text: ❧
+      - paragraph [ref=e36]: Many roots.One shared community.
+      - link "About this project ↗" [ref=e37] [cursor=pointer]:
+        - /url: "#about"
+  - generic [ref=e38]:
+    - banner [ref=e39]:
+      - link "IMRC Community Maheshwari connections across North America" [ref=e40] [cursor=pointer]:
+        - /url: "#home"
+        - generic [aria-hidden] [ref=e41]: ♧
+        - generic [ref=e42]:
+          - strong [ref=e43]: IMRC Community
+          - generic [ref=e44]: Maheshwari connections across North America
+      - link "Member journey" [ref=e45] [cursor=pointer]:
+        - /url: "#start"
+      - generic [ref=e46]:
+        - link [ref=e188] [cursor=pointer]:
+          - /url: "#chapter/mideast"
+          - strong [ref=e189]: Mid-Atlantic Chapter
+          - text: · Washington, DC
+        - link "change" [ref=e190] [cursor=pointer]:
+          - /url: "#profile"
+      - generic [ref=e191]:
+        - generic [ref=e192]: Theme
+        - combobox "Choose visual theme" [ref=e193]:
+          - option "Mid-Atlantic Chapter theme" [selected]
+          - option "Indian Flag"
+          - option "Jaisalmer"
+          - option "Jodhpur"
+          - option "Udaipur"
+          - option "Jaipur"
+          - option "Peacock"
+      - link "Demo sign in" [ref=e53] [cursor=pointer]:
+        - /url: "#login"
+    - main [ref=e54]:
+      - paragraph [ref=e194]: IMRC ORGANIZATION
+      - heading "Mid-Atlantic Chapter" [level=1] [ref=e195]
+      - paragraph [ref=e196]:
+        - text: United States · Your chapter is selected from the home city in your demo profile. Not right?
+        - link "Change your home city" [ref=e197] [cursor=pointer]:
+          - /url: "#profile"
+        - text: .
+      - generic [ref=e198]:
+        - img "Map of Mid-Atlantic Chapter service area" [ref=e199]:
+          - generic:
+            - generic:
+              - img:
+                - generic:
+                  - generic [ref=e200] [cursor=pointer]
+                  - generic [ref=e201] [cursor=pointer]
+                  - generic [ref=e202] [cursor=pointer]
+                  - generic [ref=e203] [cursor=pointer]
+                  - generic [ref=e204] [cursor=pointer]
+                  - generic [ref=e205] [cursor=pointer]
+            - generic:
+              - tooltip "Mid-Atlantic Chapter"
+          - generic:
+            - generic [ref=e206]:
+              - button "Zoom in" [ref=e207] [cursor=pointer]: +
+              - button "Zoom out" [ref=e208] [cursor=pointer]: −
+            - generic [ref=e209]:
+              - link "Leaflet" [ref=e210] [cursor=pointer]:
+                - /url: https://leafletjs.com
+              - text: "| © OpenStreetMap contributors · boundaries: U.S. Census and public Canadian province data"
+        - paragraph [ref=e215]: Chapter service area follows its assigned state or province boundaries; for community navigation, not legal jurisdiction.
+        - generic [ref=e216]:
+          - link "IMRC National" [ref=e217] [cursor=pointer]:
+            - /url: "#chapter/national"
+          - generic [aria-hidden] [ref=e218]: →
+          - strong [ref=e219]: Mid-Atlantic Chapter
+      - generic [ref=e220]:
+        - generic [ref=e221]:
+          - heading "Chapter leadership" [level=2] [ref=e222]
+          - generic [ref=e223]:
+            - article [ref=e224]:
+              - strong [ref=e225]: President
+              - generic [ref=e226]: Ritu Mehta
+            - article [ref=e227]:
+              - strong [ref=e228]: Vice President
+              - generic [ref=e229]: Sameer Shah
+            - article [ref=e230]:
+              - strong [ref=e231]: Treasurer
+              - generic [ref=e232]: Pooja Rao
+            - article [ref=e233]:
+              - strong [ref=e234]: Secretary
+              - generic [ref=e235]: Dev Patel
+          - link "Open full map" [ref=e236] [cursor=pointer]:
+            - /url: "#chapter-map/mideast"
+        - generic [ref=e237]:
+          - heading "Committees" [level=2] [ref=e238]
+          - list [ref=e239]:
+            - listitem [ref=e240]: Events
+            - listitem [ref=e241]: Community Care
+            - listitem [ref=e242]: Professional Network
+          - link "Open a committee vote" [ref=e243] [cursor=pointer]:
+            - /url: "#votes"
+        - generic [ref=e244]:
+          - heading "Initiatives" [level=2] [ref=e245]
+          - list [ref=e246]:
+            - listitem [ref=e247]: Regional dinner
+            - listitem [ref=e248]: Volunteer exchange
+          - paragraph [ref=e249]: IMRC Convention 2028 is a national event shared on every chapter calendar.
+          - link "View shared calendar" [ref=e250] [cursor=pointer]:
+            - /url: "#calendar"
+      - heading "Members in this chapter" [level=2] [ref=e251]
+      - paragraph [ref=e252]: 4 demo members · National events are shared across all chapters.
+      - generic [ref=e253]:
+        - link [ref=e254] [cursor=pointer]:
+          - /url: "#person/RAM-001"
+          - heading "Rama Ikshvaku" [level=3] [ref=e255]
+          - paragraph [ref=e256]: Washington, DC · Mideast
+        - link [ref=e257] [cursor=pointer]:
+          - /url: "#person/RAM-029"
+          - heading "Jatayu Aruna / Gridhra" [level=3] [ref=e258]
+          - paragraph [ref=e259]: Washington, DC · Mideast
+        - link [ref=e260] [cursor=pointer]:
+          - /url: "#person/RAM-030"
+          - heading "Sampati Aruna / Gridhra" [level=3] [ref=e261]
+          - paragraph [ref=e262]: Baltimore, MD · Mideast
+        - link [ref=e263] [cursor=pointer]:
+          - /url: "#person/RAM-032"
+          - heading "Vishvamitra Kaushika" [level=3] [ref=e264]
+          - paragraph [ref=e265]: Washington, DC · Mideast
+    - contentinfo [ref=e77]:
+      - text: Tree in the Forest
+      - generic [ref=e78]: Rooted in relationships. Growing together.
+  - dialog [ref=e267]:
+    - paragraph [ref=e268]: BOARD TOUR
+    - heading "Every member belongs somewhere visible" [level=2] [ref=e269]
+    - generic [ref=e270]:
+      - paragraph [ref=e271]: IMRC National, the regional chapters, and the states and provinces each one serves — drawn from the member's own home-city field.
+      - paragraph [ref=e272]: Members who can see their chapter, and see that other chapters exist, are far more likely to show up for their own and cross over to a neighbor's events.
+    - generic [ref=e273]:
+      - button "Back" [active] [ref=e274] [cursor=pointer]
+      - button "Next" [ref=e275] [cursor=pointer]
+      - button "Skip tour" [ref=e276] [cursor=pointer]
+    - generic [ref=e277]: 2 of 12
