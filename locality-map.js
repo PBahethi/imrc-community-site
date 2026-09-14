@@ -72,6 +72,6 @@
       family.forEach(p=>L.circleMarker(cityCoordinates[p.city],{radius:p.id===profile.id?9:7,color:'#000080',weight:2,fillColor:p.id===profile.id?'#ff9933':'#138808',fillOpacity:.92}).bindPopup(`<div class="locality-popup"><h3>${esc(p.name)}</h3><p class="sub">${esc(p.city)} · ${p.id===profile.id?'selected profile':'direct family member'}</p><p>Fictional demo profile location.</p></div>`).addTo(map));
     }catch{if(current())status.textContent='Unable to load the map or locality data. Check your connection, then leave this page and open Locality Map to retry.';}
   }
-  function observe(){if(mounted)return;mounted=true;const nav=document.querySelector('nav');if(nav&&!nav.querySelector('a[href="#localitymap"]'))nav.insertAdjacentHTML('beforeend','<a href="#localitymap">▲ <span>Locality Map</span></a>');}
+  function observe(){if(mounted)return;mounted=true;}
   root.LocalityMap={observe,render,leave};
 })(globalThis);

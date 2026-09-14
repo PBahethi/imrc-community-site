@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/broadsheet-a49e7d18-fec6-4fca-995b-b3b77723ef7c/styles.css">
+<script src="_ds/broadsheet-a49e7d18-fec6-4fca-995b-b3b77723ef7c/_ds_bundle.js"></script>
+</helmet>
+<div style="background:var(--color-bg);min-height:100vh">
+<div style="max-width:1100px;margin:0 auto;padding:var(--space-8) var(--space-6)">
+
+  <div style="border-top:6px solid var(--color-text);padding-top:var(--space-2);margin-bottom:var(--space-2)"></div>
+  <div style="display:flex;flex-wrap:wrap;gap:var(--space-3);justify-content:space-between;align-items:baseline;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--color-neutral-700);padding-bottom:var(--space-2);border-bottom:1px solid var(--color-text)">
+    <span>Design review · third pass · themes &amp; guidance</span>
+    <span>Tree in the Forest · IMRC community demo</span>
+    <span>14 September 2026</span>
+  </div>
+
+  <h1 style="font-size:clamp(2.5rem,5vw,4rem);line-height:1.03;margin:var(--space-6) 0 var(--space-4);max-width:30ch">Six themes, and the one the organisation is named after cannot be selected.</h1>
+  <p style="font-size:1.22rem;line-height:1.6;max-width:62ch;margin:0 0 var(--space-3)">This pass covers what is new since the last review: a six-palette theme system tied to chapters and cities, nine IMRC chapters with leadership and territory maps, and a five-step guided demo tour. The chapter model is the strongest idea in the product so far. The theme layer under it is index-mapped rather than role-mapped, so two of the six palettes put white text on a near-white button and a third misses 4.5:1 — and a label/key mismatch means choosing “Indian Flag” quietly applies the beige Udaipur palette instead.</p>
+  <p style="font-size:1rem;line-height:1.7;max-width:62ch;color:var(--color-neutral-700)">Earlier passes: <a href="Review v2.dc.html">second review</a> (tooltips, motion, registration) · <a href="Review.dc.html">first review</a> · reference builds: <a href="Current Site.dc.html">current screens</a>, <a href="Help and Motion Patterns.dc.html">help &amp; motion patterns</a>.</p>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:var(--space-6);margin:var(--space-8) 0">
+    <div><div style="font-size:2.5rem;line-height:1">3 / 6</div><p style="margin:var(--space-1) 0 0;font-size:.9rem;color:var(--color-neutral-700)">themes whose primary button fails contrast</p></div>
+    <div><div style="font-size:2.5rem;line-height:1">8</div><p style="margin:var(--space-1) 0 0;font-size:.9rem;color:var(--color-neutral-700)">selectors the theme layer actually repaints, all with <code>!important</code></p></div>
+    <div><div style="font-size:2.5rem;line-height:1">0</div><p style="margin:var(--space-1) 0 0;font-size:.9rem;color:var(--color-neutral-700)">ways back to the guided tour once you leave it</p></div>
+    <div><div style="font-size:2.5rem;line-height:1">5</div><p style="margin:var(--space-1) 0 0;font-size:.9rem;color:var(--color-neutral-700)">tour steps, none of which ever marks itself done</p></div>
+  </div>
+
+  <h2 style="font-size:1.9rem;margin:0 0 var(--space-2)">Credit where it is due</h2>
+  <p style="font-size:1.05rem;line-height:1.75;max-width:64ch;margin:0 0 var(--space-8);color:var(--color-neutral-800)">Chapters give the demo something it lacked: a reason the member is somewhere specific. <em>chapter-core.js</em> resolves a chapter from the home city with a sane state-level fallback, the chapter page carries real leadership, committees and initiatives, and the territory map is labelled “schematic… not legal jurisdictions” without being asked. The sidebar is now grouped into <em>What’s happening</em> and <em>Who’s here</em> — exactly the split recommended in the last review — and Votes, Ask the community and Find / offer help finally have navigation entries. The guided tour is the right instinct too: a five-step narrative with one named member is far better onboarding than a feature list.</p>
+
+  <div style="border-top:6px solid var(--color-text);padding-top:var(--space-4);margin-bottom:var(--space-6)">
+    <h2 style="font-size:1.9rem;margin:0 0 var(--space-2)">The theme system, audited</h2>
+    <p style="font-size:1rem;line-height:1.7;max-width:62ch;margin:0 0 var(--space-2);color:var(--color-neutral-700)">Each palette is a flat list of five hexes. <em>theme.js</em> assigns them by position: colour 1 becomes every primary button, colour 4 becomes eyebrow and secondary-button text, colour 5 becomes the secondary-button and select background. Two of the six palettes (Jodhpur, Udaipur) are tonal ramps of a single light hue, so position 1 is a pale tint and the mapping collapses. Ratios below are computed live from the palettes in <em>theme.js</em>.</p>
+  </div>
+
+  <sc-for list="{{ themes }}" as="t" hint-placeholder-count="6">
+    <div style="border:1px solid var(--color-neutral-300);border-radius:2px;padding:var(--space-4);margin-bottom:var(--space-4)">
+      <div style="display:flex;flex-wrap:wrap;gap:var(--space-3);justify-content:space-between;align-items:baseline;margin-bottom:var(--space-3)">
+        <h3 style="font-size:1.35rem;margin:0">{{ t.label }}</h3>
+        <span style="font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--color-neutral-600)">{{ t.assigned }}</span>
+      </div>
+      <div style="display:flex;gap:var(--space-2);flex-wrap:wrap;margin-bottom:var(--space-4)">
+        <sc-for list="{{ t.swatches }}" as="s" hint-placeholder-count="5">
+          <div style="width:96px">
+            <div style="height:46px;border:1px solid var(--color-neutral-400);background:{{ s.hex }}"></div>
+            <div style="font-size:.7rem;font-family:var(--font-mono,monospace);margin-top:4px;color:var(--color-neutral-700)">{{ s.hex }}</div>
+            <div style="font-size:.68rem;letter-spacing:.05em;text-transform:uppercase;color:var(--color-neutral-600)">{{ s.role }}</div>
+          </div>
+        </sc-for>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:var(--space-3)">
+        <sc-for list="{{ t.checks }}" as="c" hint-placeholder-count="3">
+          <div>
+            <div style="padding:12px 14px;border:1px solid var(--color-neutral-300);background:{{ c.bg }};color:{{ c.fg }};font-size:.85rem;font-weight:600">{{ c.sample }}</div>
+            <p style="margin:6px 0 0;font-size:.8rem;color:var(--color-neutral-700)">{{ c.name }} · {{ c.ratio }}:1 · <strong>{{ c.verdict }}</strong></p>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </sc-for>
+
+  <h3 style="font-size:1.3rem;margin:var(--space-6) 0 var(--space-3)">Replace five positions with six roles</h3>
+  <p style="font-size:1rem;line-height:1.75;max-width:64ch;margin:0 0 var(--space-4);color:var(--color-neutral-800)">A palette is not a theme. Define the roles once, let each palette fill them, and a bad combination becomes impossible rather than accidental. Suggested values, keeping each palette’s character and putting every pairing above 4.5:1:</p>
+  <table class="table" style="margin-bottom:var(--space-8)">
+    <thead><tr><th>Theme</th><th>--surface</th><th>--ink</th><th>--action (white text)</th><th>--quiet (ink text)</th><th>--accent (decorative only)</th></tr></thead>
+    <tbody>
+      <tr><td>Indian Flag</td><td>#f8f9fc</td><td>#172750</td><td>#153eaa</td><td>#edf2ff</td><td>#ff9933</td></tr>
+      <tr><td>Jaisalmer</td><td>#fff8e9</td><td>#54210b</td><td>#9a4f07</td><td>#fff3dc</td><td>#f2a51a</td></tr>
+      <tr><td>Jodhpur</td><td>#f4f7ff</td><td>#17366b</td><td>#1f5496</td><td>#e6edff</td><td>#6da4ff</td></tr>
+      <tr><td>Udaipur</td><td>#fffceb</td><td>#3d3b3b</td><td>#4a4442</td><td>#f4eee0</td><td>#d2cac5</td></tr>
+      <tr><td>Jaipur</td><td>#fff5f0</td><td>#4b1d14</td><td>#762817</td><td>#fff0e9</td><td>#c9775e</td></tr>
+      <tr><td>Peacock</td><td>#f2fbfa</td><td>#123744</td><td>#174a70</td><td>#e4f4f2</td><td>#3e93aa</td></tr>
+    </tbody>
+  </table>
+
+  <h2 style="font-size:1.9rem;margin:0 0 var(--space-2)">Theme findings</h2>
+  <p style="font-size:1rem;line-height:1.7;max-width:60ch;margin:0 0 var(--space-6);color:var(--color-neutral-700)">The first two are visible on the first click of the picker.</p>
+  <sc-for list="{{ themeFindings }}" as="f" hint-placeholder-count="7">
+    <article style="display:grid;grid-template-columns:3.5rem minmax(0,1fr);gap:var(--space-4);padding-bottom:var(--space-6);margin-bottom:var(--space-6);border-bottom:1px solid var(--color-neutral-200)">
+      <div style="font-size:1.9rem;line-height:1;color:var(--color-accent-2)">{{ f.n }}</div>
+      <div>
+        <h3 style="font-size:1.55rem;line-height:1.15;margin:0 0 var(--space-2);max-width:34ch">{{ f.title }}</h3>
+        <p style="font-size:1.02rem;line-height:1.75;margin:0 0 var(--space-2);max-width:66ch">{{ f.body }}</p>
+        <p style="font-size:1.02rem;line-height:1.75;margin:0 0 var(--space-2);max-width:66ch"><em>{{ f.fix }}</em></p>
+        <p style="font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:var(--color-neutral-600);margin:0">{{ f.source }}</p>
+      </div>
+    </article>
+  </sc-for>
+
+  <h2 style="font-size:1.9rem;margin:var(--space-4) 0 var(--space-2)">Guiding the member</h2>
+  <p style="font-size:1.05rem;line-height:1.75;max-width:64ch;margin:0 0 var(--space-6);color:var(--color-neutral-800)">The tour, the chapter context pill and the theme switch are all answers to the same question — <em>where am I and what should I do next?</em> — but they are three separate answers that never refer to one another. A member who lands mid-flow gets none of them.</p>
+  <sc-for list="{{ guidance }}" as="f" hint-placeholder-count="7">
+    <article style="display:grid;grid-template-columns:3.5rem minmax(0,1fr);gap:var(--space-4);padding-bottom:var(--space-6);margin-bottom:var(--space-6);border-bottom:1px solid var(--color-neutral-200)">
+      <div style="font-size:1.9rem;line-height:1;color:var(--color-accent)">{{ f.n }}</div>
+      <div>
+        <h3 style="font-size:1.55rem;line-height:1.15;margin:0 0 var(--space-2);max-width:34ch">{{ f.title }}</h3>
+        <p style="font-size:1.02rem;line-height:1.75;margin:0 0 var(--space-2);max-width:66ch">{{ f.body }}</p>
+        <p style="font-size:1.02rem;line-height:1.75;margin:0 0 var(--space-2);max-width:66ch"><em>{{ f.fix }}</em></p>
+        <p style="font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:var(--color-neutral-600);margin:0">{{ f.source }}</p>
+      </div>
+    </article>
+  </sc-for>
+
+  <h3 style="font-size:1.3rem;margin:0 0 var(--space-3)">A progress rail the tour can actually drive</h3>
+  <p style="font-size:1rem;line-height:1.75;max-width:64ch;margin:0 0 var(--space-4);color:var(--color-neutral-800)">Every step already has a state in <code>localStorage</code> that says whether it happened. Read it, and the five boxes stop being a diagram and become a checklist that follows the member across the site.</p>
+  <table class="table" style="margin-bottom:var(--space-8)">
+    <thead><tr><th>Step</th><th>Done when</th><th>Where the rail should appear</th></tr></thead>
+    <tbody>
+      <tr><td>01 Sign in as Rama</td><td><code>session.personaId</code> is set</td><td>Header pill shows the persona instead of “Demo sign in”</td></tr>
+      <tr><td>02 Register the household</td><td>A registration record exists for EV2028</td><td>Collapsed rail on the event page</td></tr>
+      <tr><td>03 Pick agenda items</td><td>Agenda selections &gt; 0, with the count</td><td>Sticky counter in the planner</td></tr>
+      <tr><td>04 See it on the profile</td><td>Profile visited after registering</td><td>Profile header</td></tr>
+      <tr><td>05 Take part elsewhere</td><td>Any vote, question, help offer or check-in</td><td>Dashboard, as the next invitation</td></tr>
+    </tbody>
+  </table>
+
+  <h2 style="font-size:1.9rem;margin:0 0 var(--space-2)">Still open from the second review</h2>
+  <p style="font-size:1.05rem;line-height:1.75;max-width:64ch;margin:0 0 var(--space-6);color:var(--color-neutral-800)">The seven new files added since then contain no <code>transition</code> and no <code>@keyframes</code>, and none of the new controls call <code>tip()</code>. So the twelve tooltips and the four motion patterns from <a href="Help and Motion Patterns.dc.html">the patterns file</a> are unchanged in priority — and the theme work makes them cheaper, because a confirmation chip and a tint both want a role token to colour themselves with.</p>
+
+  <h2 style="font-size:1.9rem;margin:0 0 var(--space-2)">What we would do next, in order</h2>
+  <table class="table" style="margin-bottom:var(--space-8)">
+    <thead><tr><th>Change</th><th>Why now</th><th>Effort</th></tr></thead>
+    <tbody>
+      <tr><td>Key the picker and chapter map by palette key, not label</td><td>“Indian Flag” currently applies Udaipur; the national chapter never gets its own theme</td><td>One line</td></tr>
+      <tr><td>Six role tokens per theme, replacing <code>--theme-1…5</code></td><td>Removes three failing button/label pairs and every future one</td><td>Low</td></tr>
+      <tr><td>Let a chosen theme outlive a reload</td><td>The picker currently looks broken for every signed-in member</td><td>Low</td></tr>
+      <tr><td>Give the tour a <code>#start</code> route and a sidebar entry</td><td>The best onboarding in the product is unreachable after the first second</td><td>Low</td></tr>
+      <tr><td>Derive tour progress from stored state</td><td>Turns five static boxes into a reason to come back</td><td>Medium</td></tr>
+      <tr><td>Paint the remaining hardcoded colours from tokens</td><td>Half-themed pages read as a bug, not a choice</td><td>Medium</td></tr>
+      <tr><td>“Your chapter · not right? change it” on the context pill</td><td>Chapter drives theme, map and members; today it cannot be corrected</td><td>Low</td></tr>
+      <tr><td>Reconcile <em>themes/colorpalette.md</em> with <em>theme.js</em></td><td>Two sources of truth for brand colour, already diverged</td><td>Low</td></tr>
+    </tbody>
+  </table>
+
+  <div style="border-top:6px solid var(--color-text);padding-top:var(--space-4);display:flex;flex-wrap:wrap;gap:var(--space-4);justify-content:space-between;font-size:.85rem;color:var(--color-neutral-700)">
+    <span>Reviewed from source at PBahethi/imrc-community-site@main · themes, chapters, locality map and guided tour</span>
+    <span><a href="Review v2.dc.html">Second review ↗</a></span>
+  </div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1100}}">
+class Component extends DCLogic {
+  renderVals() {
+    const palettes = {
+      IndianFlag: { label: 'Indian Flag', colors: ['#153eaa','#ff9933','#138808','#000080','#edf2ff'], surface: '#f8f9fc', assigned: 'National · default' },
+      Jaisalmer: { label: 'Jaisalmer', colors: ['#b85f08','#f2a51a','#2d727b','#6f8400','#fff8e9'], surface: '#fff8e9', assigned: 'Southeast · Canada West · AZ/CA/CO' },
+      Jodhpur: { label: 'Jodhpur', colors: ['#b0c3ff','#9fb8ff','#6da4ff','#538fff','#2663b7'], surface: '#f4f7ff', assigned: 'Northeast · Mid-Atlantic' },
+      Udaipur: { label: 'Udaipur', colors: ['#fffceb','#f4eee0','#e9e0d4','#d2cac5','#c5bebe'], surface: '#fffceb', assigned: 'Midwest · and every unknown chapter' },
+      Jaipur: { label: 'Jaipur', colors: ['#762817','#a5422c','#c9775e','#6b2618','#fff5f0'], surface: '#fff5f0', assigned: 'Southwest · TX' },
+      Peacock: { label: 'Peacock', colors: ['#174a70','#236f7a','#3e93aa','#0c6b67','#f2fbfa'], surface: '#f2fbfa', assigned: 'West Coast · Canada East' }
+    };
+    const lum = hex => {
+      const c = [1,3,5].map(i => parseInt(hex.substr(i,2),16)/255)
+        .map(v => v <= 0.03928 ? v/12.92 : Math.pow((v+0.055)/1.055, 2.4));
+      return 0.2126*c[0] + 0.7152*c[1] + 0.0722*c[2];
+    };
+    const ratio = (a,b) => {
+      const l1 = lum(a), l2 = lum(b);
+      return ((Math.max(l1,l2)+0.05)/(Math.min(l1,l2)+0.05));
+    };
+    const check = (name, fg, bg, sample) => {
+      const r = ratio(fg,bg);
+      return { name, fg, bg, sample, ratio: r.toFixed(2), verdict: r >= 4.5 ? 'passes' : r >= 3 ? 'fails (3:1 only)' : 'fails badly' };
+    };
+    const roles = ['1 · buttons','2 · seal border','3 · unused','4 · eyebrow text','5 · quiet bg'];
+    const themes = Object.values(palettes).map(p => ({
+      label: p.label,
+      assigned: p.assigned,
+      swatches: p.colors.map((hex,i) => ({ hex, role: roles[i] })),
+      checks: [
+        check('Primary button', '#ffffff', p.colors[0], 'Register your household'),
+        check('Secondary button', p.colors[3], p.colors[4], 'Open full map'),
+        check('Eyebrow / labels', p.colors[3], p.surface, 'IMRC ORGANIZATION')
+      ]
+    }));
+
+    const themeFindings = [
+      { n: '01', title: 'Choosing “Indian Flag” applies Udaipur',
+        body: 'The picker’s option values are labels, but apply() looks palettes up by key. Only “Indian Flag” differs from its key (IndianFlag), and safe() falls back to Udaipur on any miss — so the organisation’s own colours are the one option the dropdown cannot reach. The same mismatch sits in chapter-core.js, where national is declared as theme "Indian Flag": every national member is served the beige Udaipur palette instead of the tricolour.',
+        fix: 'Emit the key as the option value and keep the label as text; make safe() fall back to IndianFlag, not Udaipur, so a miss degrades to the brand rather than away from it.',
+        source: 'theme.js · safe(), init() · chapter-core.js · chapters[0].theme' },
+      { n: '02', title: 'Two of the palettes are tonal ramps plugged into role slots',
+        body: 'Jodhpur and Udaipur are five shades of one light hue — beautiful as surfaces, unusable as actions. Position 1 becomes every primary button, and .button sets color:white, so Udaipur produces white text on #fffceb (1.03:1) and Jodhpur white on #b0c3ff (1.74:1). Udaipur’s secondary button is #d2cac5 on #c5bebe. These are not near-misses; the control disappears.',
+        fix: 'Stop mapping by index. Give every theme the six named roles in the table above, and add a build-time assertion that action/ink and quiet/ink clear 4.5:1.',
+        source: 'themes.css · .button, .button.secondary · styles.css · .button{color:white}' },
+      { n: '03', title: 'A chosen theme does not survive a reload',
+        body: 'init() reads the saved theme, then ignores it whenever a chapter can be resolved: chapter ? themeForChapter(chapter) : (saved || themeForCity(...)). Since signing in is the first thing the tour asks for, the saved branch is effectively dead — the member picks Peacock, reloads, and is back in their chapter theme with no explanation.',
+        fix: 'Precedence should be explicit preference → chapter → city → brand, and the picker should show which one is active (“Jodhpur · your chapter’s colours”) with a Reset to chapter option.',
+        source: 'theme.js · init()' },
+      { n: '04', title: 'The theme repaints eight selectors; the rest of the page stays blue',
+        body: 'themes.css touches the seal, buttons, eyebrows, four stat borders, the select and the chapter pill. Everything else is hardcoded: the tricolour top border on body, the #edf2ff active nav state, the landing hero’s blue-to-cream gradient, the #c62828 poll bar and reset tab, and the chapter map’s #c22303 outline with #faa622 fill. Switch to Jaipur and a terracotta page still has a blue nav highlight, a blue hero and an orange map.',
+        fix: 'Convert those literals to the role tokens, and give the map polygon var(--action) and var(--accent) at render time so chapter territory is drawn in chapter colour — the strongest use of theming in the whole product.',
+        source: 'styles.css, landing.css, chapter-map.js · literal hex values' },
+      { n: '05', title: 'Twelve !important declarations mean the theme can only ever be a patch',
+        body: 'Because themes.css loads after styles.css and overrides by component, each new component has to be added to it by hand or it ships unthemed — which is exactly what happened to help, recognition, participation and locality-map. The cascade is also now unusable for ordinary state styling: a hover that wants to darken a button has to win against !important.',
+        fix: 'Set the tokens on :root (or [data-theme]) and let the component stylesheets consume them. No !important, and new components are themed by default.',
+        source: 'themes.css · every rule' },
+      { n: '06', title: 'The palette document and the code disagree',
+        body: 'themes/colorpalette.md lists Jaisalmer as #faa622/#ffe52c/#7fe6ef/#c4d70c/#c22303 — a fluorescent set nothing like the earthy values in theme.js. Jaipur and Peacock differ too, the heading is spelled “Jaslameer”, and the last Peacock value reads #00ffc6T. A reviewer reading the repo sees one brand; a member sees another.',
+        fix: 'Make the document generated from the theme definitions, and include the role each colour fills plus its contrast against ink — a palette page nobody can contradict.',
+        source: 'themes/colorpalette.md vs theme.js · palettes' },
+      { n: '07', title: 'Theming is doing three jobs at once',
+        body: 'Right now the same switch expresses national brand, chapter identity and personal taste. Those conflict: a member who prefers Peacock loses their chapter signal, and a chapter-coloured chrome makes screenshots between two members look like two different products. It also means no capacity is left for the preference members actually ask for — larger text, higher contrast, dark mode.',
+        fix: 'Keep the base chrome constant. Express chapter identity in a banner, the seal and the map — a stripe of colour with a name on it — and reserve the personal setting for light/dark and contrast.',
+        source: 'theme.js · cityTheme, chapterTheme · index.html · #theme-picker' }
+    ];
+
+    const guidance = [
+      { n: '08', title: 'The guided tour exists for one second and cannot be returned to',
+        body: 'DemoLanding renders only when location.hash is empty, fired by two setTimeouts plus a MutationObserver, from a script that is neither in index.html nor loaded until routes-enhancements.js injects it. Follow any step and the hash is no longer empty: refreshing, sharing a link or pressing back never shows the tour again, and no navigation item points to it. The strongest first-run experience in the build is effectively unlisted.',
+        fix: 'Make it a real route (#start), render it from the router, link it in the sidebar as “Take the tour”, and show a small “Resume the tour” pill on the dashboard while it is unfinished.',
+        source: 'landing-demo.js · render() · routes-enhancements.js · startLanding()' },
+      { n: '09', title: 'Five steps that never complete',
+        body: 'The workflow boxes are static markup. Nothing marks step 2 done after a registration is saved, nothing carries the count of chosen sessions from step 3, and step 5 (“Build momentum”) links to the profile without naming an action. Meanwhile the state required to know all of this already sits in localStorage under forest-community-v1 and the registration record.',
+        fix: 'Derive each step’s state on render, show “3 of 5”, and make the primary button read “Continue — pick agenda items” rather than always starting at the beginning.',
+        source: 'landing-demo.js · steps[] · event-actions-core.js · stored records' },
+      { n: '10', title: 'Chapter is inferred, shown everywhere, and cannot be corrected',
+        body: 'forPerson() resolves a chapter from the city, then a state list, then the person’s chapter field, and finally defaults to National. The result drives the header pill, the profile badge, the theme and the map. A member whose city is not in the list is silently National, and there is no control anywhere to say otherwise.',
+        fix: 'Make the pill an affordance: “Northeast Chapter · change”. On the profile, show how it was derived (“from your home city”) — inference is fine when it is legible and reversible.',
+        source: 'chapter-core.js · forPerson(), decorate()' },
+      { n: '11', title: 'The territory maps overlap each other',
+        body: 'The regions are hand-written rectangles. Mid-Atlantic spans 35–43°N and −82 to −72°W, which swallows most of the Northeast box and the top of the Southeast; Midwest reaches to 36°N in Texas. Shown side by side, two chapters claim the same counties — the disclaimer covers legality but not the visible contradiction.',
+        fix: 'Either draw all chapters on one map with adjacent, non-overlapping shapes so the national structure reads at a glance, or drop polygons and plot the chapter’s member cities as dots, which is truer to a demo with 54 people.',
+        source: 'chapter-map.js · regions' },
+      { n: '12', title: 'Two maps, two vocabularies, no relationship',
+        body: 'The Locality Map shades county population; the chapter map draws a service-area rectangle in a different colour with a permanent tooltip and a separate Leaflet load. They answer neighbouring questions (“where are we?” / “who runs my area?”) and never link to each other; a member finds one and never learns the other exists.',
+        fix: 'One map surface with a layer switch — population context, member dots, chapter areas — sharing legend, colours and disclaimer. It also halves the Leaflet loading paths.',
+        source: 'locality-map.js · chapter-map.js' },
+      { n: '13', title: 'The map is loaded from a CDN at click time, and fails quietly',
+        body: 'Leaflet’s CSS and JS are appended on demand from unpkg, with a catch that returns null and a one-line “Unable to load the chapter map”. On a slow connection the panel sits empty with no spinner beyond a single line of text, and there is no retry control — a hard failure in front of a board is the worst possible moment for this.',
+        fix: 'Pin and vendor Leaflet, show a skeleton in the map’s reserved height, and give the failure state a Retry button rather than an instruction to reopen the page.',
+        source: 'chapter-map.js · load(), paint()' },
+      { n: '14', title: 'Navigation is growing by addition, not by shape',
+        body: 'Eleven sidebar items in two groups is still readable, but the convention — the deepest, most-demonstrated flow — has no entry, the profile is reachable only through the header pill, and the tour has none. Meanwhile Chapters, Locality Map and the chapter pill all lead to overlapping views of the same thing.',
+        fix: 'Add My profile and IMRC Convention 2028 to the first group, fold Locality Map into Chapters as a layer, and cap the sidebar at nine items. Anything beyond that belongs on a page, not in navigation.',
+        source: 'index.html · nav · routes-enhancements.js · decorateProfile()' }
+    ];
+
+    return { themes, themeFindings, guidance };
+  }
+}
+</script>
+</body>
+</html>
