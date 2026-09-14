@@ -21,3 +21,12 @@ test('convention airline planner separates native date/time fields and carries O
   assert.deepEqual([...new Set(event.airlineOptions.map(o=>o.airline))].sort(),['Alaska Airlines','American Airlines','Delta Air Lines','Frontier Airlines','Southwest Airlines']);
   assert.match(source,/type="date" name="arrivalDate"/);assert.match(source,/type="time" name="arrivalTime"/);assert.match(source,/data-flight-suggestion="arrival"/);assert.match(source,/data-flight-suggestion="departure"/);
 });
+test('IMRC officer voting calendar event is tied to four national and four chapter offices',()=>{
+  const event=data.events.find(e=>e.id==='EVVOTE2015');
+  assert.ok(event);
+  assert.deepEqual(event.dates,['2015-02-28']);
+  assert.deepEqual(event.voting.national,['President','Vice President','Treasurer','Secretary']);
+  assert.deepEqual(event.voting.chapter,['President','Vice President','Treasurer','Secretary']);
+  assert.match(fs.readFileSync('voting.js','utf8'),/EVVOTE2015/);
+  assert.match(fs.readFileSync('calendars/EVVOTE2015.ics','utf8'),/DTSTART;VALUE=DATE:20150228/);
+});

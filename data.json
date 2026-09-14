@@ -2473,6 +2473,21 @@
           "url": "https://www.okc.gov/Government/Departments/Airports"
         }
       ]
+    },
+    {
+      "id": "EVVOTE2015",
+      "name": "IMRC Officer Voting",
+      "location": "IMRC National & Chapter ballot",
+      "people": [],
+      "image": "images/okc-convention.svg",
+      "imageAlt": "IMRC voting ballot illustration",
+      "imageSource": "Generated site asset",
+      "dates": ["2015-02-28"],
+      "type": "Voting",
+      "voting": {
+        "national": ["President", "Vice President", "Treasurer", "Secretary"],
+        "chapter": ["President", "Vice President", "Treasurer", "Secretary"]
+      }
     }
   ]
 }
