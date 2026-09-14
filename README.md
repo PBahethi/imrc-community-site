@@ -14,6 +14,8 @@ The organization masthead now exposes a national/chapter context and a city-deri
 
 The organization model is represented by `ChapterCore`: IMRC National owns shared programs and the IMRC Convention calendar, while regional chapters are selected from a member's home-city/chapter field and maintain their own committees and initiatives. `#chapters/<id>` presents that hierarchy. `Voting`/`VotingCore` is a reusable, browser-local poll that national or chapter committees can open at `#votes` when a decision needs member input.
 
+The convention airline planner uses native date and time controls, editable flight fields, and expected OKC suggestions covering the week before, convention dates, and the week after. The demo carrier fixture follows the current OKC Airport airline directory and nonstop-city listing; flight numbers and times are illustrative and must be verified against the member's booking.
+
 ## Run locally
 
 Requires Python 3; no package installation or environment variables.

@@ -15,3 +15,9 @@ test('theme source contains every supplied palette and new components are wired'
   for(const name of ['Jaisalmer','Jodhpur','Udaipur','Jaipur','Peacock'])assert.match(source,new RegExp(name));
   assert.match(html,/theme\.js/);assert.match(html,/chapter\.js/);assert.match(html,/voting\.js/);
 });
+test('convention airline planner separates native date/time fields and carries OKC suggestions',()=>{
+  const event=data.events.find(e=>e.id==='EV2028'),source=fs.readFileSync('event-actions.js','utf8');
+  assert.ok(event.airlineOptions.length>=10);
+  assert.deepEqual([...new Set(event.airlineOptions.map(o=>o.airline))].sort(),['Alaska Airlines','American Airlines','Delta Air Lines','Frontier Airlines','Southwest Airlines']);
+  assert.match(source,/type="date" name="arrivalDate"/);assert.match(source,/type="time" name="arrivalTime"/);assert.match(source,/data-flight-suggestion="arrival"/);assert.match(source,/data-flight-suggestion="departure"/);
+});

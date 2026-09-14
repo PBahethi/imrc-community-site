@@ -1850,6 +1850,18 @@
       "type": "Convention",
       "capacity": 240,
       "registeredCount": 18,
+      "airlineOptions": [
+        {"airline":"American Airlines","flight":"AA 1234","direction":"arrival","date":"2028-01-14","time":"18:20"},
+        {"airline":"Southwest Airlines","flight":"WN 2045","direction":"arrival","date":"2028-01-15","time":"16:35"},
+        {"airline":"Delta Air Lines","flight":"DL 2861","direction":"arrival","date":"2028-01-15","time":"19:10"},
+        {"airline":"Frontier Airlines","flight":"F9 1422","direction":"arrival","date":"2028-01-16","time":"12:45"},
+        {"airline":"Alaska Airlines","flight":"AS 441","direction":"arrival","date":"2028-01-17","time":"15:05"},
+        {"airline":"American Airlines","flight":"AA 5678","direction":"departure","date":"2028-01-18","time":"10:15"},
+        {"airline":"Southwest Airlines","flight":"WN 3180","direction":"departure","date":"2028-01-19","time":"13:40"},
+        {"airline":"Delta Air Lines","flight":"DL 2910","direction":"departure","date":"2028-01-20","time":"08:55"},
+        {"airline":"Frontier Airlines","flight":"F9 1511","direction":"departure","date":"2028-01-21","time":"11:30"},
+        {"airline":"Alaska Airlines","flight":"AS 442","direction":"departure","date":"2028-01-22","time":"14:05"}
+      ],
       "venue": {
         "hotel": "Omni Oklahoma City Hotel",
         "address": "100 W Oklahoma City Blvd, Oklahoma City, OK 73109",
