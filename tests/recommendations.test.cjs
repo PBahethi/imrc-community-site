@@ -16,9 +16,10 @@ test('theme source contains every supplied palette and new components are wired'
   assert.match(html,/theme\.js/);assert.match(html,/chapter\.js/);assert.match(html,/voting\.js/);
 });
 test('chapter pages place the labeled territory map before leadership and use the Indian Flag national theme',()=>{
-  const chapter=fs.readFileSync('chapter.js','utf8'),core=fs.readFileSync('chapter-core.js','utf8'),map=fs.readFileSync('chapter-map.js','utf8');
+  const chapter=fs.readFileSync('chapter.js','utf8'),core=fs.readFileSync('chapter-core.js','utf8'),map=fs.readFileSync('chapter-map.js','utf8'),routes=fs.readFileSync('routes-enhancements.js','utf8');
   assert.ok(chapter.indexOf('chapter-inline-map')<chapter.indexOf('Chapter leadership'));
   assert.match(map,/renderInline/);assert.match(core,/theme:'Indian Flag'/);
+  assert.match(routes,/signedInChapter/);assert.doesNotMatch(routes,/render\(data,'national'\)/);
 });
 test('convention airline planner separates native date/time fields and carries OKC suggestions',()=>{
   const event=data.events.find(e=>e.id==='EV2028'),source=fs.readFileSync('event-actions.js','utf8');
@@ -27,11 +28,12 @@ test('convention airline planner separates native date/time fields and carries O
   assert.match(source,/type="date" name="arrivalDate"/);assert.match(source,/type="time" name="arrivalTime"/);assert.match(source,/data-flight-suggestion="arrival"/);assert.match(source,/data-flight-suggestion="departure"/);
 });
 test('IMRC officer voting calendar event is tied to four national and four chapter offices',()=>{
-  const event=data.events.find(e=>e.id==='EVVOTE2015');
+  const event=data.events.find(e=>e.id==='EVVOTE2027');
   assert.ok(event);
-  assert.deepEqual(event.dates,['2015-02-28']);
+  assert.deepEqual(event.dates,['2027-02-28']);
+  assert.equal(event.image,'images/imrc-officer-voting-2027.jpg');
   assert.deepEqual(event.voting.national,['President','Vice President','Treasurer','Secretary']);
   assert.deepEqual(event.voting.chapter,['President','Vice President','Treasurer','Secretary']);
-  assert.match(fs.readFileSync('voting.js','utf8'),/EVVOTE2015/);
-  assert.match(fs.readFileSync('calendars/EVVOTE2015.ics','utf8'),/DTSTART;VALUE=DATE:20150228/);
+  assert.match(fs.readFileSync('voting.js','utf8'),/EVVOTE2027/);
+  assert.match(fs.readFileSync('calendars/EVVOTE2027.ics','utf8'),/DTSTART;VALUE=DATE:20270228/);
 });
