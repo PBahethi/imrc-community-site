@@ -1,3 +1,11 @@
+#Colors in Indian Flag (IMRC National original)
+##Color	Hex	RGB
+#153eaa	(21,62,170)
+#ff9933	(255,153,51)
+#138808	(19,136,8)
+#000080	(0,0,128)
+#edf2ff	(237,242,255)
+
 #Colors in Jaslameer
 ##Color	Hex	RGB
 #faa622	(250,166,34)
