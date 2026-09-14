@@ -55,6 +55,15 @@ test('guided member journey is a routed, resumable checklist derived from stored
   assert.match(html,/href="#start"/);assert.match(html,/IMRC Convention 2028/);
   assert.match(engagement,/forest-demo-journey-v1/);assert.match(engagement,/forest-theme-preference-v1/);
 });
+test('journey mode preselects Rama and carries coach marks through login, event, profile, and voting',()=>{
+  const landing=fs.readFileSync('landing-demo.js','utf8'),routes=fs.readFileSync('routes-enhancements.js','utf8'),engagement=fs.readFileSync('engagement.js','utf8'),css=fs.readFileSync('landing.css','utf8');
+  assert.match(landing,/tryHref:'#login\/journey'/);
+  assert.match(landing,/index===0&&current===0\?step\.tryHref/);
+  assert.match(engagement,/guided\?'RAM-001'/);assert.match(engagement,/#home\/journey/);
+  assert.match(routes,/journey-event-banner/);assert.match(routes,/#event\/EV2028\/journey/);
+  assert.match(routes,/#profile\/journey/);assert.match(routes,/#votes\/journey/);
+  assert.match(routes,/Build Rama’s personal agenda/);assert.match(css,/journey-coach-popover/);
+});
 test('chapter maps use state and province geometry instead of overlapping rectangles',()=>{
   const source=fs.readFileSync('chapter-map.js','utf8'),core=fs.readFileSync('chapter-core.js','utf8'),us=JSON.parse(fs.readFileSync('chapter-boundaries-us.geojson')),canada=JSON.parse(fs.readFileSync('chapter-boundaries-canada.geojson'));
   assert.match(source,/L\.geoJSON/);assert.match(source,/chapter-boundaries-us\.geojson/);assert.match(source,/chapter-boundaries-canada\.geojson/);
