@@ -1,0 +1,107 @@
+- generic [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - button "↺ Reset demo" [ref=e3] [cursor=pointer]
+  - complementary [ref=e4]:
+    - link "♧ Tree in the Forest A PLACE TO BELONG" [ref=e5] [cursor=pointer]:
+      - /url: "#home"
+      - generic [ref=e6]: ♧
+      - generic [ref=e7]:
+        - text: Tree inthe Forest
+        - generic [ref=e8]: A PLACE TO BELONG
+    - generic [ref=e9]: IMRC COMMUNITY
+    - navigation "Main navigation" [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e12]: What’s happening
+        - link "⌂ My Community" [ref=e13] [cursor=pointer]:
+          - /url: "#home"
+          - text: ⌂
+          - generic [ref=e14]: My Community
+        - link "→ Take the member journey" [ref=e15] [cursor=pointer]:
+          - /url: "#start"
+          - text: →
+          - generic [ref=e16]: Take the member journey
+        - link "◎ Board tour" [ref=e17] [cursor=pointer]:
+          - /url: "#tour"
+          - text: ◎
+          - generic [ref=e18]: Board tour
+        - link "◇ IMRC Convention 2028" [ref=e19] [cursor=pointer]:
+          - /url: "#event/EV2028"
+          - text: ◇
+          - generic [ref=e20]: IMRC Convention 2028
+        - link "▦ Events" [ref=e21] [cursor=pointer]:
+          - /url: "#events"
+          - text: ▦
+          - generic [ref=e22]: Events
+        - link "◉ Votes & polls" [ref=e23] [cursor=pointer]:
+          - /url: "#votes"
+          - text: ◉
+          - generic [ref=e24]: Votes & polls
+      - generic [ref=e25]:
+        - generic [ref=e26]: Who’s here
+        - link "● My profile" [ref=e27] [cursor=pointer]:
+          - /url: "#profile"
+          - text: ●
+          - generic [ref=e28]: My profile
+        - link "♧ People" [ref=e29] [cursor=pointer]:
+          - /url: "#people"
+          - text: ♧
+          - generic [ref=e30]: People
+        - link "⌘ Family & connections" [ref=e31] [cursor=pointer]:
+          - /url: "#connections"
+          - text: ⌘
+          - generic [ref=e32]: Family & connections
+        - link "▤ Chapters & map" [ref=e33] [cursor=pointer]:
+          - /url: "#chapters"
+          - text: ▤
+          - generic [ref=e34]: Chapters & map
+    - generic [ref=e35]:
+      - text: ❧
+      - paragraph [ref=e36]: Many roots.One shared community.
+      - link "About this project ↗" [ref=e37] [cursor=pointer]:
+        - /url: "#about"
+  - generic [ref=e38]:
+    - banner [ref=e39]:
+      - link "IMRC Community Maheshwari connections across North America" [ref=e40] [cursor=pointer]:
+        - /url: "#home"
+        - generic [aria-hidden] [ref=e41]: ♧
+        - generic [ref=e42]:
+          - strong [ref=e43]: IMRC Community
+          - generic [ref=e44]: Maheshwari connections across North America
+      - link "Member journey" [ref=e45] [cursor=pointer]:
+        - /url: "#start"
+      - generic [ref=e46]:
+        - link [ref=e228] [cursor=pointer]:
+          - /url: "#chapter/mideast"
+          - strong [ref=e229]: Mid-Atlantic Chapter
+          - text: · Washington, DC
+        - link "change" [ref=e230] [cursor=pointer]:
+          - /url: "#profile"
+      - generic [ref=e231]:
+        - generic [ref=e232]: Theme
+        - combobox "Choose visual theme" [ref=e233]:
+          - option "Mid-Atlantic Chapter theme" [selected]
+          - option "Indian Flag"
+          - option "Jaisalmer"
+          - option "Jodhpur"
+          - option "Udaipur"
+          - option "Jaipur"
+          - option "Peacock"
+      - link "Demo sign in" [ref=e53] [cursor=pointer]:
+        - /url: "#login"
+    - main [ref=e54]:
+      - status [ref=e234]: Preparing the board tour…
+    - contentinfo [ref=e137]:
+      - text: Tree in the Forest
+      - generic [ref=e138]: Rooted in relationships. Growing together.
+  - dialog [ref=e236]:
+    - paragraph [ref=e237]: BOARD TOUR
+    - heading "One sign-in, one profile, one place for everything" [level=2] [ref=e238]
+    - generic [ref=e239]:
+      - paragraph [ref=e240]: A simulated sign-in. In production this becomes invitation-and-approval with real accounts; here it just opens a fictional member's world.
+      - paragraph [ref=e241]: Today a member's registrations, votes, and family details live in email threads and spreadsheets. Once they live behind one sign-in, every later step in this tour becomes possible.
+    - generic [ref=e242]:
+      - button "Back" [active] [ref=e243] [cursor=pointer]
+      - button "Next" [ref=e244] [cursor=pointer]
+      - button "Skip tour" [ref=e245] [cursor=pointer]
+    - generic [ref=e246]: 3 of 12

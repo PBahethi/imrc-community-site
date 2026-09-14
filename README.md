@@ -1,6 +1,6 @@
 # Tree in the Forest
 
-A responsive community demo built from `CODEX_PROMPT.md` and the supplied Ramayana workbook, designed for GitHub Pages. It now includes an engagement-oriented My Community dashboard with actionable next steps, explainable people suggestions, interest-based example groups, browser-local preferences, ways-to-help prompts, household event registration, event requests, family/friends tree views, a unified personal activity feed, and an IMRC Oklahoma City convention planning workflow. The convention programme uses day tabs, category filters, personal schedules, per-session QR check-ins, and private participation badges alongside the searchable directory, lineage collections, directional relationships, event artwork, saved-event filters, calendar agenda, contextual help, and ICS downloads.
+A responsive community demo built from `CODEX_PROMPT.md` and the supplied Ramayana workbook, designed for GitHub Pages. It now includes an engagement-oriented My Community dashboard with actionable next steps, explainable people suggestions, interest-based example groups, browser-local preferences, ways-to-help prompts, household event registration, event requests, family/friends tree views, a unified personal activity feed, and an IMRC Oklahoma City convention planning workflow. A twelve-stop, five-minute Board tour at `#tour` seeds a fictional Rama scenario and explains the engagement purpose of each working screen with accessible, responsive coach marks. The convention programme uses day tabs, category filters, personal schedules, per-session QR check-ins, and private participation badges alongside the searchable directory, lineage collections, directional relationships, event artwork, saved-event filters, calendar agenda, contextual help, and ICS downloads.
 
 The phased product plan is [docs/active-community-plan.md](docs/active-community-plan.md). Phase 1 is intentionally a safe public demo: it creates useful discovery and contribution prompts without pretending that a visitor is authenticated, has joined a group, sent an invitation, RSVP'd, or offered help to another member.
 
@@ -71,6 +71,7 @@ Database migrations are provided but have not been applied to a configured backe
 | First branches | Interests, suggestions, groups, local member/family creation, activity, portraits, tiers, catch phrases, searchable help offers, relationship trees, convention logistics review, and spotlights/nominations | Browser-local foundation; no real accounts |
 | Next branch | Community questions, replies, follow, reactions, reports | Browser-local foundation |
 | Phase 2 | Mentorship discovery and preferences | Browser-local foundation; AMAs, challenges, guides and matching expansion remain planned |
+| Board tour | Twelve-stop trustee walkthrough with fictional pre-seeded activity | Browser-local demonstration; no tracking or network writes |
 | Production | Authenticated API, private database, moderation, notifications, analytics | Schema/hardening/runbook prepared; activation and live policy verification pending |
 
 “Auto mode” means the next highest-value phase is implemented from the existing architecture without waiting for a separate redesign: reuse the static data boundary, `CommunityCore` state rules, `Engagement` views, and the existing reset behavior. Each phase remains reviewable and deployable on its own.
@@ -117,6 +118,8 @@ Run all local regression checks with `node --test tests/*.test.cjs`, then build 
 The [security review](docs/security-review.md) records findings and fixes. Both migrations and the [database assertions](supabase/tests/access-control.sql) passed in a disposable PGlite PostgreSQL/WASM runtime using minimal Supabase Auth stand-ins. The optional runner is `tests/security-runtime.cjs`; hosted Supabase Auth, PostgREST, and Storage remain unverified. The ordinary Node security tests are static regression guards. See the [backend runbook](docs/secure-backend-phase.md) for activation prerequisites.
 
 ## Try the local member journey
+
+Open **Board tour** from the landing page or navigation, or go directly to `#tour`. Starting the tour signs in as fictional Rama and preloads one bookmark, one household registration, two convention sessions, one simulated QR check-in/private badge, and one non-officer chapter poll answer. The tour never performs later actions for the presenter; **Skip tour** returns to the current working screen and **Reset demo** clears the seed.
 
 1. Choose **Demo sign in**, or create a fictional member. Creation opens the saved profile automatically.
 2. Choose **Add a family member** to copy the household's shared fields. Select the relationship; names, portraits, and catch phrases stay personal. New people and relationships appear in the directory and family view.
