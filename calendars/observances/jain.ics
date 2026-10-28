@@ -1,0 +1,134 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//IMRC Community//Festival and Holiday Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:IMRC · Jain
+X-WR-CALDESC:Hindu and Jain dates follow the panchang for Washington\, D.C.
+  Tithis change at local sunrise\, so a date can differ by a day in other N
+ orth American cities or in India. Check your own city on drikpanchang.com 
+ before planning an event.
+REFRESH-INTERVAL;VALUE=DURATION:P1W
+X-PUBLISHED-TTL:P1W
+BEGIN:VEVENT
+UID:mahavir-nirvan-2026@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:Mahavir Nirvan Divas (Jain Diwali) · महावीर निर
+ ्वाण दिवस (tentative)
+DESCRIPTION:Bhagwan Mahavir attained nirvana on Diwali night\; Jains light 
+ lamps and offer nirvan laddu.\n\nDrik Panchang's Washington\, DC Jain cale
+ ndar lists Lakshmi Puja on this date but no separate Nirvan entry. Confirm
+  with your derasar or Jain centre.\n\nDate status: tentative\, confirm bef
+ ore planning\n\nSource: https://www.drikpanchang.com/jain/calendar/jain-ca
+ lendar.html?geoname-id=4140963&year=2026
+CATEGORIES:Jain
+URL:https://www.drikpanchang.com/jain/calendar/jain-calendar.html?geoname-i
+ d=4140963&year=2026
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:gyan-panchami-2026@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Gyan Panchami (Labh Panchami) · ज्ञान पंचमी ·
+  लाभ पंचमी
+DESCRIPTION:Day of reverence for knowledge and scriptures\; many businesses
+  reopen after Diwali.\n\nDate status: verified against the source\n\nSourc
+ e: https://www.drikpanchang.com/jain/calendar/jain-calendar.html?geoname-i
+ d=4140963&year=2026
+CATEGORIES:Jain
+URL:https://www.drikpanchang.com/jain/calendar/jain-calendar.html?geoname-i
+ d=4140963&year=2026
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:mahavir-jayanti-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270418
+DTEND;VALUE=DATE:20270419
+SUMMARY:Mahavir Jayanti · महावीर जयंती
+DESCRIPTION:Birth of Bhagwan Mahavir\, the 24th Tirthankara: processions\, 
+ abhishek and charity.\n\nIndia observes it on April 19\, 2027\; Washington
+ \, DC falls a day earlier.\n\nDate status: verified against the source\n\n
+ Source: https://www.drikpanchang.com/jain/calendar/jain-calendar.html?geon
+ ame-id=4140963&year=2027
+CATEGORIES:Jain
+URL:https://www.drikpanchang.com/jain/calendar/jain-calendar.html?geoname-i
+ d=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:paryushan-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270828
+DTEND;VALUE=DATE:20270905
+SUMMARY:Paryushan Parva (Shvetambar) · पर्युषण पर्व
+DESCRIPTION:Eight days of fasting\, study and reflection\, ending with Samv
+ atsari.\n\nDate status: verified against the source\n\nSource: https://www
+ .drikpanchang.com/jain/calendar/jain-calendar.html?geoname-id=4140963&year
+ =2027
+CATEGORIES:Jain
+URL:https://www.drikpanchang.com/jain/calendar/jain-calendar.html?geoname-i
+ d=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:samvatsari-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270904
+DTEND;VALUE=DATE:20270905
+SUMMARY:Samvatsari · Michhami Dukkadam · संवत्सरी · म
+ िच्छामि दुक्कडम्
+DESCRIPTION:Final day of Paryushan: pratikraman and asking forgiveness of e
+ very living being.\n\nDate status: verified against the source\n\nSource: 
+ https://www.drikpanchang.com/jain/calendar/jain-calendar.html?geoname-id=4
+ 140963&year=2027
+CATEGORIES:Jain
+URL:https://www.drikpanchang.com/jain/calendar/jain-calendar.html?geoname-i
+ d=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:mahavir-nirvan-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271028
+DTEND;VALUE=DATE:20271029
+SUMMARY:Mahavir Nirvan Divas (Jain Diwali) · महावीर निर
+ ्वाण दिवस (tentative)
+DESCRIPTION:Bhagwan Mahavir attained nirvana on Diwali night\; Jains light 
+ lamps and offer nirvan laddu.\n\nShown on Diwali night for Washington\, DC
+ \; Indian Jain calendars list Oct 29. Confirm with your derasar or Jain ce
+ ntre.\n\nDate status: tentative\, confirm before planning\n\nSource: https
+ ://www.drikpanchang.com/jain/calendar/jain-calendar.html?geoname-id=414096
+ 3&year=2027
+CATEGORIES:Jain
+URL:https://www.drikpanchang.com/jain/calendar/jain-calendar.html?geoname-i
+ d=4140963&year=2027
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:gyan-panchami-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271103
+DTEND;VALUE=DATE:20271104
+SUMMARY:Gyan Panchami (Labh Panchami) · ज्ञान पंचमी ·
+  लाभ पंचमी
+DESCRIPTION:Day of reverence for knowledge and scriptures.\n\nDate status: 
+ verified against the source\n\nSource: https://www.drikpanchang.com/jain/c
+ alendar/jain-calendar.html?geoname-id=4140963&year=2027
+CATEGORIES:Jain
+URL:https://www.drikpanchang.com/jain/calendar/jain-calendar.html?geoname-i
+ d=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

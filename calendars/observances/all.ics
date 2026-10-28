@@ -1,0 +1,1238 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//IMRC Community//Festival and Holiday Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:IMRC festivals & holidays
+X-WR-CALDESC:Hindu and Jain dates follow the panchang for Washington\, D.C.
+  Tithis change at local sunrise\, so a date can differ by a day in other N
+ orth American cities or in India. Check your own city on drikpanchang.com 
+ before planning an event.
+REFRESH-INTERVAL;VALUE=DURATION:P1W
+X-PUBLISHED-TTL:P1W
+BEGIN:VEVENT
+UID:us-new-years-day-2026-01-01@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20260101
+DTEND;VALUE=DATE:20260102
+SUMMARY:New Year's Day · नव वर्ष दिवस
+DESCRIPTION:U.S. federal holiday. Federal offices\, banks and many schools 
+ are closed.\n\nDate status: verified against the source\n\nSource: https:/
+ /www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+CATEGORIES:US holidays
+URL:https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-birthday-of-martin-luther-king-jr-2026-01-19@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20260119
+DTEND;VALUE=DATE:20260120
+SUMMARY:Birthday of Martin Luther King\, Jr. · मार्टिन ल
+ ूथर किंग जूनियर जयंती
+DESCRIPTION:U.S. federal holiday. Federal offices\, banks and many schools 
+ are closed.\n\nDate status: verified against the source\n\nSource: https:/
+ /www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+CATEGORIES:US holidays
+URL:https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-washingtons-birthday-2026-02-16@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20260216
+DTEND;VALUE=DATE:20260217
+SUMMARY:Washington's Birthday (Presidents' Day) · वॉशिंगटन
+  जयंती
+DESCRIPTION:U.S. federal holiday. Federal offices\, banks and many schools 
+ are closed.\n\nDate status: verified against the source\n\nSource: https:/
+ /www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+CATEGORIES:US holidays
+URL:https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-memorial-day-2026-05-25@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20260525
+DTEND;VALUE=DATE:20260526
+SUMMARY:Memorial Day · स्मृति दिवस
+DESCRIPTION:U.S. federal holiday. Federal offices\, banks and many schools 
+ are closed.\n\nDate status: verified against the source\n\nSource: https:/
+ /www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+CATEGORIES:US holidays
+URL:https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-juneteenth-national-independence-day-2026-06-19@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20260619
+DTEND;VALUE=DATE:20260620
+SUMMARY:Juneteenth National Independence Day · जूनटीन्थ
+DESCRIPTION:U.S. federal holiday. Federal offices\, banks and many schools 
+ are closed.\n\nDate status: verified against the source\n\nSource: https:/
+ /www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+CATEGORIES:US holidays
+URL:https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-independence-day-2026-07-03@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20260703
+DTEND;VALUE=DATE:20260704
+SUMMARY:Independence Day (observed) · अमेरिकी स्वत
+ ंत्रता दिवस
+DESCRIPTION:U.S. federal holiday. Federal offices\, banks and many schools 
+ are closed.\n\nJuly 4\, 2026 is a Saturday\; federal offices observe Frida
+ y\, July 3.\n\nDate status: verified against the source\n\nSource: https:/
+ /www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+CATEGORIES:US holidays
+URL:https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-labor-day-2026-09-07@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260908
+SUMMARY:Labor Day · श्रमिक दिवस
+DESCRIPTION:U.S. federal holiday. Federal offices\, banks and many schools 
+ are closed.\n\nDate status: verified against the source\n\nSource: https:/
+ /www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+CATEGORIES:US holidays
+URL:https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-columbus-day-2026-10-12@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+SUMMARY:Columbus Day · कोलंबस दिवस
+DESCRIPTION:U.S. federal holiday. Federal offices\, banks and many schools 
+ are closed.\n\nDate status: verified against the source\n\nSource: https:/
+ /www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+CATEGORIES:US holidays
+URL:https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dhanteras-2026@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Dhanteras · धनतेरस
+DESCRIPTION:First day of Diwali. Families buy new utensils or gold and ligh
+ t a lamp for Dhanvantari and Lakshmi.\n\nDate status: verified against the
+  source\n\nSource: https://www.drikpanchang.com/calendars/hindu/hinducalen
+ dar.html?geoname-id=4140963&year=2026
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2026
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:roop-chaudas-2026@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Roop Chaudas (Narak Chaturdashi) · रूप चौदस
+DESCRIPTION:Second day of Diwali\, known in Marwari homes as Roop Chaudas: 
+ an early bath\, ubtan and small lamps at dusk.\n\nDate status: verified ag
+ ainst the source\n\nSource: https://www.drikpanchang.com/calendars/hindu/h
+ inducalendar.html?geoname-id=4140963&year=2026
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2026
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:diwali-2026@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:Diwali · Lakshmi Puja · दीपावली · लक्ष्
+ मी पूजन
+DESCRIPTION:The festival of lights. Evening Lakshmi Puja\, new account book
+ s (bahi-khata) for business families\, diyas and sweets.\n\nDate status: v
+ erified against the source\n\nSource: https://www.drikpanchang.com/calenda
+ rs/hindu/hinducalendar.html?geoname-id=4140963&year=2026
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2026
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:mahavir-nirvan-2026@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:Mahavir Nirvan Divas (Jain Diwali) · महावीर निर
+ ्वाण दिवस (tentative)
+DESCRIPTION:Bhagwan Mahavir attained nirvana on Diwali night\; Jains light 
+ lamps and offer nirvan laddu.\n\nDrik Panchang's Washington\, DC Jain cale
+ ndar lists Lakshmi Puja on this date but no separate Nirvan entry. Confirm
+  with your derasar or Jain centre.\n\nDate status: tentative\, confirm bef
+ ore planning\n\nSource: https://www.drikpanchang.com/jain/calendar/jain-ca
+ lendar.html?geoname-id=4140963&year=2026
+CATEGORIES:Jain
+URL:https://www.drikpanchang.com/jain/calendar/jain-calendar.html?geoname-i
+ d=4140963&year=2026
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:govardhan-2026@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:Govardhan Puja · Annakut · गोवर्धन पूजा · 
+ अन्नकूट
+DESCRIPTION:Day after Diwali. Annakut offerings of many dishes to Shri Kris
+ hna\; Ram-Ram visits between families.\n\nDate status: verified against th
+ e source\n\nSource: https://www.drikpanchang.com/calendars/hindu/hinducale
+ ndar.html?geoname-id=4140963&year=2026
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2026
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:bhai-dooj-2026@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:Bhai Dooj · भाई दूज
+DESCRIPTION:Sisters apply tilak and pray for their brothers' well-being\; b
+ rothers visit with gifts.\n\nDate status: verified against the source\n\nS
+ ource: https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geo
+ name-id=4140963&year=2026
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2026
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-veterans-day-2026-11-11@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:Veterans Day · वेटरन्स दिवस
+DESCRIPTION:U.S. federal holiday. Federal offices\, banks and many schools 
+ are closed.\n\nDate status: verified against the source\n\nSource: https:/
+ /www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+CATEGORIES:US holidays
+URL:https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:gyan-panchami-2026@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Gyan Panchami (Labh Panchami) · ज्ञान पंचमी ·
+  लाभ पंचमी
+DESCRIPTION:Day of reverence for knowledge and scriptures\; many businesses
+  reopen after Diwali.\n\nDate status: verified against the source\n\nSourc
+ e: https://www.drikpanchang.com/jain/calendar/jain-calendar.html?geoname-i
+ d=4140963&year=2026
+CATEGORIES:Jain
+URL:https://www.drikpanchang.com/jain/calendar/jain-calendar.html?geoname-i
+ d=4140963&year=2026
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pushkar-fair-2026@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261125
+SUMMARY:Pushkar Fair (Pushkar Mela) · पुष्कर मेला
+DESCRIPTION:One of the world's largest camel and livestock fairs\, with fol
+ k music\, turban-tying and moustache contests by Pushkar Lake.\n\nRajastha
+ n Tourism's main programme. Livestock trading starts around November 10.\n
+ \nDate status: verified against the source\n\nSource: https://www.tourism.
+ rajasthan.gov.in/fairs-and-festivals.html
+CATEGORIES:Rajasthan events
+URL:https://www.tourism.rajasthan.gov.in/fairs-and-festivals.html
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dev-uthani-2026@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Dev Uthani Ekadashi · देवउठनी एकादशी
+DESCRIPTION:Lord Vishnu wakes from his four-month rest\; the wedding season
+  traditionally begins.\n\nDate status: verified against the source\n\nSour
+ ce: https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geonam
+ e-id=4140963&year=2026
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2026
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:tulsi-vivah-2026@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Tulsi Vivah · तुलसी विवाह
+DESCRIPTION:Ceremonial marriage of the tulsi plant to Shaligram (Vishnu)\, 
+ celebrated at home and in temples.\n\nDate status: verified against the so
+ urce\n\nSource: https://www.drikpanchang.com/calendars/hindu/hinducalendar
+ .html?geoname-id=4140963&year=2026
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2026
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:kartik-purnima-2026@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:Kartik Purnima · कार्तिक पूर्णिमा
+DESCRIPTION:Full moon of Kartik: holy dips\, deep-daan and the peak day of 
+ the Pushkar fair.\n\nDate status: verified against the source\n\nSource: h
+ ttps://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=
+ 4140963&year=2026
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2026
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-thanksgiving-day-2026-11-26@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:Thanksgiving Day · थैंक्सगिविंग
+DESCRIPTION:U.S. federal holiday. Federal offices\, banks and many schools 
+ are closed.\n\nDate status: verified against the source\n\nSource: https:/
+ /www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+CATEGORIES:US holidays
+URL:https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:gita-jayanti-2026@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20261220
+SUMMARY:Gita Jayanti · Mokshada Ekadashi · गीता जयंती
+DESCRIPTION:Marks the day the Bhagavad Gita was spoken\; Gita path and stud
+ y circles.\n\nDate status: verified against the source\n\nSource: https://
+ www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963
+ &year=2026
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2026
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-christmas-day-2026-12-25@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261226
+SUMMARY:Christmas Day · क्रिसमस
+DESCRIPTION:U.S. federal holiday. Federal offices\, banks and many schools 
+ are closed.\n\nDate status: verified against the source\n\nSource: https:/
+ /www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+CATEGORIES:US holidays
+URL:https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-new-years-day-2027-01-01@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:New Year's Day · नव वर्ष दिवस
+DESCRIPTION:U.S. federal holiday. Federal offices\, banks and many schools 
+ are closed.\n\nDate status: verified against the source\n\nSource: https:/
+ /www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+CATEGORIES:US holidays
+URL:https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:makar-sankranti-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
+SUMMARY:Makar Sankranti · मकर संक्रांति
+DESCRIPTION:Sun enters Capricorn. Kite flying across Rajasthan\, til-gud sw
+ eets\, and daan (giving).\n\nDate status: verified against the source\n\nS
+ ource: https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geo
+ name-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-birthday-of-martin-luther-king-jr-2027-01-18@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270119
+SUMMARY:Birthday of Martin Luther King\, Jr. · मार्टिन ल
+ ूथर किंग जूनियर जयंती
+DESCRIPTION:U.S. federal holiday. Federal offices\, banks and many schools 
+ are closed.\n\nDate status: verified against the source\n\nSource: https:/
+ /www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+CATEGORIES:US holidays
+URL:https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:in-republic-day-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270126
+DTEND;VALUE=DATE:20270127
+SUMMARY:Republic Day (India) · गणतंत्र दिवस
+DESCRIPTION:Marks the Constitution of India coming into force in 1950.\n\nD
+ ate status: verified against the source\n\nSource: https://dopt.gov.in/sta
+ tic/uploads/2026/08/2ffd159748162a48c025f7e6ca5807d5.pdf
+CATEGORIES:India holidays
+URL:https://dopt.gov.in/static/uploads/2026/08/2ffd159748162a48c025f7e6ca58
+ 07d5.pdf
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:vasant-panchami-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270211
+DTEND;VALUE=DATE:20270212
+SUMMARY:Vasant Panchami · वसंत पंचमी
+DESCRIPTION:Welcomes spring and honours Saraswati\, goddess of learning\; y
+ ellow clothes and sweets.\n\nDate status: verified against the source\n\nS
+ ource: https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geo
+ name-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:nagaur-fair-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270212
+DTEND;VALUE=DATE:20270216
+SUMMARY:Nagaur Fair (Ramdeoji Cattle Fair) · नागौर मेला 
+ (tentative)
+DESCRIPTION:Marwar's great cattle fair in Nagaur: Nagori bullocks\, camel r
+ aces and folk performances.\n\nFrom Rajasthan Tourism's 2024–2030 foreca
+ st list. Final dates are announced closer to the event.\n\nDate status: te
+ ntative\, confirm before planning\n\nSource: https://www.tourism.rajasthan
+ .gov.in/content/dam/rajasthan-tourism/english/pdf/FairsandFestivals.pdf
+CATEGORIES:Rajasthan events
+URL:https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/engl
+ ish/pdf/FairsandFestivals.pdf
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-washingtons-birthday-2027-02-15@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270215
+DTEND;VALUE=DATE:20270216
+SUMMARY:Washington's Birthday (Presidents' Day) · वॉशिंगटन
+  जयंती
+DESCRIPTION:U.S. federal holiday. Federal offices\, banks and many schools 
+ are closed.\n\nDate status: verified against the source\n\nSource: https:/
+ /www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+CATEGORIES:US holidays
+URL:https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:desert-festival-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270218
+DTEND;VALUE=DATE:20270221
+SUMMARY:Desert Festival\, Jaisalmer · मरु महोत्सव (ten
+ tative)
+DESCRIPTION:Three days of folk culture on the Thar dunes near Jaisalmer: ca
+ mel polo\, Mr Desert\, puppeteers and Kalbelia dancers.\n\nFrom Rajasthan 
+ Tourism's 2024–2030 forecast list. Final dates are announced closer to t
+ he event.\n\nDate status: tentative\, confirm before planning\n\nSource: h
+ ttps://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/
+ pdf/FairsandFestivals.pdf
+CATEGORIES:Rajasthan events
+URL:https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/engl
+ ish/pdf/FairsandFestivals.pdf
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:maha-shivaratri-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270306
+DTEND;VALUE=DATE:20270307
+SUMMARY:Maha Shivaratri · महाशिवरात्रि
+DESCRIPTION:Night of Shiva: fasting\, night-long worship and abhishek at te
+ mples.\n\nDate status: verified against the source\n\nSource: https://www.
+ drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&yea
+ r=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:holika-dahan-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270321
+DTEND;VALUE=DATE:20270322
+SUMMARY:Holika Dahan · होलिका दहन
+DESCRIPTION:Bonfire on the full-moon night before Holi\; Gangaur worship be
+ gins the next morning for many Marwari women.\n\nDate status: verified aga
+ inst the source\n\nSource: https://www.drikpanchang.com/calendars/hindu/hi
+ nducalendar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:holi-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270322
+DTEND;VALUE=DATE:20270323
+SUMMARY:Holi (Dhulandi) · होली · धुलंडी
+DESCRIPTION:Festival of colours\, gulal and gujiya\; the 16–18 day Gangau
+ r puja starts from this day.\n\nDate status: verified against the source\n
+ \nSource: https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?
+ geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sheetla-ashtami-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270329
+DTEND;VALUE=DATE:20270330
+SUMMARY:Sheetla Ashtami (Basoda) · शीतला अष्टमी · 
+ बासोड़ा
+DESCRIPTION:Worship of Sheetla Mata\; families eat food cooked the day befo
+ re (basoda). Widely kept in Rajasthan.\n\nDate status: verified against th
+ e source\n\nSource: https://www.drikpanchang.com/calendars/hindu/hinducale
+ ndar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:chaitra-navratri-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270407
+DTEND;VALUE=DATE:20270415
+SUMMARY:Chaitra Navratri · Nav Samvat begins · चैत्र नवर
+ ात्रि · नव संवत्सर
+DESCRIPTION:Hindu new year (Vikram Samvat 2084) and the start of nine night
+ s of Durga worship.\n\nEnds with Ram Navami on April 14.\n\nDate status: v
+ erified against the source\n\nSource: https://www.drikpanchang.com/calenda
+ rs/hindu/hinducalendar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:gangaur-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270409
+DTEND;VALUE=DATE:20270410
+SUMMARY:Gangaur · गणगौर
+DESCRIPTION:Rajasthan's beloved festival of Gauri (Parvati) and Isar (Shiva
+ ). Women and girls who began puja after Holi dress Gangaur\, sing songs\, 
+ and lead processions.\n\nDate status: verified against the source\n\nSourc
+ e: https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ram-navami-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270414
+DTEND;VALUE=DATE:20270415
+SUMMARY:Ram Navami · राम नवमी
+DESCRIPTION:Birth of Shri Ram\, closing Chaitra Navratri.\n\nDate status: v
+ erified against the source\n\nSource: https://www.drikpanchang.com/calenda
+ rs/hindu/hinducalendar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:mahavir-jayanti-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270418
+DTEND;VALUE=DATE:20270419
+SUMMARY:Mahavir Jayanti · महावीर जयंती
+DESCRIPTION:Birth of Bhagwan Mahavir\, the 24th Tirthankara: processions\, 
+ abhishek and charity.\n\nIndia observes it on April 19\, 2027\; Washington
+ \, DC falls a day earlier.\n\nDate status: verified against the source\n\n
+ Source: https://www.drikpanchang.com/jain/calendar/jain-calendar.html?geon
+ ame-id=4140963&year=2027
+CATEGORIES:Jain
+URL:https://www.drikpanchang.com/jain/calendar/jain-calendar.html?geoname-i
+ d=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hanuman-jayanti-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270420
+DTEND;VALUE=DATE:20270421
+SUMMARY:Hanuman Jayanti · हनुमान जयंती
+DESCRIPTION:Birth of Hanuman\; Hanuman Chalisa recitation and temple visits
+  (including Salasar Balaji devotees).\n\nDate status: verified against the
+  source\n\nSource: https://www.drikpanchang.com/calendars/hindu/hinducalen
+ dar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:akshaya-tritiya-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270508
+DTEND;VALUE=DATE:20270509
+SUMMARY:Akshaya Tritiya (Aakha Teej) · अक्षय तृतीया 
+ · आखा तीज
+DESCRIPTION:An auspicious day for new beginnings. In Marwar it is Aakha Tee
+ j\, with khichda and many weddings.\n\nDate status: verified against the s
+ ource\n\nSource: https://www.drikpanchang.com/calendars/hindu/hinducalenda
+ r.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-memorial-day-2027-05-31@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270531
+DTEND;VALUE=DATE:20270601
+SUMMARY:Memorial Day · स्मृति दिवस
+DESCRIPTION:U.S. federal holiday. Federal offices\, banks and many schools 
+ are closed.\n\nDate status: verified against the source\n\nSource: https:/
+ /www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+CATEGORIES:US holidays
+URL:https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-juneteenth-national-independence-day-2027-06-18@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270618
+DTEND;VALUE=DATE:20270619
+SUMMARY:Juneteenth National Independence Day (observed) · जूनटी
+ न्थ
+DESCRIPTION:U.S. federal holiday. Federal offices\, banks and many schools 
+ are closed.\n\nJune 19\, 2027 is a Saturday.\n\nDate status: verified agai
+ nst the source\n\nSource: https://www.opm.gov/policy-data-oversight/pay-le
+ ave/federal-holidays/
+CATEGORIES:US holidays
+URL:https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-independence-day-2027-07-05@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270705
+DTEND;VALUE=DATE:20270706
+SUMMARY:Independence Day (observed) · अमेरिकी स्वत
+ ंत्रता दिवस
+DESCRIPTION:U.S. federal holiday. Federal offices\, banks and many schools 
+ are closed.\n\nJuly 4\, 2027 is a Sunday.\n\nDate status: verified against
+  the source\n\nSource: https://www.opm.gov/policy-data-oversight/pay-leave
+ /federal-holidays/
+CATEGORIES:US holidays
+URL:https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:guru-purnima-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270718
+DTEND;VALUE=DATE:20270719
+SUMMARY:Guru Purnima · गुरु पूर्णिमा
+DESCRIPTION:Honours teachers and gurus.\n\nDate status: verified against th
+ e source\n\nSource: https://www.drikpanchang.com/calendars/hindu/hinducale
+ ndar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hariyali-teej-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270804
+DTEND;VALUE=DATE:20270805
+SUMMARY:Hariyali Teej (Sawan Teej) · हरियाली तीज
+DESCRIPTION:Monsoon festival for women: green clothes\, mehendi\, swings an
+ d ghewar.\n\nDate status: verified against the source\n\nSource: https://w
+ ww.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&
+ year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:in-independence-day-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270815
+DTEND;VALUE=DATE:20270816
+SUMMARY:Independence Day (India) · स्वतंत्रता दि
+ वस
+DESCRIPTION:India's independence in 1947\; flag hoisting and community gath
+ erings across North America.\n\nDate status: verified against the source\n
+ \nSource: https://dopt.gov.in/static/uploads/2026/08/2ffd159748162a48c025f
+ 7e6ca5807d5.pdf
+CATEGORIES:India holidays
+URL:https://dopt.gov.in/static/uploads/2026/08/2ffd159748162a48c025f7e6ca58
+ 07d5.pdf
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:raksha-bandhan-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270816
+DTEND;VALUE=DATE:20270817
+SUMMARY:Raksha Bandhan · रक्षाबंधन
+DESCRIPTION:Sisters tie rakhi on their brothers' wrists.\n\nDate status: ve
+ rified against the source\n\nSource: https://www.drikpanchang.com/calendar
+ s/hindu/hinducalendar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:kajari-teej-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270820
+DTEND;VALUE=DATE:20270821
+SUMMARY:Kajari Teej (Badi Teej · Satudi Teej) · कजरी तीज ·
+  बड़ी तीज · सातुड़ी तीज
+DESCRIPTION:A major Marwari women's fast. Satu (sattu) sweets\, neemdi mata
+  puja\, and the fast is broken after seeing the moon.\n\nDate status: veri
+ fied against the source\n\nSource: https://www.drikpanchang.com/calendars/
+ hindu/hinducalendar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:janmashtami-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270825
+DTEND;VALUE=DATE:20270826
+SUMMARY:Krishna Janmashtami · कृष्ण जन्माष्टम
+ ी
+DESCRIPTION:Birth of Shri Krishna at midnight\; fasting\, bhajans and jhank
+ i decorations.\n\nDate status: verified against the source\n\nSource: http
+ s://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=414
+ 0963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:paryushan-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270828
+DTEND;VALUE=DATE:20270905
+SUMMARY:Paryushan Parva (Shvetambar) · पर्युषण पर्व
+DESCRIPTION:Eight days of fasting\, study and reflection\, ending with Samv
+ atsari.\n\nDate status: verified against the source\n\nSource: https://www
+ .drikpanchang.com/jain/calendar/jain-calendar.html?geoname-id=4140963&year
+ =2027
+CATEGORIES:Jain
+URL:https://www.drikpanchang.com/jain/calendar/jain-calendar.html?geoname-i
+ d=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ganesh-chaturthi-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270903
+DTEND;VALUE=DATE:20270915
+SUMMARY:Ganesh Chaturthi · गणेश चतुर्थी
+DESCRIPTION:Welcomes Ganesh\, remover of obstacles\; ten days of worship to
+  Anant Chaturdashi.\n\nGanesh Visarjan / Anant Chaturdashi on September 14
+ .\n\nDate status: verified against the source\n\nSource: https://www.drikp
+ anchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=202
+ 7
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:samvatsari-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270904
+DTEND;VALUE=DATE:20270905
+SUMMARY:Samvatsari · Michhami Dukkadam · संवत्सरी · म
+ िच्छामि दुक्कडम्
+DESCRIPTION:Final day of Paryushan: pratikraman and asking forgiveness of e
+ very living being.\n\nDate status: verified against the source\n\nSource: 
+ https://www.drikpanchang.com/jain/calendar/jain-calendar.html?geoname-id=4
+ 140963&year=2027
+CATEGORIES:Jain
+URL:https://www.drikpanchang.com/jain/calendar/jain-calendar.html?geoname-i
+ d=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-labor-day-2027-09-06@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270906
+DTEND;VALUE=DATE:20270907
+SUMMARY:Labor Day · श्रमिक दिवस
+DESCRIPTION:U.S. federal holiday. Federal offices\, banks and many schools 
+ are closed.\n\nDate status: verified against the source\n\nSource: https:/
+ /www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+CATEGORIES:US holidays
+URL:https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pitru-paksha-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270916
+DTEND;VALUE=DATE:20270930
+SUMMARY:Pitru Paksha (Shraadh) · पितृ पक्ष · श्रा
+ द्ध
+DESCRIPTION:Fortnight for remembering ancestors with tarpan and food offeri
+ ngs.\n\nEnds on Sarva Pitru Amavasya\, September 29.\n\nDate status: verif
+ ied against the source\n\nSource: https://www.drikpanchang.com/calendars/h
+ indu/hinducalendar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sharad-navratri-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270930
+DTEND;VALUE=DATE:20271009
+SUMMARY:Sharad Navratri · शारदीय नवरात्रि
+DESCRIPTION:Nine nights of Durga worship\, garba and dandiya.\n\nDurga Asht
+ ami October 7\; Maha Navami October 8.\n\nDate status: verified against th
+ e source\n\nSource: https://www.drikpanchang.com/calendars/hindu/hinducale
+ ndar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:in-gandhi-jayanti-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271002
+DTEND;VALUE=DATE:20271003
+SUMMARY:Gandhi Jayanti · गांधी जयंती
+DESCRIPTION:Birthday of Mahatma Gandhi\; a national holiday and Internation
+ al Day of Non-Violence.\n\nDate status: verified against the source\n\nSou
+ rce: https://dopt.gov.in/static/uploads/2026/08/2ffd159748162a48c025f7e6ca
+ 5807d5.pdf
+CATEGORIES:India holidays
+URL:https://dopt.gov.in/static/uploads/2026/08/2ffd159748162a48c025f7e6ca58
+ 07d5.pdf
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dussehra-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271009
+DTEND;VALUE=DATE:20271010
+SUMMARY:Dussehra (Vijayadashami) · दशहरा · विजयाद
+ शमी
+DESCRIPTION:Victory of good over evil\; Ravan dahan and Shami puja.\n\nDate
+  status: verified against the source\n\nSource: https://www.drikpanchang.c
+ om/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-columbus-day-2027-10-11@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271011
+DTEND;VALUE=DATE:20271012
+SUMMARY:Columbus Day · कोलंबस दिवस
+DESCRIPTION:U.S. federal holiday. Federal offices\, banks and many schools 
+ are closed.\n\nDate status: verified against the source\n\nSource: https:/
+ /www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+CATEGORIES:US holidays
+URL:https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:marwar-festival-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271013
+DTEND;VALUE=DATE:20271015
+SUMMARY:Marwar Festival\, Jodhpur · मारवाड़ महोत्
+ सव (tentative)
+DESCRIPTION:Jodhpur's festival of Marwar folk music (Maand) and heroes\, at
+  Mehrangarh\, Umaid Stadium and the Osian dunes.\n\nFrom Rajasthan Tourism
+ 's 2024–2030 forecast list. The 2026 edition ran Oct 24–25.\n\nDate st
+ atus: tentative\, confirm before planning\n\nSource: https://www.tourism.r
+ ajasthan.gov.in/content/dam/rajasthan-tourism/english/pdf/FairsandFestival
+ s.pdf
+CATEGORIES:Rajasthan events
+URL:https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/engl
+ ish/pdf/FairsandFestivals.pdf
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sharad-purnima-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271014
+DTEND;VALUE=DATE:20271015
+SUMMARY:Sharad Purnima · शरद पूर्णिमा
+DESCRIPTION:Harvest full moon\; kheer kept in the moonlight. The Marwar Fes
+ tival in Jodhpur is timed to it.\n\nDate status: verified against the sour
+ ce\n\nSource: https://www.drikpanchang.com/calendars/hindu/hinducalendar.h
+ tml?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:karva-chauth-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271018
+DTEND;VALUE=DATE:20271019
+SUMMARY:Karva Chauth · करवा चौथ
+DESCRIPTION:Married women fast from sunrise to moonrise for their husbands'
+  long life.\n\nDate status: verified against the source\n\nSource: https:/
+ /www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=414096
+ 3&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dhanteras-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271026
+DTEND;VALUE=DATE:20271027
+SUMMARY:Dhanteras · धनतेरस
+DESCRIPTION:First day of Diwali. Families buy new utensils or gold and ligh
+ t a lamp for Dhanvantari and Lakshmi.\n\nDate status: verified against the
+  source\n\nSource: https://www.drikpanchang.com/calendars/hindu/hinducalen
+ dar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:diwali-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271028
+DTEND;VALUE=DATE:20271029
+SUMMARY:Diwali · Lakshmi Puja · दीपावली · लक्ष्
+ मी पूजन
+DESCRIPTION:The festival of lights. Evening Lakshmi Puja\, new account book
+ s (bahi-khata)\, diyas and sweets.\n\nIndia's government calendar lists Di
+ wali on Oct 29\, 2027\; in Washington\, DC it falls on Oct 28.\n\nDate sta
+ tus: verified against the source\n\nSource: https://www.drikpanchang.com/c
+ alendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:mahavir-nirvan-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271028
+DTEND;VALUE=DATE:20271029
+SUMMARY:Mahavir Nirvan Divas (Jain Diwali) · महावीर निर
+ ्वाण दिवस (tentative)
+DESCRIPTION:Bhagwan Mahavir attained nirvana on Diwali night\; Jains light 
+ lamps and offer nirvan laddu.\n\nShown on Diwali night for Washington\, DC
+ \; Indian Jain calendars list Oct 29. Confirm with your derasar or Jain ce
+ ntre.\n\nDate status: tentative\, confirm before planning\n\nSource: https
+ ://www.drikpanchang.com/jain/calendar/jain-calendar.html?geoname-id=414096
+ 3&year=2027
+CATEGORIES:Jain
+URL:https://www.drikpanchang.com/jain/calendar/jain-calendar.html?geoname-i
+ d=4140963&year=2027
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:roop-chaudas-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271028
+DTEND;VALUE=DATE:20271029
+SUMMARY:Roop Chaudas (Narak Chaturdashi) · रूप चौदस
+DESCRIPTION:Second day of Diwali. In 2027 the Washington\, DC panchang list
+ s it on the same day as Lakshmi Puja.\n\nDrik Panchang lists Kali Chaudas 
+ on Oct 27 and Narak Chaturdashi on Oct 28 for Washington\, DC.\n\nDate sta
+ tus: verified against the source\n\nSource: https://www.drikpanchang.com/c
+ alendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:govardhan-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271029
+DTEND;VALUE=DATE:20271030
+SUMMARY:Govardhan Puja · Annakut · गोवर्धन पूजा · 
+ अन्नकूट
+DESCRIPTION:Day after Diwali. Annakut offerings to Shri Krishna\; Ram-Ram v
+ isits between families.\n\nDate status: verified against the source\n\nSou
+ rce: https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geona
+ me-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:bhai-dooj-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271030
+DTEND;VALUE=DATE:20271031
+SUMMARY:Bhai Dooj · भाई दूज
+DESCRIPTION:Sisters apply tilak and pray for their brothers' well-being.\n\
+ nDate status: verified against the source\n\nSource: https://www.drikpanch
+ ang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:gyan-panchami-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271103
+DTEND;VALUE=DATE:20271104
+SUMMARY:Gyan Panchami (Labh Panchami) · ज्ञान पंचमी ·
+  लाभ पंचमी
+DESCRIPTION:Day of reverence for knowledge and scriptures.\n\nDate status: 
+ verified against the source\n\nSource: https://www.drikpanchang.com/jain/c
+ alendar/jain-calendar.html?geoname-id=4140963&year=2027
+CATEGORIES:Jain
+URL:https://www.drikpanchang.com/jain/calendar/jain-calendar.html?geoname-i
+ d=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pushkar-fair-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271106
+DTEND;VALUE=DATE:20271115
+SUMMARY:Pushkar Fair (Pushkar Mela) · पुष्कर मेला (ten
+ tative)
+DESCRIPTION:Camel and livestock fair with cultural programmes\, ending on K
+ artik Purnima.\n\nFrom Rajasthan Tourism's 2024–2030 forecast list. Fina
+ l dates are announced closer to the event.\n\nDate status: tentative\, con
+ firm before planning\n\nSource: https://www.tourism.rajasthan.gov.in/conte
+ nt/dam/rajasthan-tourism/english/pdf/FairsandFestivals.pdf
+CATEGORIES:Rajasthan events
+URL:https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/engl
+ ish/pdf/FairsandFestivals.pdf
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dev-uthani-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271109
+DTEND;VALUE=DATE:20271110
+SUMMARY:Dev Uthani Ekadashi · देवउठनी एकादशी
+DESCRIPTION:Lord Vishnu wakes from his four-month rest\; the wedding season
+  begins.\n\nDate status: verified against the source\n\nSource: https://ww
+ w.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&y
+ ear=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-veterans-day-2027-11-11@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271111
+DTEND;VALUE=DATE:20271112
+SUMMARY:Veterans Day · वेटरन्स दिवस
+DESCRIPTION:U.S. federal holiday. Federal offices\, banks and many schools 
+ are closed.\n\nDate status: verified against the source\n\nSource: https:/
+ /www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+CATEGORIES:US holidays
+URL:https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:kartik-purnima-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271113
+DTEND;VALUE=DATE:20271114
+SUMMARY:Kartik Purnima · कार्तिक पूर्णिमा
+DESCRIPTION:Full moon of Kartik: holy dips and deep-daan.\n\nDate status: v
+ erified against the source\n\nSource: https://www.drikpanchang.com/calenda
+ rs/hindu/hinducalendar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-thanksgiving-day-2027-11-25@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271125
+DTEND;VALUE=DATE:20271126
+SUMMARY:Thanksgiving Day · थैंक्सगिविंग
+DESCRIPTION:U.S. federal holiday. Federal offices\, banks and many schools 
+ are closed.\n\nDate status: verified against the source\n\nSource: https:/
+ /www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+CATEGORIES:US holidays
+URL:https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:gita-jayanti-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271209
+DTEND;VALUE=DATE:20271210
+SUMMARY:Gita Jayanti · Mokshada Ekadashi · गीता जयंती
+DESCRIPTION:Marks the day the Bhagavad Gita was spoken.\n\nDate status: ver
+ ified against the source\n\nSource: https://www.drikpanchang.com/calendars
+ /hindu/hinducalendar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-christmas-day-2027-12-24@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271224
+DTEND;VALUE=DATE:20271225
+SUMMARY:Christmas Day (observed) · क्रिसमस
+DESCRIPTION:U.S. federal holiday. Federal offices\, banks and many schools 
+ are closed.\n\nDecember 25\, 2027 is a Saturday.\n\nDate status: verified 
+ against the source\n\nSource: https://www.opm.gov/policy-data-oversight/pa
+ y-leave/federal-holidays/
+CATEGORIES:US holidays
+URL:https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-new-years-day-2028-2027-12-31@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271231
+DTEND;VALUE=DATE:20280101
+SUMMARY:New Year's Day 2028 (observed) · नव वर्ष दिवस
+DESCRIPTION:U.S. federal holiday. Federal offices\, banks and many schools 
+ are closed.\n\nJanuary 1\, 2028 is a Saturday\; OPM lists Friday\, Decembe
+ r 31\, 2027.\n\nDate status: verified against the source\n\nSource: https:
+ //www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+CATEGORIES:US holidays
+URL:https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

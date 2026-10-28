@@ -1,0 +1,61 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//IMRC Community//Festival and Holiday Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:IMRC · India holidays
+X-WR-CALDESC:Hindu and Jain dates follow the panchang for Washington\, D.C.
+  Tithis change at local sunrise\, so a date can differ by a day in other N
+ orth American cities or in India. Check your own city on drikpanchang.com 
+ before planning an event.
+REFRESH-INTERVAL;VALUE=DURATION:P1W
+X-PUBLISHED-TTL:P1W
+BEGIN:VEVENT
+UID:in-republic-day-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270126
+DTEND;VALUE=DATE:20270127
+SUMMARY:Republic Day (India) · गणतंत्र दिवस
+DESCRIPTION:Marks the Constitution of India coming into force in 1950.\n\nD
+ ate status: verified against the source\n\nSource: https://dopt.gov.in/sta
+ tic/uploads/2026/08/2ffd159748162a48c025f7e6ca5807d5.pdf
+CATEGORIES:India holidays
+URL:https://dopt.gov.in/static/uploads/2026/08/2ffd159748162a48c025f7e6ca58
+ 07d5.pdf
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:in-independence-day-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270815
+DTEND;VALUE=DATE:20270816
+SUMMARY:Independence Day (India) · स्वतंत्रता दि
+ वस
+DESCRIPTION:India's independence in 1947\; flag hoisting and community gath
+ erings across North America.\n\nDate status: verified against the source\n
+ \nSource: https://dopt.gov.in/static/uploads/2026/08/2ffd159748162a48c025f
+ 7e6ca5807d5.pdf
+CATEGORIES:India holidays
+URL:https://dopt.gov.in/static/uploads/2026/08/2ffd159748162a48c025f7e6ca58
+ 07d5.pdf
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:in-gandhi-jayanti-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271002
+DTEND;VALUE=DATE:20271003
+SUMMARY:Gandhi Jayanti · गांधी जयंती
+DESCRIPTION:Birthday of Mahatma Gandhi\; a national holiday and Internation
+ al Day of Non-Violence.\n\nDate status: verified against the source\n\nSou
+ rce: https://dopt.gov.in/static/uploads/2026/08/2ffd159748162a48c025f7e6ca
+ 5807d5.pdf
+CATEGORIES:India holidays
+URL:https://dopt.gov.in/static/uploads/2026/08/2ffd159748162a48c025f7e6ca58
+ 07d5.pdf
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
