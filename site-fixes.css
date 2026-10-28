@@ -1,0 +1,13 @@
+/* Small layout and accessibility fixes from the October 2026 review. */
+/* #main receives programmatic focus after each route change (and from the skip link);
+   the outline around the whole content area was distracting and did not mark a control. */
+main:focus{outline:none}
+/* The organization brand could be squeezed under the chapter/theme controls
+   (seen at 1280px when signed in, and on phones); let the header wrap instead. */
+.organization-header{flex-wrap:wrap;row-gap:10px}
+.organization-brand{flex-shrink:0}
+@media(max-width:700px){
+ .organization-header{flex-wrap:wrap;row-gap:10px}
+ .organization-brand{flex:1 1 100%;min-width:0}
+ .organization-brand small{overflow-wrap:anywhere}
+}

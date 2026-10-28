@@ -24,18 +24,28 @@ The convention airline planner uses native date and time controls, editable flig
 
 Requires Python 3; no package installation or environment variables.
 
+In this public deployment repository the site files live at the repository root:
+
 ```sh
-python3 scripts/build.py
-python3 -m http.server 8000 --directory site
+python3 -m http.server 8000
 ```
 
-Open http://localhost:8000. Run all interaction, state, and security regression checks with `node --test tests/*.test.cjs`. Check each browser module with `node --check site/<module>.js`; CI checks all modules and tests automatically.
+In the private source repository, build first with `python3 scripts/build.py` and serve with `python3 -m http.server 8000 --directory site`.
+
+Open http://localhost:8000. A user walkthrough with screenshots is in [docs/HOW-TO-USE.md](docs/HOW-TO-USE.md). Run all interaction, state, and security regression checks with `node --test tests/*.test.cjs`. Check each browser module with `node --check site/<module>.js`; CI checks all modules and tests automatically.
 
 Checks cover directory search/filter/pagination, source integrity and public-field allowlisting, route rendering, missing-profile handling, HTML escaping, and local event saves. Additional checks cover monthly dates, image presence, calendar exports, month/saved filters, convention logistics, accessible tooltip markup, deterministic recommendations, preference persistence, group discovery, date-aware dashboard content, and corrupted or unavailable browser storage.
 
 Event participation now mounts a single registration/request panel and updates it after a confirmed save. Members and family created during a demo session can register immediately; validation follows the current member list while preserving saved and visit-only activity. The signed-in profile combines login/logout history, profile changes, event registrations and requests, convention logistics, questions/help/recognition activity, and QR check-ins for that fictional member. The 2028 IMRC convention workflow adds a review path for registering, opening an external hotel booking link, returning to finish airline logistics, selecting airport bus times, choosing agenda sessions in any order, setting reminders, and saving an example packing list in the browser. Its structured programme covers business, charity, networking, matrimonial, card games, local outings, RAYS, Women/Sakhi, health, culture, meals, and travel. Day tabs and category filters operate on both the programme browser and personal planner. Selected sessions appear on the signed-in profile with a public-session QR link; simulated check-ins create private browser activity and unlock participation badges without a public score or leaderboard. Locality Map is handled by the main router, waits for Leaflet 1.9.4 CSS and scripts, and discards pending renders when the member leaves the page. Failed map assets show a retry message. The heat map currently shows aggregate US Census county total population, not South Asian or Indian-subcontinent heritage counts; Canadian directory members do not add Canadian Census coverage. Signed-in profiles can show fictional family-location dots over that aggregate layer.
 
 The September 2026 rendering fixes and convention workflow are covered by automated checks, including observer stability, member-list replacement, convention logistics state, structured agenda integrity, badge milestones, QR check-in validation, map asset failures/retries, stylesheet readiness, and route transitions. Playwright's bundled Chromium also verifies event sign-in/registration/requests, immediate registration of a new household, loaded map tiles/heat layer, both module/data loading orders, repeated map navigation, programme filters, and profile schedule persistence. Browser screenshots are kept locally under `output/playwright/`.
+
+
+## Festival & holiday calendar and Marwar culture (October 2026)
+
+- `#observances` is a festival and holiday calendar with month and list views, category filters (Festivals, Jain, Rajasthan events, US holidays, India holidays), Hindi names, a short description per date, and a link to each date's source. `observances.json` is the single data file. `python3 scripts/build_observances.py` regenerates the subscribable `calendars/observances/*.ics` files (one for everything plus one per category). Hindu and Jain dates follow Drik Panchang for Washington, D.C.; U.S. holidays come from OPM; Indian national holidays from the DoPT 2027 list; Rajasthan fairs from Rajasthan Tourism. Dates not yet confirmed by their source are marked `tentative`.
+- `#culture` is a Marwar photo album and `#credits` lists the author, licence and source of every photo. Photos are real Wikimedia Commons images under CC BY / CC BY-SA, resized to WebP and lazy-loaded; `marwar-photos.json` holds the credits. Do not add AI-generated images of real places or people.
+- Feature ideas for the community are in [docs/COMMUNITY-FEATURE-IDEAS.md](docs/COMMUNITY-FEATURE-IDEAS.md).
 
 ## GitHub Pages
 
