@@ -1,0 +1,645 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//IMRC Community//Festival and Holiday Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:IMRC · Festivals
+X-WR-CALDESC:Hindu and Jain dates follow the panchang for Washington\, D.C.
+  Tithis change at local sunrise\, so a date can differ by a day in other N
+ orth American cities or in India. Check your own city on drikpanchang.com 
+ before planning an event.
+REFRESH-INTERVAL;VALUE=DURATION:P1W
+X-PUBLISHED-TTL:P1W
+BEGIN:VEVENT
+UID:dhanteras-2026@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Dhanteras · धनतेरस
+DESCRIPTION:First day of Diwali. Families buy new utensils or gold and ligh
+ t a lamp for Dhanvantari and Lakshmi.\n\nDate status: verified against the
+  source\n\nSource: https://www.drikpanchang.com/calendars/hindu/hinducalen
+ dar.html?geoname-id=4140963&year=2026
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2026
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:roop-chaudas-2026@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Roop Chaudas (Narak Chaturdashi) · रूप चौदस
+DESCRIPTION:Second day of Diwali\, known in Marwari homes as Roop Chaudas: 
+ an early bath\, ubtan and small lamps at dusk.\n\nDate status: verified ag
+ ainst the source\n\nSource: https://www.drikpanchang.com/calendars/hindu/h
+ inducalendar.html?geoname-id=4140963&year=2026
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2026
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:diwali-2026@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:Diwali · Lakshmi Puja · दीपावली · लक्ष्
+ मी पूजन
+DESCRIPTION:The festival of lights. Evening Lakshmi Puja\, new account book
+ s (bahi-khata) for business families\, diyas and sweets.\n\nDate status: v
+ erified against the source\n\nSource: https://www.drikpanchang.com/calenda
+ rs/hindu/hinducalendar.html?geoname-id=4140963&year=2026
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2026
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:govardhan-2026@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:Govardhan Puja · Annakut · गोवर्धन पूजा · 
+ अन्नकूट
+DESCRIPTION:Day after Diwali. Annakut offerings of many dishes to Shri Kris
+ hna\; Ram-Ram visits between families.\n\nDate status: verified against th
+ e source\n\nSource: https://www.drikpanchang.com/calendars/hindu/hinducale
+ ndar.html?geoname-id=4140963&year=2026
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2026
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:bhai-dooj-2026@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:Bhai Dooj · भाई दूज
+DESCRIPTION:Sisters apply tilak and pray for their brothers' well-being\; b
+ rothers visit with gifts.\n\nDate status: verified against the source\n\nS
+ ource: https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geo
+ name-id=4140963&year=2026
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2026
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dev-uthani-2026@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Dev Uthani Ekadashi · देवउठनी एकादशी
+DESCRIPTION:Lord Vishnu wakes from his four-month rest\; the wedding season
+  traditionally begins.\n\nDate status: verified against the source\n\nSour
+ ce: https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geonam
+ e-id=4140963&year=2026
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2026
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:tulsi-vivah-2026@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Tulsi Vivah · तुलसी विवाह
+DESCRIPTION:Ceremonial marriage of the tulsi plant to Shaligram (Vishnu)\, 
+ celebrated at home and in temples.\n\nDate status: verified against the so
+ urce\n\nSource: https://www.drikpanchang.com/calendars/hindu/hinducalendar
+ .html?geoname-id=4140963&year=2026
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2026
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:kartik-purnima-2026@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:Kartik Purnima · कार्तिक पूर्णिमा
+DESCRIPTION:Full moon of Kartik: holy dips\, deep-daan and the peak day of 
+ the Pushkar fair.\n\nDate status: verified against the source\n\nSource: h
+ ttps://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=
+ 4140963&year=2026
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2026
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:gita-jayanti-2026@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20261220
+SUMMARY:Gita Jayanti · Mokshada Ekadashi · गीता जयंती
+DESCRIPTION:Marks the day the Bhagavad Gita was spoken\; Gita path and stud
+ y circles.\n\nDate status: verified against the source\n\nSource: https://
+ www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963
+ &year=2026
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2026
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:makar-sankranti-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
+SUMMARY:Makar Sankranti · मकर संक्रांति
+DESCRIPTION:Sun enters Capricorn. Kite flying across Rajasthan\, til-gud sw
+ eets\, and daan (giving).\n\nDate status: verified against the source\n\nS
+ ource: https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geo
+ name-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:vasant-panchami-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270211
+DTEND;VALUE=DATE:20270212
+SUMMARY:Vasant Panchami · वसंत पंचमी
+DESCRIPTION:Welcomes spring and honours Saraswati\, goddess of learning\; y
+ ellow clothes and sweets.\n\nDate status: verified against the source\n\nS
+ ource: https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geo
+ name-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:maha-shivaratri-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270306
+DTEND;VALUE=DATE:20270307
+SUMMARY:Maha Shivaratri · महाशिवरात्रि
+DESCRIPTION:Night of Shiva: fasting\, night-long worship and abhishek at te
+ mples.\n\nDate status: verified against the source\n\nSource: https://www.
+ drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&yea
+ r=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:holika-dahan-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270321
+DTEND;VALUE=DATE:20270322
+SUMMARY:Holika Dahan · होलिका दहन
+DESCRIPTION:Bonfire on the full-moon night before Holi\; Gangaur worship be
+ gins the next morning for many Marwari women.\n\nDate status: verified aga
+ inst the source\n\nSource: https://www.drikpanchang.com/calendars/hindu/hi
+ nducalendar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:holi-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270322
+DTEND;VALUE=DATE:20270323
+SUMMARY:Holi (Dhulandi) · होली · धुलंडी
+DESCRIPTION:Festival of colours\, gulal and gujiya\; the 16–18 day Gangau
+ r puja starts from this day.\n\nDate status: verified against the source\n
+ \nSource: https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?
+ geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sheetla-ashtami-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270329
+DTEND;VALUE=DATE:20270330
+SUMMARY:Sheetla Ashtami (Basoda) · शीतला अष्टमी · 
+ बासोड़ा
+DESCRIPTION:Worship of Sheetla Mata\; families eat food cooked the day befo
+ re (basoda). Widely kept in Rajasthan.\n\nDate status: verified against th
+ e source\n\nSource: https://www.drikpanchang.com/calendars/hindu/hinducale
+ ndar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:chaitra-navratri-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270407
+DTEND;VALUE=DATE:20270415
+SUMMARY:Chaitra Navratri · Nav Samvat begins · चैत्र नवर
+ ात्रि · नव संवत्सर
+DESCRIPTION:Hindu new year (Vikram Samvat 2084) and the start of nine night
+ s of Durga worship.\n\nEnds with Ram Navami on April 14.\n\nDate status: v
+ erified against the source\n\nSource: https://www.drikpanchang.com/calenda
+ rs/hindu/hinducalendar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:gangaur-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270409
+DTEND;VALUE=DATE:20270410
+SUMMARY:Gangaur · गणगौर
+DESCRIPTION:Rajasthan's beloved festival of Gauri (Parvati) and Isar (Shiva
+ ). Women and girls who began puja after Holi dress Gangaur\, sing songs\, 
+ and lead processions.\n\nDate status: verified against the source\n\nSourc
+ e: https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ram-navami-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270414
+DTEND;VALUE=DATE:20270415
+SUMMARY:Ram Navami · राम नवमी
+DESCRIPTION:Birth of Shri Ram\, closing Chaitra Navratri.\n\nDate status: v
+ erified against the source\n\nSource: https://www.drikpanchang.com/calenda
+ rs/hindu/hinducalendar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hanuman-jayanti-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270420
+DTEND;VALUE=DATE:20270421
+SUMMARY:Hanuman Jayanti · हनुमान जयंती
+DESCRIPTION:Birth of Hanuman\; Hanuman Chalisa recitation and temple visits
+  (including Salasar Balaji devotees).\n\nDate status: verified against the
+  source\n\nSource: https://www.drikpanchang.com/calendars/hindu/hinducalen
+ dar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:akshaya-tritiya-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270508
+DTEND;VALUE=DATE:20270509
+SUMMARY:Akshaya Tritiya (Aakha Teej) · अक्षय तृतीया 
+ · आखा तीज
+DESCRIPTION:An auspicious day for new beginnings. In Marwar it is Aakha Tee
+ j\, with khichda and many weddings.\n\nDate status: verified against the s
+ ource\n\nSource: https://www.drikpanchang.com/calendars/hindu/hinducalenda
+ r.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:guru-purnima-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270718
+DTEND;VALUE=DATE:20270719
+SUMMARY:Guru Purnima · गुरु पूर्णिमा
+DESCRIPTION:Honours teachers and gurus.\n\nDate status: verified against th
+ e source\n\nSource: https://www.drikpanchang.com/calendars/hindu/hinducale
+ ndar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hariyali-teej-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270804
+DTEND;VALUE=DATE:20270805
+SUMMARY:Hariyali Teej (Sawan Teej) · हरियाली तीज
+DESCRIPTION:Monsoon festival for women: green clothes\, mehendi\, swings an
+ d ghewar.\n\nDate status: verified against the source\n\nSource: https://w
+ ww.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&
+ year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:raksha-bandhan-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270816
+DTEND;VALUE=DATE:20270817
+SUMMARY:Raksha Bandhan · रक्षाबंधन
+DESCRIPTION:Sisters tie rakhi on their brothers' wrists.\n\nDate status: ve
+ rified against the source\n\nSource: https://www.drikpanchang.com/calendar
+ s/hindu/hinducalendar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:kajari-teej-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270820
+DTEND;VALUE=DATE:20270821
+SUMMARY:Kajari Teej (Badi Teej · Satudi Teej) · कजरी तीज ·
+  बड़ी तीज · सातुड़ी तीज
+DESCRIPTION:A major Marwari women's fast. Satu (sattu) sweets\, neemdi mata
+  puja\, and the fast is broken after seeing the moon.\n\nDate status: veri
+ fied against the source\n\nSource: https://www.drikpanchang.com/calendars/
+ hindu/hinducalendar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:janmashtami-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270825
+DTEND;VALUE=DATE:20270826
+SUMMARY:Krishna Janmashtami · कृष्ण जन्माष्टम
+ ी
+DESCRIPTION:Birth of Shri Krishna at midnight\; fasting\, bhajans and jhank
+ i decorations.\n\nDate status: verified against the source\n\nSource: http
+ s://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=414
+ 0963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ganesh-chaturthi-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270903
+DTEND;VALUE=DATE:20270915
+SUMMARY:Ganesh Chaturthi · गणेश चतुर्थी
+DESCRIPTION:Welcomes Ganesh\, remover of obstacles\; ten days of worship to
+  Anant Chaturdashi.\n\nGanesh Visarjan / Anant Chaturdashi on September 14
+ .\n\nDate status: verified against the source\n\nSource: https://www.drikp
+ anchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=202
+ 7
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pitru-paksha-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270916
+DTEND;VALUE=DATE:20270930
+SUMMARY:Pitru Paksha (Shraadh) · पितृ पक्ष · श्रा
+ द्ध
+DESCRIPTION:Fortnight for remembering ancestors with tarpan and food offeri
+ ngs.\n\nEnds on Sarva Pitru Amavasya\, September 29.\n\nDate status: verif
+ ied against the source\n\nSource: https://www.drikpanchang.com/calendars/h
+ indu/hinducalendar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sharad-navratri-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270930
+DTEND;VALUE=DATE:20271009
+SUMMARY:Sharad Navratri · शारदीय नवरात्रि
+DESCRIPTION:Nine nights of Durga worship\, garba and dandiya.\n\nDurga Asht
+ ami October 7\; Maha Navami October 8.\n\nDate status: verified against th
+ e source\n\nSource: https://www.drikpanchang.com/calendars/hindu/hinducale
+ ndar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dussehra-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271009
+DTEND;VALUE=DATE:20271010
+SUMMARY:Dussehra (Vijayadashami) · दशहरा · विजयाद
+ शमी
+DESCRIPTION:Victory of good over evil\; Ravan dahan and Shami puja.\n\nDate
+  status: verified against the source\n\nSource: https://www.drikpanchang.c
+ om/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sharad-purnima-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271014
+DTEND;VALUE=DATE:20271015
+SUMMARY:Sharad Purnima · शरद पूर्णिमा
+DESCRIPTION:Harvest full moon\; kheer kept in the moonlight. The Marwar Fes
+ tival in Jodhpur is timed to it.\n\nDate status: verified against the sour
+ ce\n\nSource: https://www.drikpanchang.com/calendars/hindu/hinducalendar.h
+ tml?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:karva-chauth-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271018
+DTEND;VALUE=DATE:20271019
+SUMMARY:Karva Chauth · करवा चौथ
+DESCRIPTION:Married women fast from sunrise to moonrise for their husbands'
+  long life.\n\nDate status: verified against the source\n\nSource: https:/
+ /www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=414096
+ 3&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dhanteras-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271026
+DTEND;VALUE=DATE:20271027
+SUMMARY:Dhanteras · धनतेरस
+DESCRIPTION:First day of Diwali. Families buy new utensils or gold and ligh
+ t a lamp for Dhanvantari and Lakshmi.\n\nDate status: verified against the
+  source\n\nSource: https://www.drikpanchang.com/calendars/hindu/hinducalen
+ dar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:diwali-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271028
+DTEND;VALUE=DATE:20271029
+SUMMARY:Diwali · Lakshmi Puja · दीपावली · लक्ष्
+ मी पूजन
+DESCRIPTION:The festival of lights. Evening Lakshmi Puja\, new account book
+ s (bahi-khata)\, diyas and sweets.\n\nIndia's government calendar lists Di
+ wali on Oct 29\, 2027\; in Washington\, DC it falls on Oct 28.\n\nDate sta
+ tus: verified against the source\n\nSource: https://www.drikpanchang.com/c
+ alendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:roop-chaudas-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271028
+DTEND;VALUE=DATE:20271029
+SUMMARY:Roop Chaudas (Narak Chaturdashi) · रूप चौदस
+DESCRIPTION:Second day of Diwali. In 2027 the Washington\, DC panchang list
+ s it on the same day as Lakshmi Puja.\n\nDrik Panchang lists Kali Chaudas 
+ on Oct 27 and Narak Chaturdashi on Oct 28 for Washington\, DC.\n\nDate sta
+ tus: verified against the source\n\nSource: https://www.drikpanchang.com/c
+ alendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:govardhan-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271029
+DTEND;VALUE=DATE:20271030
+SUMMARY:Govardhan Puja · Annakut · गोवर्धन पूजा · 
+ अन्नकूट
+DESCRIPTION:Day after Diwali. Annakut offerings to Shri Krishna\; Ram-Ram v
+ isits between families.\n\nDate status: verified against the source\n\nSou
+ rce: https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geona
+ me-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:bhai-dooj-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271030
+DTEND;VALUE=DATE:20271031
+SUMMARY:Bhai Dooj · भाई दूज
+DESCRIPTION:Sisters apply tilak and pray for their brothers' well-being.\n\
+ nDate status: verified against the source\n\nSource: https://www.drikpanch
+ ang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dev-uthani-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271109
+DTEND;VALUE=DATE:20271110
+SUMMARY:Dev Uthani Ekadashi · देवउठनी एकादशी
+DESCRIPTION:Lord Vishnu wakes from his four-month rest\; the wedding season
+  begins.\n\nDate status: verified against the source\n\nSource: https://ww
+ w.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&y
+ ear=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:kartik-purnima-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271113
+DTEND;VALUE=DATE:20271114
+SUMMARY:Kartik Purnima · कार्तिक पूर्णिमा
+DESCRIPTION:Full moon of Kartik: holy dips and deep-daan.\n\nDate status: v
+ erified against the source\n\nSource: https://www.drikpanchang.com/calenda
+ rs/hindu/hinducalendar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:gita-jayanti-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271209
+DTEND;VALUE=DATE:20271210
+SUMMARY:Gita Jayanti · Mokshada Ekadashi · गीता जयंती
+DESCRIPTION:Marks the day the Bhagavad Gita was spoken.\n\nDate status: ver
+ ified against the source\n\nSource: https://www.drikpanchang.com/calendars
+ /hindu/hinducalendar.html?geoname-id=4140963&year=2027
+CATEGORIES:Festivals
+URL:https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname
+ -id=4140963&year=2027
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,841 @@
+{
+ "meta": {
+  "title": "IMRC festival & holiday calendar",
+  "location": "Washington, D.C., United States (Drik Panchang geoname-id 4140963)",
+  "locationNote": "Hindu and Jain dates follow the panchang for Washington, D.C. Tithis change at local sunrise, so a date can differ by a day in other North American cities or in India. Check your own city on drikpanchang.com before planning an event.",
+  "range": {
+   "start": "2026-11-01",
+   "end": "2027-12-31"
+  },
+  "rangeNote": "Festivals, Jain observances and Rajasthan events cover November 2026 through December 2027. U.S. federal holidays cover all of 2026 and 2027.",
+  "generatedFrom": "Sources checked on 2026-10-28.",
+  "categories": [
+   {
+    "id": "festival",
+    "label": "Festivals",
+    "hindi": "त्योहार"
+   },
+   {
+    "id": "jain",
+    "label": "Jain",
+    "hindi": "जैन पर्व"
+   },
+   {
+    "id": "rajasthan",
+    "label": "Rajasthan events",
+    "hindi": "राजस्थान के मेले"
+   },
+   {
+    "id": "us-holiday",
+    "label": "US holidays",
+    "hindi": "अमेरिकी अवकाश"
+   },
+   {
+    "id": "india-holiday",
+    "label": "India holidays",
+    "hindi": "भारतीय राष्ट्रीय पर्व"
+   }
+  ]
+ },
+ "events": [
+  {
+   "id": "us-new-years-day-2026-01-01",
+   "name": "New Year's Day",
+   "hindi": "नव वर्ष दिवस",
+   "category": "us-holiday",
+   "start": "2026-01-01",
+   "status": "verified",
+   "source": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "description": "U.S. federal holiday. Federal offices, banks and many schools are closed."
+  },
+  {
+   "id": "us-birthday-of-martin-luther-king-jr-2026-01-19",
+   "name": "Birthday of Martin Luther King, Jr.",
+   "hindi": "मार्टिन लूथर किंग जूनियर जयंती",
+   "category": "us-holiday",
+   "start": "2026-01-19",
+   "status": "verified",
+   "source": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "description": "U.S. federal holiday. Federal offices, banks and many schools are closed."
+  },
+  {
+   "id": "us-washingtons-birthday-2026-02-16",
+   "name": "Washington's Birthday (Presidents' Day)",
+   "hindi": "वॉशिंगटन जयंती",
+   "category": "us-holiday",
+   "start": "2026-02-16",
+   "status": "verified",
+   "source": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "description": "U.S. federal holiday. Federal offices, banks and many schools are closed."
+  },
+  {
+   "id": "us-memorial-day-2026-05-25",
+   "name": "Memorial Day",
+   "hindi": "स्मृति दिवस",
+   "category": "us-holiday",
+   "start": "2026-05-25",
+   "status": "verified",
+   "source": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "description": "U.S. federal holiday. Federal offices, banks and many schools are closed."
+  },
+  {
+   "id": "us-juneteenth-national-independence-day-2026-06-19",
+   "name": "Juneteenth National Independence Day",
+   "hindi": "जूनटीन्थ",
+   "category": "us-holiday",
+   "start": "2026-06-19",
+   "status": "verified",
+   "source": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "description": "U.S. federal holiday. Federal offices, banks and many schools are closed."
+  },
+  {
+   "id": "us-independence-day-2026-07-03",
+   "name": "Independence Day (observed)",
+   "hindi": "अमेरिकी स्वतंत्रता दिवस",
+   "category": "us-holiday",
+   "start": "2026-07-03",
+   "status": "verified",
+   "source": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "description": "U.S. federal holiday. Federal offices, banks and many schools are closed.",
+   "note": "July 4, 2026 is a Saturday; federal offices observe Friday, July 3."
+  },
+  {
+   "id": "us-labor-day-2026-09-07",
+   "name": "Labor Day",
+   "hindi": "श्रमिक दिवस",
+   "category": "us-holiday",
+   "start": "2026-09-07",
+   "status": "verified",
+   "source": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "description": "U.S. federal holiday. Federal offices, banks and many schools are closed."
+  },
+  {
+   "id": "us-columbus-day-2026-10-12",
+   "name": "Columbus Day",
+   "hindi": "कोलंबस दिवस",
+   "category": "us-holiday",
+   "start": "2026-10-12",
+   "status": "verified",
+   "source": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "description": "U.S. federal holiday. Federal offices, banks and many schools are closed."
+  },
+  {
+   "id": "dhanteras-2026",
+   "name": "Dhanteras",
+   "hindi": "धनतेरस",
+   "category": "festival",
+   "start": "2026-11-06",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2026",
+   "description": "First day of Diwali. Families buy new utensils or gold and light a lamp for Dhanvantari and Lakshmi."
+  },
+  {
+   "id": "roop-chaudas-2026",
+   "name": "Roop Chaudas (Narak Chaturdashi)",
+   "hindi": "रूप चौदस",
+   "category": "festival",
+   "start": "2026-11-07",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2026",
+   "description": "Second day of Diwali, known in Marwari homes as Roop Chaudas: an early bath, ubtan and small lamps at dusk."
+  },
+  {
+   "id": "diwali-2026",
+   "name": "Diwali · Lakshmi Puja",
+   "hindi": "दीपावली · लक्ष्मी पूजन",
+   "category": "festival",
+   "start": "2026-11-08",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2026",
+   "description": "The festival of lights. Evening Lakshmi Puja, new account books (bahi-khata) for business families, diyas and sweets."
+  },
+  {
+   "id": "mahavir-nirvan-2026",
+   "name": "Mahavir Nirvan Divas (Jain Diwali)",
+   "hindi": "महावीर निर्वाण दिवस",
+   "category": "jain",
+   "start": "2026-11-08",
+   "status": "tentative",
+   "source": "https://www.drikpanchang.com/jain/calendar/jain-calendar.html?geoname-id=4140963&year=2026",
+   "description": "Bhagwan Mahavir attained nirvana on Diwali night; Jains light lamps and offer nirvan laddu.",
+   "note": "Drik Panchang's Washington, DC Jain calendar lists Lakshmi Puja on this date but no separate Nirvan entry. Confirm with your derasar or Jain centre."
+  },
+  {
+   "id": "govardhan-2026",
+   "name": "Govardhan Puja · Annakut",
+   "hindi": "गोवर्धन पूजा · अन्नकूट",
+   "category": "festival",
+   "start": "2026-11-09",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2026",
+   "description": "Day after Diwali. Annakut offerings of many dishes to Shri Krishna; Ram-Ram visits between families."
+  },
+  {
+   "id": "bhai-dooj-2026",
+   "name": "Bhai Dooj",
+   "hindi": "भाई दूज",
+   "category": "festival",
+   "start": "2026-11-10",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2026",
+   "description": "Sisters apply tilak and pray for their brothers' well-being; brothers visit with gifts."
+  },
+  {
+   "id": "us-veterans-day-2026-11-11",
+   "name": "Veterans Day",
+   "hindi": "वेटरन्स दिवस",
+   "category": "us-holiday",
+   "start": "2026-11-11",
+   "status": "verified",
+   "source": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "description": "U.S. federal holiday. Federal offices, banks and many schools are closed."
+  },
+  {
+   "id": "gyan-panchami-2026",
+   "name": "Gyan Panchami (Labh Panchami)",
+   "hindi": "ज्ञान पंचमी · लाभ पंचमी",
+   "category": "jain",
+   "start": "2026-11-14",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/jain/calendar/jain-calendar.html?geoname-id=4140963&year=2026",
+   "description": "Day of reverence for knowledge and scriptures; many businesses reopen after Diwali."
+  },
+  {
+   "id": "pushkar-fair-2026",
+   "name": "Pushkar Fair (Pushkar Mela)",
+   "hindi": "पुष्कर मेला",
+   "category": "rajasthan",
+   "start": "2026-11-17",
+   "end": "2026-11-24",
+   "status": "verified",
+   "source": "https://www.tourism.rajasthan.gov.in/fairs-and-festivals.html",
+   "description": "One of the world's largest camel and livestock fairs, with folk music, turban-tying and moustache contests by Pushkar Lake.",
+   "note": "Rajasthan Tourism's main programme. Livestock trading starts around November 10."
+  },
+  {
+   "id": "dev-uthani-2026",
+   "name": "Dev Uthani Ekadashi",
+   "hindi": "देवउठनी एकादशी",
+   "category": "festival",
+   "start": "2026-11-20",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2026",
+   "description": "Lord Vishnu wakes from his four-month rest; the wedding season traditionally begins."
+  },
+  {
+   "id": "tulsi-vivah-2026",
+   "name": "Tulsi Vivah",
+   "hindi": "तुलसी विवाह",
+   "category": "festival",
+   "start": "2026-11-21",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2026",
+   "description": "Ceremonial marriage of the tulsi plant to Shaligram (Vishnu), celebrated at home and in temples."
+  },
+  {
+   "id": "kartik-purnima-2026",
+   "name": "Kartik Purnima",
+   "hindi": "कार्तिक पूर्णिमा",
+   "category": "festival",
+   "start": "2026-11-24",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2026",
+   "description": "Full moon of Kartik: holy dips, deep-daan and the peak day of the Pushkar fair."
+  },
+  {
+   "id": "us-thanksgiving-day-2026-11-26",
+   "name": "Thanksgiving Day",
+   "hindi": "थैंक्सगिविंग",
+   "category": "us-holiday",
+   "start": "2026-11-26",
+   "status": "verified",
+   "source": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "description": "U.S. federal holiday. Federal offices, banks and many schools are closed."
+  },
+  {
+   "id": "gita-jayanti-2026",
+   "name": "Gita Jayanti · Mokshada Ekadashi",
+   "hindi": "गीता जयंती",
+   "category": "festival",
+   "start": "2026-12-19",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2026",
+   "description": "Marks the day the Bhagavad Gita was spoken; Gita path and study circles."
+  },
+  {
+   "id": "us-christmas-day-2026-12-25",
+   "name": "Christmas Day",
+   "hindi": "क्रिसमस",
+   "category": "us-holiday",
+   "start": "2026-12-25",
+   "status": "verified",
+   "source": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "description": "U.S. federal holiday. Federal offices, banks and many schools are closed."
+  },
+  {
+   "id": "us-new-years-day-2027-01-01",
+   "name": "New Year's Day",
+   "hindi": "नव वर्ष दिवस",
+   "category": "us-holiday",
+   "start": "2027-01-01",
+   "status": "verified",
+   "source": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "description": "U.S. federal holiday. Federal offices, banks and many schools are closed."
+  },
+  {
+   "id": "makar-sankranti-2027",
+   "name": "Makar Sankranti",
+   "hindi": "मकर संक्रांति",
+   "category": "festival",
+   "start": "2027-01-14",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027",
+   "description": "Sun enters Capricorn. Kite flying across Rajasthan, til-gud sweets, and daan (giving)."
+  },
+  {
+   "id": "us-birthday-of-martin-luther-king-jr-2027-01-18",
+   "name": "Birthday of Martin Luther King, Jr.",
+   "hindi": "मार्टिन लूथर किंग जूनियर जयंती",
+   "category": "us-holiday",
+   "start": "2027-01-18",
+   "status": "verified",
+   "source": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "description": "U.S. federal holiday. Federal offices, banks and many schools are closed."
+  },
+  {
+   "id": "in-republic-day-2027",
+   "name": "Republic Day (India)",
+   "hindi": "गणतंत्र दिवस",
+   "category": "india-holiday",
+   "start": "2027-01-26",
+   "status": "verified",
+   "source": "https://dopt.gov.in/static/uploads/2026/08/2ffd159748162a48c025f7e6ca5807d5.pdf",
+   "description": "Marks the Constitution of India coming into force in 1950."
+  },
+  {
+   "id": "vasant-panchami-2027",
+   "name": "Vasant Panchami",
+   "hindi": "वसंत पंचमी",
+   "category": "festival",
+   "start": "2027-02-11",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027",
+   "description": "Welcomes spring and honours Saraswati, goddess of learning; yellow clothes and sweets."
+  },
+  {
+   "id": "nagaur-fair-2027",
+   "name": "Nagaur Fair (Ramdeoji Cattle Fair)",
+   "hindi": "नागौर मेला",
+   "category": "rajasthan",
+   "start": "2027-02-12",
+   "end": "2027-02-15",
+   "status": "tentative",
+   "source": "https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/pdf/FairsandFestivals.pdf",
+   "description": "Marwar's great cattle fair in Nagaur: Nagori bullocks, camel races and folk performances.",
+   "note": "From Rajasthan Tourism's 2024–2030 forecast list. Final dates are announced closer to the event."
+  },
+  {
+   "id": "us-washingtons-birthday-2027-02-15",
+   "name": "Washington's Birthday (Presidents' Day)",
+   "hindi": "वॉशिंगटन जयंती",
+   "category": "us-holiday",
+   "start": "2027-02-15",
+   "status": "verified",
+   "source": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "description": "U.S. federal holiday. Federal offices, banks and many schools are closed."
+  },
+  {
+   "id": "desert-festival-2027",
+   "name": "Desert Festival, Jaisalmer",
+   "hindi": "मरु महोत्सव",
+   "category": "rajasthan",
+   "start": "2027-02-18",
+   "end": "2027-02-20",
+   "status": "tentative",
+   "source": "https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/pdf/FairsandFestivals.pdf",
+   "description": "Three days of folk culture on the Thar dunes near Jaisalmer: camel polo, Mr Desert, puppeteers and Kalbelia dancers.",
+   "note": "From Rajasthan Tourism's 2024–2030 forecast list. Final dates are announced closer to the event."
+  },
+  {
+   "id": "maha-shivaratri-2027",
+   "name": "Maha Shivaratri",
+   "hindi": "महाशिवरात्रि",
+   "category": "festival",
+   "start": "2027-03-06",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027",
+   "description": "Night of Shiva: fasting, night-long worship and abhishek at temples."
+  },
+  {
+   "id": "holika-dahan-2027",
+   "name": "Holika Dahan",
+   "hindi": "होलिका दहन",
+   "category": "festival",
+   "start": "2027-03-21",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027",
+   "description": "Bonfire on the full-moon night before Holi; Gangaur worship begins the next morning for many Marwari women."
+  },
+  {
+   "id": "holi-2027",
+   "name": "Holi (Dhulandi)",
+   "hindi": "होली · धुलंडी",
+   "category": "festival",
+   "start": "2027-03-22",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027",
+   "description": "Festival of colours, gulal and gujiya; the 16–18 day Gangaur puja starts from this day."
+  },
+  {
+   "id": "sheetla-ashtami-2027",
+   "name": "Sheetla Ashtami (Basoda)",
+   "hindi": "शीतला अष्टमी · बासोड़ा",
+   "category": "festival",
+   "start": "2027-03-29",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027",
+   "description": "Worship of Sheetla Mata; families eat food cooked the day before (basoda). Widely kept in Rajasthan."
+  },
+  {
+   "id": "chaitra-navratri-2027",
+   "name": "Chaitra Navratri · Nav Samvat begins",
+   "hindi": "चैत्र नवरात्रि · नव संवत्सर",
+   "category": "festival",
+   "start": "2027-04-07",
+   "end": "2027-04-14",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027",
+   "description": "Hindu new year (Vikram Samvat 2084) and the start of nine nights of Durga worship.",
+   "note": "Ends with Ram Navami on April 14."
+  },
+  {
+   "id": "gangaur-2027",
+   "name": "Gangaur",
+   "hindi": "गणगौर",
+   "category": "festival",
+   "start": "2027-04-09",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027",
+   "description": "Rajasthan's beloved festival of Gauri (Parvati) and Isar (Shiva). Women and girls who began puja after Holi dress Gangaur, sing songs, and lead processions."
+  },
+  {
+   "id": "ram-navami-2027",
+   "name": "Ram Navami",
+   "hindi": "राम नवमी",
+   "category": "festival",
+   "start": "2027-04-14",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027",
+   "description": "Birth of Shri Ram, closing Chaitra Navratri."
+  },
+  {
+   "id": "mahavir-jayanti-2027",
+   "name": "Mahavir Jayanti",
+   "hindi": "महावीर जयंती",
+   "category": "jain",
+   "start": "2027-04-18",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/jain/calendar/jain-calendar.html?geoname-id=4140963&year=2027",
+   "description": "Birth of Bhagwan Mahavir, the 24th Tirthankara: processions, abhishek and charity.",
+   "note": "India observes it on April 19, 2027; Washington, DC falls a day earlier."
+  },
+  {
+   "id": "hanuman-jayanti-2027",
+   "name": "Hanuman Jayanti",
+   "hindi": "हनुमान जयंती",
+   "category": "festival",
+   "start": "2027-04-20",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027",
+   "description": "Birth of Hanuman; Hanuman Chalisa recitation and temple visits (including Salasar Balaji devotees)."
+  },
+  {
+   "id": "akshaya-tritiya-2027",
+   "name": "Akshaya Tritiya (Aakha Teej)",
+   "hindi": "अक्षय तृतीया · आखा तीज",
+   "category": "festival",
+   "start": "2027-05-08",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027",
+   "description": "An auspicious day for new beginnings. In Marwar it is Aakha Teej, with khichda and many weddings."
+  },
+  {
+   "id": "us-memorial-day-2027-05-31",
+   "name": "Memorial Day",
+   "hindi": "स्मृति दिवस",
+   "category": "us-holiday",
+   "start": "2027-05-31",
+   "status": "verified",
+   "source": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "description": "U.S. federal holiday. Federal offices, banks and many schools are closed."
+  },
+  {
+   "id": "us-juneteenth-national-independence-day-2027-06-18",
+   "name": "Juneteenth National Independence Day (observed)",
+   "hindi": "जूनटीन्थ",
+   "category": "us-holiday",
+   "start": "2027-06-18",
+   "status": "verified",
+   "source": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "description": "U.S. federal holiday. Federal offices, banks and many schools are closed.",
+   "note": "June 19, 2027 is a Saturday."
+  },
+  {
+   "id": "us-independence-day-2027-07-05",
+   "name": "Independence Day (observed)",
+   "hindi": "अमेरिकी स्वतंत्रता दिवस",
+   "category": "us-holiday",
+   "start": "2027-07-05",
+   "status": "verified",
+   "source": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "description": "U.S. federal holiday. Federal offices, banks and many schools are closed.",
+   "note": "July 4, 2027 is a Sunday."
+  },
+  {
+   "id": "guru-purnima-2027",
+   "name": "Guru Purnima",
+   "hindi": "गुरु पूर्णिमा",
+   "category": "festival",
+   "start": "2027-07-18",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027",
+   "description": "Honours teachers and gurus."
+  },
+  {
+   "id": "hariyali-teej-2027",
+   "name": "Hariyali Teej (Sawan Teej)",
+   "hindi": "हरियाली तीज",
+   "category": "festival",
+   "start": "2027-08-04",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027",
+   "description": "Monsoon festival for women: green clothes, mehendi, swings and ghewar."
+  },
+  {
+   "id": "in-independence-day-2027",
+   "name": "Independence Day (India)",
+   "hindi": "स्वतंत्रता दिवस",
+   "category": "india-holiday",
+   "start": "2027-08-15",
+   "status": "verified",
+   "source": "https://dopt.gov.in/static/uploads/2026/08/2ffd159748162a48c025f7e6ca5807d5.pdf",
+   "description": "India's independence in 1947; flag hoisting and community gatherings across North America."
+  },
+  {
+   "id": "raksha-bandhan-2027",
+   "name": "Raksha Bandhan",
+   "hindi": "रक्षाबंधन",
+   "category": "festival",
+   "start": "2027-08-16",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027",
+   "description": "Sisters tie rakhi on their brothers' wrists."
+  },
+  {
+   "id": "kajari-teej-2027",
+   "name": "Kajari Teej (Badi Teej · Satudi Teej)",
+   "hindi": "कजरी तीज · बड़ी तीज · सातुड़ी तीज",
+   "category": "festival",
+   "start": "2027-08-20",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027",
+   "description": "A major Marwari women's fast. Satu (sattu) sweets, neemdi mata puja, and the fast is broken after seeing the moon."
+  },
+  {
+   "id": "janmashtami-2027",
+   "name": "Krishna Janmashtami",
+   "hindi": "कृष्ण जन्माष्टमी",
+   "category": "festival",
+   "start": "2027-08-25",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027",
+   "description": "Birth of Shri Krishna at midnight; fasting, bhajans and jhanki decorations."
+  },
+  {
+   "id": "paryushan-2027",
+   "name": "Paryushan Parva (Shvetambar)",
+   "hindi": "पर्युषण पर्व",
+   "category": "jain",
+   "start": "2027-08-28",
+   "end": "2027-09-04",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/jain/calendar/jain-calendar.html?geoname-id=4140963&year=2027",
+   "description": "Eight days of fasting, study and reflection, ending with Samvatsari."
+  },
+  {
+   "id": "ganesh-chaturthi-2027",
+   "name": "Ganesh Chaturthi",
+   "hindi": "गणेश चतुर्थी",
+   "category": "festival",
+   "start": "2027-09-03",
+   "end": "2027-09-14",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027",
+   "description": "Welcomes Ganesh, remover of obstacles; ten days of worship to Anant Chaturdashi.",
+   "note": "Ganesh Visarjan / Anant Chaturdashi on September 14."
+  },
+  {
+   "id": "samvatsari-2027",
+   "name": "Samvatsari · Michhami Dukkadam",
+   "hindi": "संवत्सरी · मिच्छामि दुक्कडम्",
+   "category": "jain",
+   "start": "2027-09-04",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/jain/calendar/jain-calendar.html?geoname-id=4140963&year=2027",
+   "description": "Final day of Paryushan: pratikraman and asking forgiveness of every living being."
+  },
+  {
+   "id": "us-labor-day-2027-09-06",
+   "name": "Labor Day",
+   "hindi": "श्रमिक दिवस",
+   "category": "us-holiday",
+   "start": "2027-09-06",
+   "status": "verified",
+   "source": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "description": "U.S. federal holiday. Federal offices, banks and many schools are closed."
+  },
+  {
+   "id": "pitru-paksha-2027",
+   "name": "Pitru Paksha (Shraadh)",
+   "hindi": "पितृ पक्ष · श्राद्ध",
+   "category": "festival",
+   "start": "2027-09-16",
+   "end": "2027-09-29",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027",
+   "description": "Fortnight for remembering ancestors with tarpan and food offerings.",
+   "note": "Ends on Sarva Pitru Amavasya, September 29."
+  },
+  {
+   "id": "sharad-navratri-2027",
+   "name": "Sharad Navratri",
+   "hindi": "शारदीय नवरात्रि",
+   "category": "festival",
+   "start": "2027-09-30",
+   "end": "2027-10-08",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027",
+   "description": "Nine nights of Durga worship, garba and dandiya.",
+   "note": "Durga Ashtami October 7; Maha Navami October 8."
+  },
+  {
+   "id": "in-gandhi-jayanti-2027",
+   "name": "Gandhi Jayanti",
+   "hindi": "गांधी जयंती",
+   "category": "india-holiday",
+   "start": "2027-10-02",
+   "status": "verified",
+   "source": "https://dopt.gov.in/static/uploads/2026/08/2ffd159748162a48c025f7e6ca5807d5.pdf",
+   "description": "Birthday of Mahatma Gandhi; a national holiday and International Day of Non-Violence."
+  },
+  {
+   "id": "dussehra-2027",
+   "name": "Dussehra (Vijayadashami)",
+   "hindi": "दशहरा · विजयादशमी",
+   "category": "festival",
+   "start": "2027-10-09",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027",
+   "description": "Victory of good over evil; Ravan dahan and Shami puja."
+  },
+  {
+   "id": "us-columbus-day-2027-10-11",
+   "name": "Columbus Day",
+   "hindi": "कोलंबस दिवस",
+   "category": "us-holiday",
+   "start": "2027-10-11",
+   "status": "verified",
+   "source": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "description": "U.S. federal holiday. Federal offices, banks and many schools are closed."
+  },
+  {
+   "id": "marwar-festival-2027",
+   "name": "Marwar Festival, Jodhpur",
+   "hindi": "मारवाड़ महोत्सव",
+   "category": "rajasthan",
+   "start": "2027-10-13",
+   "end": "2027-10-14",
+   "status": "tentative",
+   "source": "https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/pdf/FairsandFestivals.pdf",
+   "description": "Jodhpur's festival of Marwar folk music (Maand) and heroes, at Mehrangarh, Umaid Stadium and the Osian dunes.",
+   "note": "From Rajasthan Tourism's 2024–2030 forecast list. The 2026 edition ran Oct 24–25."
+  },
+  {
+   "id": "sharad-purnima-2027",
+   "name": "Sharad Purnima",
+   "hindi": "शरद पूर्णिमा",
+   "category": "festival",
+   "start": "2027-10-14",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027",
+   "description": "Harvest full moon; kheer kept in the moonlight. The Marwar Festival in Jodhpur is timed to it."
+  },
+  {
+   "id": "karva-chauth-2027",
+   "name": "Karva Chauth",
+   "hindi": "करवा चौथ",
+   "category": "festival",
+   "start": "2027-10-18",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027",
+   "description": "Married women fast from sunrise to moonrise for their husbands' long life."
+  },
+  {
+   "id": "dhanteras-2027",
+   "name": "Dhanteras",
+   "hindi": "धनतेरस",
+   "category": "festival",
+   "start": "2027-10-26",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027",
+   "description": "First day of Diwali. Families buy new utensils or gold and light a lamp for Dhanvantari and Lakshmi."
+  },
+  {
+   "id": "diwali-2027",
+   "name": "Diwali · Lakshmi Puja",
+   "hindi": "दीपावली · लक्ष्मी पूजन",
+   "category": "festival",
+   "start": "2027-10-28",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027",
+   "description": "The festival of lights. Evening Lakshmi Puja, new account books (bahi-khata), diyas and sweets.",
+   "note": "India's government calendar lists Diwali on Oct 29, 2027; in Washington, DC it falls on Oct 28."
+  },
+  {
+   "id": "roop-chaudas-2027",
+   "name": "Roop Chaudas (Narak Chaturdashi)",
+   "hindi": "रूप चौदस",
+   "category": "festival",
+   "start": "2027-10-28",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027",
+   "description": "Second day of Diwali. In 2027 the Washington, DC panchang lists it on the same day as Lakshmi Puja.",
+   "note": "Drik Panchang lists Kali Chaudas on Oct 27 and Narak Chaturdashi on Oct 28 for Washington, DC."
+  },
+  {
+   "id": "mahavir-nirvan-2027",
+   "name": "Mahavir Nirvan Divas (Jain Diwali)",
+   "hindi": "महावीर निर्वाण दिवस",
+   "category": "jain",
+   "start": "2027-10-28",
+   "status": "tentative",
+   "source": "https://www.drikpanchang.com/jain/calendar/jain-calendar.html?geoname-id=4140963&year=2027",
+   "description": "Bhagwan Mahavir attained nirvana on Diwali night; Jains light lamps and offer nirvan laddu.",
+   "note": "Shown on Diwali night for Washington, DC; Indian Jain calendars list Oct 29. Confirm with your derasar or Jain centre."
+  },
+  {
+   "id": "govardhan-2027",
+   "name": "Govardhan Puja · Annakut",
+   "hindi": "गोवर्धन पूजा · अन्नकूट",
+   "category": "festival",
+   "start": "2027-10-29",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027",
+   "description": "Day after Diwali. Annakut offerings to Shri Krishna; Ram-Ram visits between families."
+  },
+  {
+   "id": "bhai-dooj-2027",
+   "name": "Bhai Dooj",
+   "hindi": "भाई दूज",
+   "category": "festival",
+   "start": "2027-10-30",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027",
+   "description": "Sisters apply tilak and pray for their brothers' well-being."
+  },
+  {
+   "id": "gyan-panchami-2027",
+   "name": "Gyan Panchami (Labh Panchami)",
+   "hindi": "ज्ञान पंचमी · लाभ पंचमी",
+   "category": "jain",
+   "start": "2027-11-03",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/jain/calendar/jain-calendar.html?geoname-id=4140963&year=2027",
+   "description": "Day of reverence for knowledge and scriptures."
+  },
+  {
+   "id": "pushkar-fair-2027",
+   "name": "Pushkar Fair (Pushkar Mela)",
+   "hindi": "पुष्कर मेला",
+   "category": "rajasthan",
+   "start": "2027-11-06",
+   "end": "2027-11-14",
+   "status": "tentative",
+   "source": "https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/pdf/FairsandFestivals.pdf",
+   "description": "Camel and livestock fair with cultural programmes, ending on Kartik Purnima.",
+   "note": "From Rajasthan Tourism's 2024–2030 forecast list. Final dates are announced closer to the event."
+  },
+  {
+   "id": "dev-uthani-2027",
+   "name": "Dev Uthani Ekadashi",
+   "hindi": "देवउठनी एकादशी",
+   "category": "festival",
+   "start": "2027-11-09",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027",
+   "description": "Lord Vishnu wakes from his four-month rest; the wedding season begins."
+  },
+  {
+   "id": "us-veterans-day-2027-11-11",
+   "name": "Veterans Day",
+   "hindi": "वेटरन्स दिवस",
+   "category": "us-holiday",
+   "start": "2027-11-11",
+   "status": "verified",
+   "source": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "description": "U.S. federal holiday. Federal offices, banks and many schools are closed."
+  },
+  {
+   "id": "kartik-purnima-2027",
+   "name": "Kartik Purnima",
+   "hindi": "कार्तिक पूर्णिमा",
+   "category": "festival",
+   "start": "2027-11-13",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027",
+   "description": "Full moon of Kartik: holy dips and deep-daan."
+  },
+  {
+   "id": "us-thanksgiving-day-2027-11-25",
+   "name": "Thanksgiving Day",
+   "hindi": "थैंक्सगिविंग",
+   "category": "us-holiday",
+   "start": "2027-11-25",
+   "status": "verified",
+   "source": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "description": "U.S. federal holiday. Federal offices, banks and many schools are closed."
+  },
+  {
+   "id": "gita-jayanti-2027",
+   "name": "Gita Jayanti · Mokshada Ekadashi",
+   "hindi": "गीता जयंती",
+   "category": "festival",
+   "start": "2027-12-09",
+   "status": "verified",
+   "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=4140963&year=2027",
+   "description": "Marks the day the Bhagavad Gita was spoken."
+  },
+  {
+   "id": "us-christmas-day-2027-12-24",
+   "name": "Christmas Day (observed)",
+   "hindi": "क्रिसमस",
+   "category": "us-holiday",
+   "start": "2027-12-24",
+   "status": "verified",
+   "source": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "description": "U.S. federal holiday. Federal offices, banks and many schools are closed.",
+   "note": "December 25, 2027 is a Saturday."
+  },
+  {
+   "id": "us-new-years-day-2028-2027-12-31",
+   "name": "New Year's Day 2028 (observed)",
+   "hindi": "नव वर्ष दिवस",
+   "category": "us-holiday",
+   "start": "2027-12-31",
+   "status": "verified",
+   "source": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "description": "U.S. federal holiday. Federal offices, banks and many schools are closed.",
+   "note": "January 1, 2028 is a Saturday; OPM lists Friday, December 31, 2027."
+  }
+ ]
+}

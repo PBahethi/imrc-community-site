@@ -1,0 +1,103 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//IMRC Community//Festival and Holiday Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:IMRC · Rajasthan events
+X-WR-CALDESC:Hindu and Jain dates follow the panchang for Washington\, D.C.
+  Tithis change at local sunrise\, so a date can differ by a day in other N
+ orth American cities or in India. Check your own city on drikpanchang.com 
+ before planning an event.
+REFRESH-INTERVAL;VALUE=DURATION:P1W
+X-PUBLISHED-TTL:P1W
+BEGIN:VEVENT
+UID:pushkar-fair-2026@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261125
+SUMMARY:Pushkar Fair (Pushkar Mela) · पुष्कर मेला
+DESCRIPTION:One of the world's largest camel and livestock fairs\, with fol
+ k music\, turban-tying and moustache contests by Pushkar Lake.\n\nRajastha
+ n Tourism's main programme. Livestock trading starts around November 10.\n
+ \nDate status: verified against the source\n\nSource: https://www.tourism.
+ rajasthan.gov.in/fairs-and-festivals.html
+CATEGORIES:Rajasthan events
+URL:https://www.tourism.rajasthan.gov.in/fairs-and-festivals.html
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:nagaur-fair-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270212
+DTEND;VALUE=DATE:20270216
+SUMMARY:Nagaur Fair (Ramdeoji Cattle Fair) · नागौर मेला 
+ (tentative)
+DESCRIPTION:Marwar's great cattle fair in Nagaur: Nagori bullocks\, camel r
+ aces and folk performances.\n\nFrom Rajasthan Tourism's 2024–2030 foreca
+ st list. Final dates are announced closer to the event.\n\nDate status: te
+ ntative\, confirm before planning\n\nSource: https://www.tourism.rajasthan
+ .gov.in/content/dam/rajasthan-tourism/english/pdf/FairsandFestivals.pdf
+CATEGORIES:Rajasthan events
+URL:https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/engl
+ ish/pdf/FairsandFestivals.pdf
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:desert-festival-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20270218
+DTEND;VALUE=DATE:20270221
+SUMMARY:Desert Festival\, Jaisalmer · मरु महोत्सव (ten
+ tative)
+DESCRIPTION:Three days of folk culture on the Thar dunes near Jaisalmer: ca
+ mel polo\, Mr Desert\, puppeteers and Kalbelia dancers.\n\nFrom Rajasthan 
+ Tourism's 2024–2030 forecast list. Final dates are announced closer to t
+ he event.\n\nDate status: tentative\, confirm before planning\n\nSource: h
+ ttps://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/
+ pdf/FairsandFestivals.pdf
+CATEGORIES:Rajasthan events
+URL:https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/engl
+ ish/pdf/FairsandFestivals.pdf
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:marwar-festival-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271013
+DTEND;VALUE=DATE:20271015
+SUMMARY:Marwar Festival\, Jodhpur · मारवाड़ महोत्
+ सव (tentative)
+DESCRIPTION:Jodhpur's festival of Marwar folk music (Maand) and heroes\, at
+  Mehrangarh\, Umaid Stadium and the Osian dunes.\n\nFrom Rajasthan Tourism
+ 's 2024–2030 forecast list. The 2026 edition ran Oct 24–25.\n\nDate st
+ atus: tentative\, confirm before planning\n\nSource: https://www.tourism.r
+ ajasthan.gov.in/content/dam/rajasthan-tourism/english/pdf/FairsandFestival
+ s.pdf
+CATEGORIES:Rajasthan events
+URL:https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/engl
+ ish/pdf/FairsandFestivals.pdf
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pushkar-fair-2027@imrc-community-site
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20271106
+DTEND;VALUE=DATE:20271115
+SUMMARY:Pushkar Fair (Pushkar Mela) · पुष्कर मेला (ten
+ tative)
+DESCRIPTION:Camel and livestock fair with cultural programmes\, ending on K
+ artik Purnima.\n\nFrom Rajasthan Tourism's 2024–2030 forecast list. Fina
+ l dates are announced closer to the event.\n\nDate status: tentative\, con
+ firm before planning\n\nSource: https://www.tourism.rajasthan.gov.in/conte
+ nt/dam/rajasthan-tourism/english/pdf/FairsandFestivals.pdf
+CATEGORIES:Rajasthan events
+URL:https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/engl
+ ish/pdf/FairsandFestivals.pdf
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
